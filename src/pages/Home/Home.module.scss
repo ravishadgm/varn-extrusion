@@ -1,0 +1,78 @@
+.heroSection {
+  position: relative;
+   height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 80%;
+ 
+  background-color: #162e20;
+  padding: 4rem 2rem;
+
+  position: absolute;
+    bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);  // Center horizontally
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 1 1 50%;
+  padding-right: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+        width: 80%;
+
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.right {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.ctaButton {
+ 
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 999px;
+  border: 1px solid #ffffff40;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #e0e0e0;
+  }
+}
