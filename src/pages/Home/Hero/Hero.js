@@ -1,13 +1,34 @@
 import React from 'react';
-import styles from './Home.module.scss';
-import backgroundImage from '../../assets/images/home_bg.jpg'; // Update path if needed
+import { motion } from 'framer-motion';
+import styles from './Hero.module.scss';
+import Images from "@assets/images"; 
 
-const Home = () => {
+const zoomAnim = {
+  initial: {
+    scale: 1.1,
+  },
+  animate: {
+    scale: 1,
+    transition: {
+      duration: 1.8,
+      ease: 'easeInOut',
+    },
+  },
+};
+
+function Hero() {
   return (
-    <section
+    <motion.section
       className={styles.heroSection}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${Images.home_bg})` }}
+      variants={zoomAnim}
+      initial="initial"
+      animate="animate"
     >
+      <div className={styles.imageContainer}>
+        <img src={Images.home_bg} alt="Hero" />
+      </div>
+
       <div className={styles.overlay}>
         <div className={styles.content}>
           <div className={styles.left}>
@@ -25,8 +46,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-};
+}
 
-export default Home;
+export default Hero;

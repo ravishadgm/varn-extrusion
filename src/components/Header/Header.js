@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import "./Header.scss";
-import Logo from "../../assets/images/logo.svg";
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.scss";
+import Images from "@assets/images"; 
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -15,24 +15,23 @@ const navLinks = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="header">
-      <div className="header__container">
-        <div className="header__logo">
-          <img src={Logo} alt="QB Corp Logo" />
+    <header className={styles.header}>
+      <div className={styles.headerContainer}>
+        <div className={styles.headerLogo}>
+          <img src={Images.logo} alt="QB Corp Logo" />
         </div>
 
-        <nav className={`header__nav ${menuOpen ? "open" : ""}`}>
-          {navLinks.map((link, index) => {
+        <nav className={`${styles.headerNav} ${menuOpen ? styles.open : ""}`}>
+          {navLinks.map((link) => {
             const isContact = link.name.toLowerCase() === "contact";
             return (
               <React.Fragment key={link.name}>
-                {isContact && <div className="header__separator" />}
+                {isContact && <div className={styles.headerSeparator} />}
                 <NavLink
                   to={link.path}
                   onClick={closeMenu}
@@ -45,14 +44,21 @@ const Header = () => {
           })}
         </nav>
 
+        {/* Menu / Close Icon */}
         <div
-          className={`header__menu-icon ${menuOpen ? "open" : ""}`}
+          className={styles.headerMenuIcon}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
         >
-          <span />
-          <span />
-          <span />
+          {menuOpen ? (
+            <div className={styles.closeIcon}>×</div>
+          ) : (
+            <>
+              <span />
+              <span />
+              <span />
+            </>
+          )}
         </div>
       </div>
     </header>

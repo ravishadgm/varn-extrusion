@@ -2,9 +2,9 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
-import Header from './components/Header/Header';
+import Header from '@components/Header/Header';
 import './styles/main.scss'; 
-
+import Footer from '@components/Footer/Footer';
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,6 +14,7 @@ const App = () => {
         <main className="app-content">
           <AppRoutes />
         </main>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
