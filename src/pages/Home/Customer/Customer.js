@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Customer.module.scss";
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Images from "@assets/images"; 
+import Images from "@assets/images";
 
 const imageVariants = {
   hidden: { x: -100, opacity: 0 },
@@ -50,7 +50,6 @@ function Customer() {
 
         <div className={styles.infoGrid}>
           {[
-         
             {
               number: "01.",
               title: "Safety Management",

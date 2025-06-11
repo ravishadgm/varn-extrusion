@@ -1,9 +1,46 @@
-import React from 'react'
+import React from "react";
+import SemiHeader from "@components/common/SemiHeader/SemiHeader";
+import ImageBlock from "@components/common/ImageBlock/ImageBlock";
+import Images from "@assets/images";
+
+const imageData = [
+  {
+    title: "Fabrication Services",
+    description:
+      "Fabrication services with cutting-edge technology, extensive capabilities, and superior results",
+    image: Images.services_fab,
+  },
+  {
+    title: "Timber Truss Assembly",
+    description:
+      "QB Corporation is your go-to solution for premium glued laminated timber trusses.",
+    image: Images.services_timber,
+  },
+  {
+    title: "Pre-Fit Connections",
+    description:
+      "More info coming soon.",
+    image: Images.services_fit,
+  }
+];
 
 function Services() {
   return (
-    <div>Services</div>
-  )
+    <>
+      <SemiHeader
+        title={<>QB Corp. Provides Exceptional Services</>}
+        description={
+          <>
+            QB Corporation offers more than glulam beam products – we provide a
+            comprehensive solution that enhances your business capabilities.
+          </>
+        }
+        buttonText="Contact an Expert"
+        buttonLink="/contact"
+      />
+      <ImageBlock data={imageData} />
+    </>
+  );
 }
 
-export default Services
+export default Services;
