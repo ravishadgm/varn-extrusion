@@ -2,7 +2,7 @@ import React from 'react'
 
 function Technical() {
   return (
-    <div>Technical</div>
+    <div>Technical Here </div>
   )
 }
 
