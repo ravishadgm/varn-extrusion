@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
-import Images from "@assets/images"; 
+import Images from "@assets/images";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -15,7 +15,6 @@ const navLinks = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
 
