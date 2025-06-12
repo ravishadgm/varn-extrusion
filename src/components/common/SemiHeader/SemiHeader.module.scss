@@ -1,0 +1,97 @@
+@import "../../../styles/variables";
+
+.container {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+
+  @media (min-width: 768px) {
+    padding: 6rem 4rem;
+  }
+}
+.left {
+  width: 90%;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+    text-transform: capitalize;
+    text-wrap: balance;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  // Remove or reduce padding on small devices
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: $dark-text;
+    line-height: 1.6;
+    max-width: 600px;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #1c1c1c;
+  width: fit-content;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $primary-green;
+    color: white;
+  }
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
