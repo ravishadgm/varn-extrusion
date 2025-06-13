@@ -72,12 +72,15 @@
 
     .imagesWrapper {
       position: relative;
-      width: 400px;
-      height: auto;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 300px;
 
       .bg1 {
-        width: 545px;
-        height: 408px;
+        width: 100%;
+        max-width: 545px;
+        height: auto;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
     }
@@ -96,6 +99,46 @@
         font-size: 0.95rem;
         color: #333;
         line-height: 1.65;
+      }
+    }
+  }
+}
+
+// ✅ Tablet/Medium Screens (1024px and below)
+@media (max-width: 1024px) {
+  .centerWrapper {
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    .sectionTwo {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 2rem;
+      text-align: center;
+
+      .imagesWrapper {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+
+        .bg1 {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .textWrapper {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .sectionOne {
+      padding: 2rem 1.5rem;
+      gap: 1.5rem;
+
+      .left h2 {
+        font-size: 1.8rem;
       }
     }
   }
@@ -143,6 +186,10 @@
 
     .sectionTwo {
       padding: 0 1rem;
+    }
+
+    .sectionOne .left h2 {
+      font-size: 1.6rem;
     }
   }
 }
