@@ -20,30 +20,54 @@ const Checking = () => {
 
                 <div className={styles.documentCard}>
                     <p>For information on checking and its impact on structural performance, please refer to AITC Technical Note #11:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1_1D-TV5sv1H3o7vJzBD7ZuRU9BVoqdBO/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
 
                 <div className={styles.documentCard}>
                     <p>For information on evaluating the impact of checking in the field, see AITC Technical Note #18:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1-Oz7akYyRTykFh8mnAskCVAEN3r5pJG2/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
 
                 <div className={styles.documentCard}>
                     <p>Read the Owners Guide to Understanding Checks in Glued Laminated Timber:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1sMX1lg5LD_lVOWVb7OXgbgBqGaDb5oP2/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
                 <div className={styles.documentCard}>
                     <p>Read about Evaluation of Check Size in Glued Laminated Timber Beams:
                     </p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/10M1NjwXKmwmWHsoA3iUkkys2WrHPMhV8/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
