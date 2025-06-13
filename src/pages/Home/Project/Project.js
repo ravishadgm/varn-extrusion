@@ -14,7 +14,7 @@ const projects = [
     title: "Idaho Central Credit Union Arena",
     location: "Moscow, Idaho, USA",
     image: Images.home_swiper_two,
-    link: "#",
+    link: "/projects/idaho-central-credit-union-arena",
   },
   {
     title: "Jackson Hole Airport",
@@ -106,9 +106,9 @@ function Project() {
             >
               <div className={styles.imageWrapper}>
                 <img src={project.image} alt={project.title} />
-                {/* <a href={project.link} className={styles.linkIcon}>
+                <a href={project.link} className={styles.linkIcon}>
                   <FiArrowUpRight />
-                </a> */}
+                </a>
               </div>
               <div className={styles.info}>
                 <h3>
