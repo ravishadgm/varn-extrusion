@@ -12,6 +12,7 @@ import Contact from '../pages/Contact';
 import Safety from '@pages/About/Safety/Safety';
 import Configurations from '@pages/Products/Configurations/Configurations';
 import ManufacturingCapabilities from '@pages/About/ManufacuringCapabilities/ManufacturingCapabilities';
+import CustomBeams from '@pages/Products/CustomBeams/CustomBeams';
 
 
 const AppRoutes = () => {
@@ -26,6 +27,7 @@ const AppRoutes = () => {
       <Route path="/about/safety" element={<Safety />} />
       <Route path="/products/available-configurations" element={<Configurations />} />
       <Route path="/about/manufacturing-capabilities" element={<ManufacturingCapabilities />} />
+      <Route path="/products/custom-beams" element={<CustomBeams />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );

@@ -37,7 +37,7 @@ const ManufactureFacility = () => {
             </section>
             <section className='bottomSection'>
                 <div>
-                    <div className={styles.imageWrapper}>
+                    {/* <div className={styles.imageWrapper}>
                         <motion.img
                             src={factory}
                             alt="Factory Overview"
@@ -45,7 +45,7 @@ const ManufactureFacility = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1, ease: "easeOut" }}
                         />
-                    </div>
+                    </div> */}
                 </div>
                 <Highlights />
             </section>
