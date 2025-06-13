@@ -6,8 +6,6 @@ function Careers() {
     heading: (
       <>
         Careers At QB Corp.
-       
-        
       </>
     ),
     subtext: "Join Our Commitment to Excellence", 

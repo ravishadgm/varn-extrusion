@@ -1,7 +1,7 @@
 import CorpBlock from '@components/common/CorpBlock/CorpBlock'
 import React from 'react'
 
-function Fabrication() {
+function Banner() {
   return (
       <CorpBlock
       heading={
@@ -17,4 +17,4 @@ function Fabrication() {
   )
 }
 
-export default Fabrication
+export default Banner
