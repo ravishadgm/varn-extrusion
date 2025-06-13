@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom'; // Import hook
 import styles from './Product.module.scss';
 
 const fadeUp = {
@@ -17,6 +18,7 @@ const fadeUp = {
 };
 
 const Product = () => {
+  const navigate = useNavigate(); 
   return (
     <section className={styles.productSection}>
       <div className={styles.container}>
@@ -45,13 +47,23 @@ const Product = () => {
           >
             <h3>Products</h3>
             <ul>
-              <li>Custom Glulam Beams <FiArrowUpRight /></li>
-              <li>Stock Glulam Beams <FiArrowUpRight /></li>
-              <li>QB Rim Board <FiArrowUpRight /></li>
-              <li>Utility Structures <FiArrowUpRight /></li>
-              <li>Wood Pellets <FiArrowUpRight /></li>
+              <li >
+                Custom Glulam Beams <FiArrowUpRight />
+              </li>
+              <li >
+                Stock Glulam Beams <FiArrowUpRight />
+              </li>
+              <li onClick={()=>navigate('/products/qb-rim-board')}>
+                QB Rim Board <FiArrowUpRight />
+              </li>
+              <li onClick={()=>navigate('/products/utility-structures')}>
+                Utility Structures <FiArrowUpRight />
+              </li>
+              <li onClick={() => navigate('/products/wood-pellets')}>
+                Wood Pellets <FiArrowUpRight />
+              </li>
             </ul>
-            <button className={styles.button}>
+            <button className={styles.button} onClick={()=>navigate('/products')}>
               ALL PRODUCTS <FiArrowUpRight />
             </button>
           </motion.div>
@@ -66,13 +78,13 @@ const Product = () => {
           >
             <h3>Services</h3>
             <ul>
-              <li>Fabrication <FiArrowUpRight /></li>
-              <li>Connection Attachment <FiArrowUpRight /></li>
-              <li>Pre-Fit Connections <FiArrowUpRight /></li>
-              <li>Heavy Glulam Timber Truss Assembly <FiArrowUpRight /></li>
-              <li>Steel <FiArrowUpRight /></li>
+              <li onClick={() => navigate('/services/fabrication')}>Fabrication <FiArrowUpRight /></li>
+              <li >Connection Attachment</li>
+              <li >Pre-Fit Connections</li>
+              <li onClick={() => navigate('/services/truss-assembly')} >Heavy Glulam Timber Truss Assembly <FiArrowUpRight /></li>
+              <li >Steel </li>
             </ul>
-            <button className={styles.button}>
+            <button className={styles.button} onClick={() => navigate('/services')}>
               ALL SERVICES <FiArrowUpRight />
             </button>
           </motion.div>

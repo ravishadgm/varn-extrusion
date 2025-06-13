@@ -52,6 +52,13 @@ import news_13 from './news/news_13.jpeg';
 import news_14 from './news/news_14.jpg';
 import news_15 from './news/news_15.webp';
 import news_16 from './news/news_16.jpeg';
+import choice_bg from './services/choice_bg.jpg';
+import woodPellets_bg from './woodPellets/woodPellets_bg.jpeg';
+import utility_banner from './utility/utility_banner.jpg';
+import woodPellets_banner from './woodPellets/woodPellets_banner.jpeg';
+import utility_treatment from './utility/utility_treatment.jpg';
+import board_banner from './board/board_banner.jpg';
+import board_proparties from './board/board_proparties.jpg'
 
 const images = {
 news_16,
@@ -106,7 +113,14 @@ news_15,
   contact_bg1,
   contact_bg2,
   community_center,
-  community_backstop
+  community_backstop,
+  choice_bg,
+  woodPellets_bg,
+  utility_banner,
+  woodPellets_banner,
+  utility_treatment,
+  board_banner,
+  board_proparties
 };
 
 export default images;

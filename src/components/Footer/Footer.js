@@ -13,6 +13,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import Images from "@assets/images";
+import { motion } from "framer-motion";
 
 const companyLinks = [
   { name: "About", href: "about" },
@@ -85,14 +86,27 @@ const Footer = () => {
       >
         <div className={styles.ctaContainer}>
           <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>
-              Join countless architects, builders,
-              <br />
-              and designers who trust QB Corp.
-            </h2>
-            <button className={styles.ctaButton}>
-              GET A QUOTE <FaArrowRight />
-            </button>
+      <motion.h2
+  className={styles.ctaTitle}
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.6 }}
+>
+  Join countless architects, builders,
+  <br />
+  and designers who trust QB Corp.
+</motion.h2>
+          <motion.button
+  className={styles.ctaButton}
+  initial={{ opacity: 0, y: 50, x: -50 }}
+  whileInView={{ opacity: 1, y: 0, x: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.6 }} // Trigger when 60% of the button is in view
+>
+      GET A QUOTE <FaArrowRight />
+    </motion.button>
+
           </div>
         </div>
       </div>

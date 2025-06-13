@@ -6,12 +6,10 @@ function Careers() {
     heading: (
       <>
         Careers At QB Corp.
-       
-        
       </>
     ),
     subtext: "Join Our Commitment to Excellence", 
-    button:true
+    buttonLabel:"Applpy Today"
   };
 
   return (

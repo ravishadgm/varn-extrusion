@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Images from "@assets/images";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -62,9 +63,9 @@ function Project() {
           Collaborations with talented <br /> architects, builders, and
           designers
         </h2>
-        <a href="#" className={styles.allProjectsBtn}>
+        <Link to="/projects" className={styles.allProjectsBtn}>
           All Projects <FiArrowUpRight />
-        </a>
+        </Link>
       </div>
 
       <Swiper
@@ -105,9 +106,9 @@ function Project() {
             >
               <div className={styles.imageWrapper}>
                 <img src={project.image} alt={project.title} />
-                <a href={project.link} className={styles.linkIcon}>
+                {/* <a href={project.link} className={styles.linkIcon}>
                   <FiArrowUpRight />
-                </a>
+                </a> */}
               </div>
               <div className={styles.info}>
                 <h3>

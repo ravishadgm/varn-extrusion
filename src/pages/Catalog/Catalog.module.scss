@@ -1,0 +1,87 @@
+@import '../../styles/variables';
+.catalogContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.catalogTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .imageWrapper {
+    height: 180px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .cardContent {
+    padding: 1.25rem;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    a.downloadLink {
+      font-weight: 600;
+      color: #c62828;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      svg {
+        font-size: 1rem;
+      }
+    }
+  }
+}
