@@ -1,0 +1,179 @@
+.mainContainer{
+    width:100%;
+    background-color: #fafafa;
+    padding: 120px 90px;
+    display: flex;
+    align-itmes:center;
+  
+}
+
+.subContainer{
+  width:50%;
+  padding:5px;
+  h1{
+    font-size:35px;
+    font-weight:bold;
+  }
+
+  p{
+    padding-top:20px;
+    padding-bottom:10px;
+    width:60%;
+    font-size:14px;
+    font-weight:bold;
+  }
+}
+
+.anotherContainer{
+  width:50%;
+  padding: 30px;
+
+
+}
+
+.accordion {
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 22px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.header:hover{
+    color:#c7803b;
+ 
+}
+
+.content {
+  padding: 24px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+
+.contentWrapper {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.open {
+    max-height: 1200px; 
+    opacity: 1;
+}
+
+.content {
+    padding:10px 24px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+    p{
+      font-weight:600;
+    }
+}
+
+.pdfButton {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  margin-top:20px;
+  padding: 14px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size:12px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #00583d;
+    color: #fff;
+    border: none;
+  }
+}
+
+.pdfIcon {
+  font-size: 1rem;
+  font-weight:600;
+  font-size:12;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.pdfIcon:hover{
+   transform: translateY(-4px);
+}
+
+
+@media (max-width: 768px) {
+  .mainContainer{
+    flex-direction: column;
+    padding: 50px 50px;
+  }
+
+  
+.subContainer{
+  width:100%;
+  padding:0px;
+
+  p{
+    padding-top:10px;
+    padding-bottom:5px;
+    width:100%;
+
+  }
+}
+
+.anotherContainer{
+  width:100%;
+  padding: 20px 0px;
+}}
+
+@media (max-width: 480px){
+
+   .mainContainer{
+  
+    padding: 50px 15px;
+  }
+
+  .subContainer{
+  width:100%;
+
+  h1{
+    font-size:25px;
+    font-weight:bold;
+  }
+
+   p{
+    font-size:14px;
+   }}
+
+   .open {
+    max-height: 2200px; 
+    opacity: 1;
+}
+
+    .pdfButton{
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .pdfIcon {
+        font-size: 0.85rem;
+    }
+}

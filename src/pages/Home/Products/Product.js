@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom'; // Import hook
 import styles from './Product.module.scss';
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -18,7 +19,7 @@ const fadeUp = {
 };
 
 const Product = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
     <section className={styles.productSection}>
       <div className={styles.container}>
@@ -47,23 +48,33 @@ const Product = () => {
           >
             <h3>Products</h3>
             <ul>
+              <Link to="/products/custom-beams">
+                <li>  Custom Glulam Beams <FiArrowUpRight /></li>
+              </Link>
+
+              <Link to="/products/stoke-beams">
+                <li>Stock Glulam Beams <FiArrowUpRight /></li>
+              </Link>
+              <li>QB Rim Board <FiArrowUpRight /></li>
+              <li>Utility Structures <FiArrowUpRight /></li>
+              <li>Wood Pellets <FiArrowUpRight /></li>
               <li >
                 Custom Glulam Beams <FiArrowUpRight />
               </li>
               <li >
                 Stock Glulam Beams <FiArrowUpRight />
               </li>
-              <li onClick={()=>navigate('/products/qb-rim-board')}>
+              <li onClick={() => navigate('/products/qb-rim-board')}>
                 QB Rim Board <FiArrowUpRight />
               </li>
-              <li onClick={()=>navigate('/products/utility-structures')}>
+              <li onClick={() => navigate('/products/utility-structures')}>
                 Utility Structures <FiArrowUpRight />
               </li>
               <li onClick={() => navigate('/products/wood-pellets')}>
                 Wood Pellets <FiArrowUpRight />
               </li>
             </ul>
-            <button className={styles.button} onClick={()=>navigate('/products')}>
+            <button className={styles.button} onClick={() => navigate('/products')}>
               ALL PRODUCTS <FiArrowUpRight />
             </button>
           </motion.div>

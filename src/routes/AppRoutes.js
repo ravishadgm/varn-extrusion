@@ -13,10 +13,11 @@ import Configurations from "@pages/Products/Configurations/Configurations";
 import ManufacturingCapabilities from "@pages/About/ManufacuringCapabilities/ManufacturingCapabilities";
 import CustomBeams from "@pages/Products/CustomBeams/CustomBeams";
 
-import Community from "../pages/Community";
-import News from "../pages/News/News";
-import Careers from "../pages/Careers";
-import Fabrication from "../pages/Fabrication/index";
+import Community from '../pages/Community';
+import News from '../pages/News/News';
+import Careers from '../pages/Careers';
+import Fabrication from '../pages/Services/Fabrication/Fabrication'
+import StokeBeams from '@pages/Products/StokeBeams/StokeBeams';
 import Assembly from "../pages/Assembly/index";
 import WoodPallets from "../pages/WoodPallets/index";
 import Utility from "../pages/Utility/index";
@@ -42,6 +43,7 @@ const AppRoutes = () => {
         element={<ManufacturingCapabilities />}
       />
       <Route path="/products/custom-beams" element={<CustomBeams />} />
+      <Route path="/products/stoke-beams" element={<StokeBeams />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/community" element={<Community />} />
       <Route path="/news" element={<News />} />

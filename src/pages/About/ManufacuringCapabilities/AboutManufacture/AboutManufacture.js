@@ -10,7 +10,7 @@ const AboutManufacture = () => {
                 <div className={styles.imagesSection}>
                     <div className={styles.imageWrapper}>
                         <img src={mainImage} alt="Main Beam" className={styles.mainImage} />
-                        <img src={overlayImage} alt="Overlay Detail" className={styles.overlayImage} />
+                        {/* <img src={overlayImage} alt="Overlay Detail" className={styles.overlayImage} /> */}
                     </div>
 
 
