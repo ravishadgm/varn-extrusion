@@ -1,0 +1,357 @@
+/* Contact.module.scss */
+
+.contactContainer {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.leftSection {
+  flex: 1;
+//   background-color: #fafafa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+
+  @media (max-width: 1024px) {
+            min-height: 35vh;
+        padding: 0px 33px;
+
+  }
+
+ 
+}
+
+.leftContent {
+  position: relative;
+  z-index: 2;
+  color: black;
+  max-width: 600px;
+  margin: auto;
+    @media (max-width: 768px) {
+    align-items: center; // horizontally centers content
+    text-align: center;  // ensures text like paragraphs align nicely
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: black;
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+
+.description {
+  font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: black;
+    width: 300px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: black;
+
+  .icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: gray;
+    margin-top: 2px;
+  }
+
+  span,
+  div {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+.bgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+//    background-color: rgba(22, 46, 32, 0.3);
+  z-index: 1;
+}
+
+.rightSection {
+  flex: 1;
+  background-color: #f8f9fa;
+  background-image: url("../../../assets/images/about/about_bg_3.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; // ✅ Top align form
+  padding: 80px 60px;
+
+  @media (max-width: 1024px) {
+    padding: 60px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+}
+
+.rightBgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(248, 249, 250, 0.95);
+  z-index: 1;
+}
+
+.formContainer {
+  position: relative;
+  z-index: 5;
+  background: rgba(255, 255, 255);
+  padding: 33px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-left: -175px;
+
+  @media (max-width: 1024px) {
+    margin: 2rem auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+  }
+}
+
+.formTitle {
+  font-size: 25px;
+    font-weight: lighter;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.formGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #162e20;
+      box-shadow: 0 0 0 2px rgba(22, 46, 32, 0.1);
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  select {
+    background-color: black;
+    cursor: pointer;
+
+    option {
+      padding: 0.5rem;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+  }
+}
+
+.errorText {
+  color: #d32f2f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitBtn {
+border: 1px solid gray;
+    color: black;
+    padding: 0.5rem 3rem;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+    align-self: flex-start;
+
+  &:hover {
+    background-color: #1a3424;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftSection {
+    padding: 30px 15px;
+  }
+
+  .rightSection {
+    padding: 30px 15px;
+  }
+
+  .formContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactInfo {
+    gap: 1rem;
+  }
+
+  .contactItem {
+    font-size: 0.9rem;
+  }
+}
+
+@media print {
+  .contactContainer {
+    display: block;
+  }
+
+  .leftSection,
+  .rightSection {
+    background-image: none;
+    background-color: black;
+    color: black;
+  }
+
+  .bgOverlay,
+  .rightBgOverlay {
+    display: none;
+  }
+}
+.commitmentSection {
+  display: flex;
+  flex-direction: column; // stack children vertically by default
+  align-items: center;
+  text-align: center;
+  padding: 5em 1em; // horizontal padding for small screens
+  width: 90vw;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.5em;
+
+  @media (max-width: 768px) {
+    font-size: 1.2em; // slightly smaller font on tablets
+    padding: 4em 1em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1em; // even smaller on mobile
+    padding: 3em 1em;
+  }
+}
+
+.resume_upload{
+    width: 100%;
+}
