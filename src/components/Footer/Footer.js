@@ -26,8 +26,8 @@ const companyLinks = [
 ];
 
 const resourcesLinks = [
-  { name: "Products", href: "#products" },
-  { name: "Services", href: "#services" },
+  { name: "Products", href: "/products" },
+  { name: "Services", href: "/services" },
   { name: "Technical", href: "/technical" },
   { name: "Safety", href: "/about/safety" },
   { name: "Capabilities", href: "/about/manufacturing-capabilities" },
