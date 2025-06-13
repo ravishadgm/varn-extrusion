@@ -39,18 +39,18 @@ const contactInfo = [
     icon: FaMapMarkerAlt,
     content: (
       <>
-        <p>1420 ID-28</p>
-        <p>Salmon, ID 83467</p>
+        <p>Plot No. 71-86, Shivalaya Industrial Estate</p>
+        <p>Kossmba, Mangrol, Gujrat - 394120, India</p>
       </>
     ),
   },
   {
     icon: FaEnvelope,
-    content: <a href="mailto:sales@qbcorp.com">sales@qbcorp.com</a>,
+    content: <a href="mailto:sales@qbcorp.com">info@varnextrusion.in</a>,
   },
   {
     icon: FaPhone,
-    content: <a href="tel:+12087564248">+1 (208) 756-4248</a>,
+    content: <a href="tel:+919638481000">+91 96384 81000</a>,
   },
   {
     icon: FaClock,
@@ -77,7 +77,7 @@ const certificationBadges = [
 ];
 
 const Footer = () => {
-    const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
     <footer className={styles.footer}>
       {/* CTA Section */}
@@ -96,15 +96,15 @@ const Footer = () => {
             >
               Join countless architects, builders,
               <br />
-              and designers who trust QB Corp.
+              and designers who trust Varn Extrusion Pvt Ltd.
             </motion.h2>
             <motion.button
               className={styles.ctaButton}
               initial={{ opacity: 0, y: 50, x: -50 }}
               whileInView={{ opacity: 1, y: 0, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.6 }} 
-              onClick={()=>navigate('/contact')}
+              viewport={{ once: true, amount: 0.6 }}
+              onClick={() => navigate('/contact')}
             >
               GET A QUOTE <FaArrowRight />
             </motion.button>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <img src={Images.footer_logo} alt="QB Corp Logo" />
               </div>
               <p className={styles.description}>
-                QB Corp. is a premier glue laminated timber manufacturer where
+                Varn Extrusion Pvt Ltd. is a premier glue laminated timber manufacturer where
                 excellence is a tradition and innovation knows no limits.
               </p>
 
@@ -182,7 +182,7 @@ const Footer = () => {
           {/* Footer Bottom */}
           <div className={styles.footerBottom}>
             <div className={styles.copyright}>
-              <p>&copy; 2025 QB Corp. All Rights Reserved.</p>
+              <p>&copy; 2025 Varn Extrusion. All Rights Reserved.</p>
             </div>
             <div className={styles.policies}>
               <a href="#privacy">Privacy Policy</a>
