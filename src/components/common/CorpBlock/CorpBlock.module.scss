@@ -177,3 +177,37 @@
     display: none;
   }
 }
+
+
+.applyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  margin-top: 2rem;
+  border: 1.5px solid #fff;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #002a17;
+  }
+
+  &::after {
+    content: '↗';
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(2px);
+  }
+}

@@ -17,9 +17,9 @@ import Images from "@assets/images";
 const companyLinks = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
-  { name: "Community", href: "#community" },
-  { name: "In the News", href: "#news" },
-  { name: "Careers", href: "#careers" },
+  { name: "Community", href: "community" },
+  { name: "In the News", href: "news" },
+  { name: "Careers", href: "careers" },
   { name: "Contact", href: "#contact" },
 ];
 

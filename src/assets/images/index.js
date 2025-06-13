@@ -34,8 +34,42 @@ import about_committed from './about/about_committed.jpg'
 import about_environment from './about/about_environment.jpeg';
 import contact_bg1 from './contact/contact_bg1.jpg';
 import contact_bg2 from './contact/contact_bg2.jpg';
+import community_center from './community/community_center.jpg';
+import community_backstop from './community/community_backstop.jpg';
+import news_1 from './news/news_1.jpeg';
+import news_2 from './news/news_2.jpeg';
+import news_3 from './news/news_3.webp';
+import news_4 from './news/news_4.jpeg';
+import news_5 from './news/news_5.jpeg';
+import news_6 from './news/news_6.jpeg';
+import news_7 from './news/news_7.jpeg';
+import news_8 from './news/news_8.webp';
+import news_9 from './news/news_9.jpeg';
+import news_10 from './news/news_10.jpeg';
+import news_11 from './news/news_11.jpeg';
+import news_12 from './news/news_12.jpeg';
+import news_13 from './news/news_13.jpeg';
+import news_14 from './news/news_14.jpg';
+import news_15 from './news/news_15.webp';
+import news_16 from './news/news_16.jpeg';
 
 const images = {
+news_16,
+news_15,
+  news_14,
+  news_13,
+  news_12,
+  news_11,
+  news_10,
+  news_9,
+  news_8,
+  news_7,
+  news_6,
+  news_5,
+  news_4,
+  news_3,
+  news_1,
+  news_2,
   footer_join,
   footer_logo,
   home_bg,
@@ -70,7 +104,9 @@ const images = {
   about_committed,
   about_environment,
   contact_bg1,
-  contact_bg2
+  contact_bg2,
+  community_center,
+  community_backstop
 };
 
 export default images;
