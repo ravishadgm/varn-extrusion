@@ -11,7 +11,7 @@ function Careers() {
       </>
     ),
     subtext: "Join Our Commitment to Excellence", 
-    button:true
+    buttonLabel:"Applpy Today"
   };
 
   return (

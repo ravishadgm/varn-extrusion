@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./CorpBlock.module.scss";
 import Images from "@assets/images";
 import { HiArrowUpRight } from "react-icons/hi2";
-const CorpBlock = ({ heading, subheading, showButton = false }) => {
+
+const CorpBlock = ({ heading, subheading, buttonLabel }) => {
   return (
     <div className={styles.pageHero}>
       <div className={styles.container}>
@@ -11,12 +12,12 @@ const CorpBlock = ({ heading, subheading, showButton = false }) => {
             <div className={styles.heroHeadingBlock}>
               <h1 className={styles.headingLarge}>{heading}</h1>
               <h2 className={styles.headingSmall}>{subheading}</h2>
-              
-              {showButton && (
+
+              {buttonLabel && (
                 <div className={styles.buttonWrapper}>
                   <a href="#" className={styles.buttonIsLight}>
                     <div className={styles.buttonText}>
-                      Apply Today <HiArrowUpRight className={styles.arrowIcon} />
+                      {buttonLabel} <HiArrowUpRight className={styles.arrowIcon} />
                     </div>
                   </a>
                 </div>
@@ -52,6 +53,5 @@ const CorpBlock = ({ heading, subheading, showButton = false }) => {
     </div>
   );
 };
-
 
 export default CorpBlock;
