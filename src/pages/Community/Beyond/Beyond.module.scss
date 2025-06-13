@@ -1,0 +1,159 @@
+.beyond {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+    text-align: left;
+    padding-left: 36px;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      padding-left: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 1.6rem;
+      padding-left: 0;
+      padding-right: 0;
+      line-height: 1.4;
+      text-align: center;
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.local, .nonLocal {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-width: 280px;
+}
+
+// Option 1: Fixed column approach
+.local ul {
+  columns: 3;
+  column-gap: 2rem;
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  
+  li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: list-item;
+    list-style: disc outside;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+// Option 2: If columns still cause issues, use this instead:
+// .local ul {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 1rem 2rem;
+//   margin: 1rem 0 0;
+//   padding-left: 0;
+//   list-style: none;
+//   
+//   li {
+//     position: relative;
+//     padding-left: 1.2rem;
+//     
+//     &::before {
+//       content: '•';
+//       position: absolute;
+//       left: 0;
+//       color: inherit;
+//     }
+//   }
+// }
+
+.nonLocal ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem; // Increased padding
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  // Ensure list style is applied
+  display: list-item;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  min-height: 100%;
+  align-self: stretch;
+}
+
+/* Mobile-specific fix */
+@media (max-width: 600px) {
+  .grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .local,
+  .nonLocal {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .local ul,
+  .nonLocal ul {
+    columns: 1;
+    padding-left: 1.5rem; // Consistent padding
+  }
+  
+  h3 {
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
+}
