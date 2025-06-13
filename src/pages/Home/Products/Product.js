@@ -55,15 +55,8 @@ const Product = () => {
               <Link to="/products/stoke-beams">
                 <li>Stock Glulam Beams <FiArrowUpRight /></li>
               </Link>
-              <li>QB Rim Board <FiArrowUpRight /></li>
-              <li>Utility Structures <FiArrowUpRight /></li>
-              <li>Wood Pellets <FiArrowUpRight /></li>
-              <li >
-                Custom Glulam Beams <FiArrowUpRight />
-              </li>
-              <li >
-                Stock Glulam Beams <FiArrowUpRight />
-              </li>
+            
+              
               <li onClick={() => navigate('/products/qb-rim-board')}>
                 QB Rim Board <FiArrowUpRight />
               </li>

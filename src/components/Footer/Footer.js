@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import Images from "@assets/images";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const companyLinks = [
   { name: "About", href: "about" },
@@ -75,8 +76,8 @@ const certificationBadges = [
   { src: Images.footer_ewpa, alt: "ewpa" },
 ];
 
-
 const Footer = () => {
+    const navigate = useNavigate(); 
   return (
     <footer className={styles.footer}>
       {/* CTA Section */}
@@ -86,27 +87,27 @@ const Footer = () => {
       >
         <div className={styles.ctaContainer}>
           <div className={styles.ctaContent}>
-      <motion.h2
-  className={styles.ctaTitle}
-  initial={{ opacity: 0, y: -50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.6 }}
->
-  Join countless architects, builders,
-  <br />
-  and designers who trust QB Corp.
-</motion.h2>
-          <motion.button
-  className={styles.ctaButton}
-  initial={{ opacity: 0, y: 50, x: -50 }}
-  whileInView={{ opacity: 1, y: 0, x: 0 }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.6 }} // Trigger when 60% of the button is in view
->
-      GET A QUOTE <FaArrowRight />
-    </motion.button>
-
+            <motion.h2
+              className={styles.ctaTitle}
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.6 }}
+            >
+              Join countless architects, builders,
+              <br />
+              and designers who trust QB Corp.
+            </motion.h2>
+            <motion.button
+              className={styles.ctaButton}
+              initial={{ opacity: 0, y: 50, x: -50 }}
+              whileInView={{ opacity: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.6 }} 
+              onClick={()=>navigate('/contact')}
+            >
+              GET A QUOTE <FaArrowRight />
+            </motion.button>
           </div>
         </div>
       </div>
@@ -115,7 +116,6 @@ const Footer = () => {
       <div className={styles.mainFooter}>
         <div className={styles.container}>
           <div className={styles.footerContent}>
-            {/* Logo and Description Section */}
             <div className={styles.brandSection}>
               <div className={styles.logo}>
                 <img src={Images.footer_logo} alt="QB Corp Logo" />
@@ -125,7 +125,6 @@ const Footer = () => {
                 excellence is a tradition and innovation knows no limits.
               </p>
 
-              {/* Social Media Links */}
               <div className={styles.socialLinks}>
                 {socialMediaLinks.map((link, index) => (
                   <a key={index} href={link.href} aria-label={link.label}>
@@ -134,7 +133,6 @@ const Footer = () => {
                 ))}
               </div>
 
-              {/* Certification Badges */}
               <div className={styles.certifications}>
                 {certificationBadges.map((badge, index) => (
                   <div key={index} className={styles.badge}>
@@ -144,7 +142,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Company Links Section */}
             <div className={styles.linkSection}>
               <h3>Company</h3>
               <ul>

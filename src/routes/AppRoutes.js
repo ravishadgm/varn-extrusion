@@ -16,7 +16,7 @@ import CustomBeams from "@pages/Products/CustomBeams/CustomBeams";
 import Community from '../pages/Community';
 import News from '../pages/News/News';
 import Careers from '../pages/Careers';
-import Fabrication from '../pages/Services/Fabrication/Fabrication'
+import Fabrication from '../pages/Fabrication/index'
 import StokeBeams from '@pages/Products/StokeBeams/StokeBeams';
 import Assembly from "../pages/Assembly/index";
 import WoodPallets from "../pages/WoodPallets/index";
