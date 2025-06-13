@@ -21,9 +21,16 @@ const Treatment = () => {
                 <h3>Additional Info</h3>
                 <div className={styles.documentCard}>
                     <p>Available Glued Laminated Timber Designs for Beams and Column:</p>
-                    <button className={styles.pdfButton}>
-                        View Document <FaRegFilePdf className={styles.pdfIcon} />
-                    </button>
+
+                    <a
+                        href="https://drive.google.com/file/d/1rYSlO7Lev8fSSJCOW2rwJA5JmaKw7gK5/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            View Document <FaRegFilePdf className={styles.pdfIcon} />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

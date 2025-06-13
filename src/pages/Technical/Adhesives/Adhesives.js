@@ -18,9 +18,16 @@ function Adhesives() {
                     <h3>Additional Info</h3>
                     <div className={styles.documentCard}>
                         <p>Adhesive Structural Certification Information:</p>
-                        <button className={styles.pdfButton}>
-                            View Document <FaRegFilePdf className={styles.pdfIcon} />
-                        </button>
+                        <a
+                            href="https://drive.google.com/file/d/1VOgvfQKXdbw1nB1doHsfN3vWRebaOt7L/view?pli=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles.pdfButton}>
+
+                                View Document <FaRegFilePdf className={styles.pdfIcon} />
+
+                            </button></a>
                     </div>
                 </div>
             </div>
