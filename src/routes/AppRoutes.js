@@ -18,6 +18,7 @@ import Community from '../pages/Community';
 import News from '../pages/News/News';
 import Careers from '../pages/Careers';
 import Fabrication from '../pages/Services/Fabrication/Fabrication'
+import StokeBeams from '@pages/Products/StokeBeams/StokeBeams';
 
 const AppRoutes = () => {
   return (
@@ -32,6 +33,7 @@ const AppRoutes = () => {
       <Route path="/products/available-configurations" element={<Configurations />} />
       <Route path="/about/manufacturing-capabilities" element={<ManufacturingCapabilities />} />
       <Route path="/products/custom-beams" element={<CustomBeams />} />
+      <Route path="/products/stoke-beams" element={<StokeBeams />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/community" element={<Community />} />
       <Route path="/news" element={<News />} />

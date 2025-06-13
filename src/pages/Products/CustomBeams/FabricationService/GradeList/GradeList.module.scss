@@ -1,0 +1,42 @@
+.grades {
+  line-height: 1.6;
+  padding-bottom:30px;
+}
+
+.grade {
+    // padding-top:8px;
+  margin-bottom: 5px;
+  padding-top:15px;
+  
+
+  strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 40px;
+    padding-top:5px;
+
+    li {
+      list-style-type: disc;
+      margin-bottom: 2px;
+      font-weight:600;
+      font-size:15px;
+  
+  
+    }
+  }
+}
+
+@media (max-width: 768px){
+
+}
+@media (max-width: 480px){
+    .grades {
+  line-height: 1.4;
+  padding-bottom:20px;
+}
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
 import styles from './Product.module.scss';
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -45,8 +46,13 @@ const Product = () => {
           >
             <h3>Products</h3>
             <ul>
-              <li>Custom Glulam Beams <FiArrowUpRight /></li>
-              <li>Stock Glulam Beams <FiArrowUpRight /></li>
+              <Link to="/products/custom-beams">
+                <li>  Custom Glulam Beams <FiArrowUpRight /></li>
+              </Link>
+
+              <Link to="/products/stoke-beams">
+                <li>Stock Glulam Beams <FiArrowUpRight /></li>
+              </Link>
               <li>QB Rim Board <FiArrowUpRight /></li>
               <li>Utility Structures <FiArrowUpRight /></li>
               <li>Wood Pellets <FiArrowUpRight /></li>
