@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.scss';
 import Images from "@assets/images"; 
+import { Link } from 'react-router-dom'; 
+import { FaArrowRight } from 'react-icons/fa';
 
 const zoomAnim = {
   initial: {
@@ -40,9 +42,10 @@ function Hero() {
               QB Corp is a premier glue laminated timber manufacturer where
               excellence is a tradition and innovation knows no limits.
             </p>
-            <a href="#" className={styles.ctaButton}>
-              GET A QUOTE →
-            </a>
+      <Link to="/contact" className={styles.ctaButton}>
+  GET A QUOTE <FaArrowRight style={{ marginLeft: '0.5rem' }} />
+
+</Link>
           </div>
         </div>
       </div>

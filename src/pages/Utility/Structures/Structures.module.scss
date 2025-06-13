@@ -1,0 +1,110 @@
+.structures {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+
+// Section 1
+.utilitySection {
+  background-color: #fff;
+  padding: 5em 2em;
+}
+
+.utilityContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+}
+
+.utilityLeft {
+  flex: 1;
+  min-width: 300px;
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}
+
+.utilityRight {
+  flex: 2;
+  min-width: 300px;
+
+  p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: #333;
+  }
+}
+
+// Section 2
+.treatmentSection {
+  background-color: #fafafa;
+  padding: 4em 2em;
+}
+
+.treatmentContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  align-items: center;
+}
+
+.treatmentImage {
+  flex: 1;
+  min-width: 300px;
+
+  img {
+   width: 100%  ;
+   height: 357px;
+    
+    border-radius: 6px;
+  }
+}
+
+.treatmentText {
+  flex: 2;
+  min-width: 300px;
+
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    color: #333;
+  }
+
+  a {
+    color: #00703c;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+// Responsive
+@media screen and (max-width: 1024px) {
+  .utilityContent,
+  .treatmentContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .utilityLeft h2,
+  .treatmentText h2 {
+    font-size: 20px;
+  }
+
+  
+}

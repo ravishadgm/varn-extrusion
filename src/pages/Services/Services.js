@@ -2,6 +2,7 @@ import React from "react";
 import SemiHeader from "@components/common/SemiHeader/SemiHeader";
 import ImageBlock from "@components/common/ImageBlock/ImageBlock";
 import Images from "@assets/images";
+import Technology from "./Technology/Technology";
 
 const imageData = [
   {
@@ -39,6 +40,7 @@ function Services() {
         buttonLink="/contact"
       />
       <ImageBlock data={imageData} />
+      <Technology/>
     </>
   );
 }

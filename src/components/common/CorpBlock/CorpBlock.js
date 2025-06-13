@@ -3,7 +3,13 @@ import styles from "./CorpBlock.module.scss";
 import Images from "@assets/images";
 import { HiArrowUpRight } from "react-icons/hi2";
 
-const CorpBlock = ({ heading, subheading, buttonLabel }) => {
+const CorpBlock = ({
+  heading,
+  subheading,
+  buttonLabel,
+  sideImage,
+  greenBg,
+}) => {
   return (
     <div className={styles.pageHero}>
       <div className={styles.container}>
@@ -17,20 +23,21 @@ const CorpBlock = ({ heading, subheading, buttonLabel }) => {
                 <div className={styles.buttonWrapper}>
                   <a href="#" className={styles.buttonIsLight}>
                     <div className={styles.buttonText}>
-                      {buttonLabel} <HiArrowUpRight className={styles.arrowIcon} />
+                      {buttonLabel}
+                      <HiArrowUpRight className={styles.arrowIcon} />
                     </div>
                   </a>
                 </div>
               )}
-
             </div>
           </div>
+
           <div className={styles.heroSideImage}>
             <div className={styles.imageRevealMask}>
               <div className={styles.imageMask}>
                 <img
                   className={styles.boxImage}
-                  src={Images.about_bg_2}
+                  src={sideImage || Images.about_bg_2}
                   alt="Side floating"
                 />
               </div>
@@ -38,14 +45,18 @@ const CorpBlock = ({ heading, subheading, buttonLabel }) => {
           </div>
         </div>
       </div>
+
       <div className={styles.pageHeroBackgorundWrapper}>
         <div className={styles.sectionBackgroundLeft}>
-          <img
-            className={styles.pageHeroBackgorundImage}
-            src={Images.about_bg}
-            alt="Background"
-          />
+          {!greenBg && (
+            <img
+              className={styles.pageHeroBackgorundImage}
+              src={Images.about_bg}
+              alt="Background"
+            />
+          )}
         </div>
+
         <div className={styles.sectionBackgroundRight}>
           <div className={styles.pageHeroBackgroundTexture}></div>
         </div>
