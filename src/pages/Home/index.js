@@ -5,13 +5,12 @@ import Customer from './Customer/Customer';
 import Project from './Project/Project';
 function index() {
   return (
-   <>
-    <Hero/>
-    <Product/>
-    <Customer/>
-    <Project/>
-  
-   </>
+    <>
+      <Hero />
+      <Product />
+      <Customer />
+      <Project />
+    </>
   )
 }
 
