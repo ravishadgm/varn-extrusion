@@ -12,6 +12,7 @@ import Contact from '../pages/Contact';
 import Community from '../pages/Community';
 import News from '../pages/News/News';
 import Careers from '../pages/Careers';
+import Fabrication from '../pages/Services/Fabrication/Fabrication'
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
        <Route path="/community" element={<Community />} />
        <Route path="/news" element={<News />} />
        <Route path="/careers" element={<Careers />} />
+         <Route path="/services/fabrication" element={<Fabrication />} />
     </Routes>
   );
 };

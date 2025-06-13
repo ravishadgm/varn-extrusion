@@ -1,44 +1,57 @@
 import React from "react";
 import styles from "./CorpBlock.module.scss";
-import { Link } from "react-router-dom";
 import Images from "@assets/images";
-
-const CorpBlock = ({ content, showButton = false }) => {
+import { HiArrowUpRight } from "react-icons/hi2";
+const CorpBlock = ({ heading, subheading, showButton = false }) => {
   return (
-    <div className={styles.featureSection}>
-      <div
-        className={styles.leftSection}
-        style={{ backgroundImage: `url(${Images.about_bg})` }}
-      >
-        <div className={styles.overlay}>
-          <div className={styles.textWrapper}>
-            <h2
-              dangerouslySetInnerHTML={{ __html: content.heading }}
-              className={styles.heading}
-            />
-            {content.customSubtext ? (
-              <p className={styles.subtext}>{content.customSubtext}</p>
-            ) : (
-              content.subtext && (
-                <p className={styles.subtext}>{content.subtext}</p>
-              )
-            )}
-            {showButton && (
-              <Link to="/careers" className={styles.applyBtn}>
-                Apply Today
-              </Link>
-            )}
+    <div className={styles.pageHero}>
+      <div className={styles.container}>
+        <div className={styles.sideImageSection}>
+          <div className={styles.heroSideContent}>
+            <div className={styles.heroHeadingBlock}>
+              <h1 className={styles.headingLarge}>{heading}</h1>
+              <h2 className={styles.headingSmall}>{subheading}</h2>
+              
+              {showButton && (
+                <div className={styles.buttonWrapper}>
+                  <a href="#" className={styles.buttonIsLight}>
+                    <div className={styles.buttonText}>
+                      Apply Today <HiArrowUpRight className={styles.arrowIcon} />
+                    </div>
+                  </a>
+                </div>
+              )}
+
+            </div>
+          </div>
+          <div className={styles.heroSideImage}>
+            <div className={styles.imageRevealMask}>
+              <div className={styles.imageMask}>
+                <img
+                  className={styles.boxImage}
+                  src={Images.about_bg_2}
+                  alt="Side floating"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className={styles.rightSection}>
-        <img src={Images.about_bg_3} alt="QB Corporation Signboard" />
-      </div>
-      <div className={styles.cropImage}>
-        <img src={Images.about_bg_2} alt="QB Corporation Secondary" />
+      <div className={styles.pageHeroBackgorundWrapper}>
+        <div className={styles.sectionBackgroundLeft}>
+          <img
+            className={styles.pageHeroBackgorundImage}
+            src={Images.about_bg}
+            alt="Background"
+          />
+        </div>
+        <div className={styles.sectionBackgroundRight}>
+          <div className={styles.pageHeroBackgroundTexture}></div>
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default CorpBlock;
