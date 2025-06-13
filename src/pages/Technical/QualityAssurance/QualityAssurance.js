@@ -27,9 +27,16 @@ const QualityAssurance = () => {
                 <h3>Span and Load Charts</h3>
                 <div className={styles.documentCard}>
                     <p>AITC Technical Note 21:</p>
-                    <button className={styles.pdfButton}>
-                        View Document <FaRegFilePdf className={styles.pdfIcon} />
-                    </button>
+
+                    <a
+                        href="https://drive.google.com/file/d/1lio3vi12HfSFiXJsjRL9YvaoFvEn1B_s/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            View Document <FaRegFilePdf className={styles.pdfIcon} />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

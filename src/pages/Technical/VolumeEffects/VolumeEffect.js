@@ -21,9 +21,16 @@ const VolumeEffect = () => {
                 <h3>Additional Info</h3>
                 <div className={styles.documentCard}>
                     <p>AITC Technical Note 21:</p>
-                    <button className={styles.pdfButton}>
-                        View Document <FaRegFilePdf className={styles.pdfIcon} />
-                    </button>
+
+                    <a
+                        href="https://drive.google.com/file/d/1BmoJgMDUvUtGTxZZBfnhWhPMiIve9sY4/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            View Document <FaRegFilePdf className={styles.pdfIcon} />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

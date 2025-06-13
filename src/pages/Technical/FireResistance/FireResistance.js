@@ -25,23 +25,41 @@ const FireResistance = () => {
 
                 <div className={styles.documentCard}>
                     <p>Read about Calculating Fire Resistance:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1ZzgKuHAk_FAJX-mCSxLy7lnSr8Gk0cy_/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
 
                 <div className={styles.documentCard}>
                     <p>Read about Fire Resistance:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1lNCpel-VTqOrO_cCz9PFqTGyLZpGaKMT/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
 
                 <div className={styles.documentCard}>
                     <p>View the Flame Spread Index:</p>
-                    <button className={styles.pdfButton}>
-                        VIEW DOCUMENT <FaRegFilePdf />
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1Yj8GjGQKhaihG_QYlAzRgIlu70M6yUle/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.pdfButton}>
+                            VIEW DOCUMENT <FaRegFilePdf />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
