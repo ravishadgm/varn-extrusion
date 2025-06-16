@@ -44,14 +44,14 @@
 
   tbody td {
     font-size: 0.95rem;
-    color: $text-color;
+    color: $dark-text;
     font-weight: bold;
   }
 
   tbody td:first-child {
     text-align: left;
     font-weight: bold;
-    color: $text-color;
+    color: $dark-text;
   }
 }
 

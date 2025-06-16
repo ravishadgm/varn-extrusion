@@ -16,7 +16,7 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 5rem;
-    background-color: $background-color;
+    background-color: $gray-bg;
     padding: 3rem 2rem;
     border-radius: 12px;
 
@@ -32,7 +32,7 @@
 
       p {
         font-size: 1rem;
-        color: $text-color;
+        color: $dark-text;
         font-weight: 400;
       }
     }
@@ -43,7 +43,7 @@
 
       p {
         font-size: 0.95rem;
-        color: $text-color;
+        color: $dark-text;
         line-height: 1.65;
         margin-bottom: 1.2rem;
       }
@@ -99,7 +99,7 @@
 
       p {
         font-size: 0.95rem;
-        color: $text-color;
+        color: $dark-text;
         line-height: 1.65;
       }
     }

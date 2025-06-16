@@ -2,7 +2,7 @@
 
 .professionalSection {
   padding: 4rem 2rem;
-  background-color: $background-color;
+  background-color: $gray-bg;
 
   h2 {
         font-size: clamp(1.75rem, 5vw, 2.5rem);
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     font-size: 0.95rem;
-    color: $text-color;
+    color: $dark-text;
     word-break: break-word;
     font-weight: 600;
     cursor:pointer;

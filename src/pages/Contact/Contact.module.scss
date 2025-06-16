@@ -180,7 +180,7 @@
 .formTitle {
   font-size: 2rem;
   font-weight: bold;
-  color:$text-color;
+  color:$dark-text;
   margin-bottom: 10px;
   text-align: left;
 
@@ -213,7 +213,7 @@
   label {
     font-size: 0.9rem;
     font-weight: 600;
-    color:$text-color;
+    color:$dark-text;
     margin-bottom: 0.5rem;
   }
 
@@ -327,7 +327,7 @@
   .rightSection {
     background-image: none;
     background-color: $color-white;
-    color: $text-color;
+    color: $dark-text;
   }
 
   .bgOverlay,

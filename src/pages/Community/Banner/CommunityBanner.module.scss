@@ -46,7 +46,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: $text-color;
+  color: $dark-text;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -72,5 +72,5 @@
     max-width: 1400px;
 
   height: auto;
-  box-shadow: 0 8px 16px $text-color;
+  box-shadow: 0 8px 16px $dark-text;
 }

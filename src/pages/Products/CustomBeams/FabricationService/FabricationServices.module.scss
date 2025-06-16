@@ -59,7 +59,7 @@
   padding: 24px;
   font-size: 15px;
   line-height: 1.6;
-  color: $text-color;
+  color: $dark-text;
   
 }
 
@@ -80,7 +80,7 @@
     padding:10px 24px;
     font-size: 15px;
     line-height: 1.6;
-    color:$text-color;
+    color:$dark-text;
 
     p{
       font-weight:600;
@@ -103,7 +103,7 @@
   font-weight: 600;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: $hover-green;
     color: $color-white;
     border: none;
   }
