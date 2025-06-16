@@ -1,3 +1,5 @@
+
+@import "../../../styles/variables";
 .heroSection {
   width: 100%;
   height: 70vh;
@@ -15,7 +17,7 @@
   background-color: #162e20;
   width: 90%;
   padding: 4rem 2rem;
-  color: white;
+  color: $color-white;
   position: absolute;
   bottom: -11rem;
   left: 50%;
@@ -74,15 +76,15 @@
   border: 1px solid #ffffff40;
   cursor: pointer;
   transition: background 0.3s;
-  color: white;
+  color: $color-white;
   text-decoration: none;
   font-size: clamp(0.9rem, 2.3vw, 1rem);
   display: flex;
   align-items: center;
   gap: 0.5rem; 
   &:hover {
-    background: #e0e0e0;
-    color: #111;
+    background: $color-white;
+    color: $dark-text;
   }
 }
 

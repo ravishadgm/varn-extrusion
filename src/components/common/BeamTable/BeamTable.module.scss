@@ -1,3 +1,4 @@
+@import "../../../styles/variables";
 .tableWrapper {
   width: 100%;
   overflow-x: auto;
@@ -25,16 +26,16 @@
   }
 
   thead {
-    background-color: #00583d;
+    background-color: $primary-green;
 
     th {
-      color: #ffffff;
+      color: $color-white;
       font-weight: bold;
     }
   }
 
   tbody tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 
 }

@@ -2,7 +2,7 @@
 
 .container {
   padding: 4rem 2rem;
-  background-color: #fafafa;
+  background-color: $gray-bg;
 
   @media (min-width: 768px) {
     padding: 6rem 4rem;
@@ -17,7 +17,7 @@
   h1 {
     font-size: 60px;
     margin-bottom: 30px;
-    color: #1f1f1f;
+    color: $dark-text;
     text-transform: capitalize;
     text-wrap: balance;
     font-weight: 500;
@@ -77,17 +77,17 @@
   padding: 0.75rem 1.5rem;
   border: 1px solid #ccc;
   border-radius: 999px;
-  background: white;
+  background: $color-white;
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
-  color: #1c1c1c;
+  color: $dark-text;
   width: fit-content;
   transition: all 0.2s ease;
 
   &:hover {
     background-color: $primary-green;
-    color: white;
+    color: $color-white;
   }
 }
 

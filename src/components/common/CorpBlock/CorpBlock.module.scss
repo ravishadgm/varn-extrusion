@@ -1,4 +1,6 @@
 
+
+@import "../../../styles/variables";
 .pageHero {
     grid-column-gap: 2em;
     grid-row-gap: 2em;
@@ -58,7 +60,7 @@
     font-size: 4em;
     font-weight: 500;
     line-height: 1.2;
-  color: white;
+  color: $color-white;
 }
 .headingSmall{
     
@@ -68,7 +70,7 @@
       font-size: 21px;
     font-weight: 500;
     line-height: 1.2;
-  color: white;
+  color:  $color-white;
 }
 .imageRevealMask{
   width: 100%;
@@ -121,7 +123,7 @@
 }
 .sectionBackgroundRight{
   z-index: 1;
-    background-color: #eee;
+    background-color: $gray-bg;
     width: 40%;
     position: relative;
     inset: 0% 0% 0% auto;
@@ -152,7 +154,7 @@
   background: transparent;
   
   &:hover {
-    border-color: #fff;
+    border-color:  $color-white;
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
@@ -161,7 +163,7 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  color: white;
+  color:  $color-white;
   text-transform: uppercase;
   gap: 0.5em;
   font-size: 1em;

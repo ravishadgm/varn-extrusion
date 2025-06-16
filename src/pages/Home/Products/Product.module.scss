@@ -2,7 +2,7 @@
 
 .productSection {
   padding: 15rem 2rem 7rem 2rem;
-  background-color: #fff;
+  background-color: $color-white;
 }
 li {
   display: flex;
@@ -38,7 +38,7 @@ li {
   p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #222;
+    color:$dark-text;
     font-weight: 500;
   }
 }
@@ -51,7 +51,7 @@ li {
 }
 
 .card {
-  background: #fafafa;
+  background: $gray-bg;
   padding: 2rem;
   flex: 1 1 300px;
 
@@ -99,10 +99,10 @@ li {
 
     &:hover {
         background-color: $primary-green;
-        color: #fff;
+        color: $color-white;
 
         svg {
-        color: #fff;
+        color: $color-white;
         }
     }
 }

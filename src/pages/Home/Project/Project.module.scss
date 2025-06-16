@@ -1,3 +1,6 @@
+
+
+@import "../../../styles/variables";
 .projectSection {
   padding: 4rem 0;
 
@@ -27,9 +30,9 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: #00583d;
+        background-color: $hover-green;
         color: white;
-        border-color: #00583d;
+        border-color: $hover-green;
       }
     }
   }
@@ -45,7 +48,7 @@
   }
 
   .projectCard {
-    background: #fff;
+    background: $color-white;
 
     .imageWrapper {
       position: relative;
@@ -61,7 +64,7 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
-        background: white;
+        background: $color-white;
         border-radius: 9999px;
         padding: 0.4rem;
         display: flex;
@@ -70,8 +73,8 @@
         transition: all 0.3s;
 
         &:hover {
-          background-color: #00583d;
-          color: white;
+          background-color:  $hover-green;
+          color: $color-white;
         }
       }
     }
@@ -84,10 +87,10 @@
         margin: 0;
 
         a {
-          color: black;
+          color: $dark-text;
 
           &:hover {
-            color: #00583d;
+            color: $hover-green;
           }
         }
       }
@@ -116,9 +119,9 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: #00583d;
+        background-color:  $hover-green;
         color: white;
-        border-color: #00583d;
+        border-color: $hover-green;
       }
     }
   }
