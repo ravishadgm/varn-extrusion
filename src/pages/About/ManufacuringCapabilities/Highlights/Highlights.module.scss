@@ -1,6 +1,8 @@
+@import '../../../../styles/variables';
+
 .container {
   padding: 80px 100px;
-  background-color: #fafafa;
+  background-color: $gray-bg;
 
   h1 {
     font-size: 32px;
@@ -43,7 +45,7 @@
     font-size: 14px;
     line-height: 1.6;
     font-weight: 600;
-    color: #222;
+    color: $dark-text;
   }
 }
 

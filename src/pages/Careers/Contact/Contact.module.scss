@@ -1,5 +1,7 @@
 /* Contact.module.scss */
 
+@import "../../../styles/variables";
+
 .contactContainer {
   display: flex;
   min-height: 100vh;
@@ -33,7 +35,7 @@
 .leftContent {
   position: relative;
   z-index: 2;
-  color: black;
+  color: $dark-text;
   max-width: 600px;
   margin: auto;
     @media (max-width: 768px) {
@@ -47,7 +49,7 @@
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: black;
+  color: $dark-text;
 
   @media (max-width: 1200px) {
     font-size: 3rem;
@@ -66,7 +68,7 @@
   font-size: 14px;
     line-height: 1.6;
     margin-bottom: 3rem;
-    color: black;
+    color: $dark-text;
     width: 300px;
 
   @media (max-width: 768px) {
@@ -90,13 +92,13 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  color: black;
+  color: $dark-text;
 
   .icon {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    color: gray;
+    color: $gray-bg;
     margin-top: 2px;
   }
 
@@ -177,7 +179,7 @@
 .formTitle {
   font-size: 25px;
     font-weight: lighter;
-  color: #333;
+  color: $dark-text;
   margin-bottom: 10px;
   text-align: left;
 
@@ -208,7 +210,7 @@
   label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #333;
+    color: $dark-text;
     margin-bottom: 0.5rem;
   }
 
@@ -223,8 +225,8 @@
 
     &:focus {
       outline: none;
-      border-color: #162e20;
-      box-shadow: 0 0 0 2px rgba(22, 46, 32, 0.1);
+      border-color: $hover-green;
+      box-shadow: 0 0 0 2px $hover-green;
     }
 
     &::placeholder {
@@ -233,7 +235,7 @@
   }
 
   select {
-    background-color: black;
+    background-color: $dark-text;
     cursor: pointer;
 
     option {
@@ -249,14 +251,14 @@
 }
 
 .errorText {
-  color: #d32f2f;
+  color: $error-color;
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
 
 .submitBtn {
-border: 1px solid gray;
-    color: black;
+border: 1px solid $gray-bg;
+    color: $dark-text;
     padding: 0.5rem 3rem;
     border-radius: 15px;
     font-size: 13px;
@@ -267,7 +269,7 @@ border: 1px solid gray;
     align-self: flex-start;
 
   &:hover {
-    background-color: #1a3424;
+    background-color: $hover-green;
     transform: translateY(-2px);
   }
 
@@ -321,8 +323,8 @@ border: 1px solid gray;
   .leftSection,
   .rightSection {
     background-image: none;
-    background-color: black;
-    color: black;
+    background-color: $dark-text;
+    color: $dark-text;
   }
 
   .bgOverlay,

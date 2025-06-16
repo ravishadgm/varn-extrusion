@@ -1,5 +1,7 @@
 /* Contact.module.scss */
 
+@import "../../styles/variables";
+
 .contactContainer {
   display: flex;
   min-height: 100vh;
@@ -12,7 +14,7 @@
 
 .leftSection {
   flex: 1;
-  background-color: #162e20;
+  background-color: $hover-green;
   background-image: linear-gradient(
       rgba(22, 46, 32, 0.8),
       rgba(22, 46, 32, 0.8)
@@ -39,7 +41,7 @@
 .leftContent {
   position: relative;
   z-index: 2;
-  color: white;
+  color: $color-white;
   max-width: 600px;
   margin: auto;
 }
@@ -49,7 +51,7 @@
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: white;
+  color: $color-white;
 
   @media (max-width: 1200px) {
     font-size: 3rem;
@@ -91,7 +93,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  color: white;
+  color: $color-white;
 
   .icon {
     flex-shrink: 0;
@@ -153,7 +155,7 @@
 .formContainer {
   position: relative;
   z-index: 5;
-  background: rgba(255, 255, 255);
+  background: $color-white;
   padding: 33px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   width: 100%;
@@ -178,7 +180,7 @@
 .formTitle {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color:$dark-text;
   margin-bottom: 10px;
   text-align: left;
 
@@ -211,7 +213,7 @@
   label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #333;
+    color:$dark-text;
     margin-bottom: 0.5rem;
   }
 
@@ -226,7 +228,7 @@
 
     &:focus {
       outline: none;
-      border-color: #162e20;
+      border-color: $hover-green;
       box-shadow: 0 0 0 2px rgba(22, 46, 32, 0.1);
     }
 
@@ -236,7 +238,7 @@
   }
 
   select {
-    background-color: white;
+    background-color: $color-white;
     cursor: pointer;
 
     option {
@@ -251,14 +253,14 @@
   }
 }
 .errorText {
-  color: #d32f2f;
+  color: $error-color;
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
 
 .submitBtn {
-  background-color: #162e20;
-  color: white;
+  background-color: $hover-green;
+  color: $color-white;
   padding: 1rem 2rem;
   border: none;
   border-radius: 4px;
@@ -270,7 +272,7 @@
   align-self: flex-start;
 
   &:hover {
-    background-color: #1a3424;
+    background-color: $hover-green;
     transform: translateY(-2px);
   }
 
@@ -324,8 +326,8 @@
   .leftSection,
   .rightSection {
     background-image: none;
-    background-color: white;
-    color: black;
+    background-color: $color-white;
+    color: $dark-text;
   }
 
   .bgOverlay,

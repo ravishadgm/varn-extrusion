@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .structures {
   width: 100%;
   font-family: "Inter", sans-serif;
@@ -6,7 +8,7 @@
 
 // Section 1
 .utilitySection {
-  background-color: #fff;
+  background-color: $color-white;
   padding: 5em 2em;
 }
 
@@ -38,13 +40,13 @@
     font-size: 1.05em;
     line-height: 1.8;
     margin-bottom: 1em;
-    color: #333;
+    color: $dark-text;
   }
 }
 
 // Section 2
 .treatmentSection {
-  background-color: #fafafa;
+  background-color: $gray-bg;
   padding: 4em 2em;
 }
 
@@ -83,11 +85,11 @@
     font-size: 1em;
     line-height: 1.7;
     margin-bottom: 1em;
-    color: #333;
+    color:$dark-text;
   }
 
   a {
-    color: #00703c;
+    color: $primary-green;
     font-weight: 500;
     text-decoration: underline;
   }
@@ -104,7 +106,5 @@
   .utilityLeft h2,
   .treatmentText h2 {
     font-size: 20px;
-  }
-
-  
+  } 
 }

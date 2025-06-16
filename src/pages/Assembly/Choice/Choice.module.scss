@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .strengthBlock {
   padding: 4rem 1rem;
   text-align: center;
@@ -10,7 +12,7 @@
     font-weight: 500;
     max-width: 800px;
     margin: 0 auto 3rem;
-    color: #222;
+    color: $dark-text;
 
     @media (max-width: 768px) {
       font-size: 1rem;

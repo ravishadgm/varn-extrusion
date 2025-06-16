@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .containerBox{
     padding: 10px 110px;
 }
@@ -24,7 +26,7 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        color: #bd8e0f;
+        color: $secondary-color;
       }
     }
 
@@ -33,8 +35,8 @@
 }
 
     .active {
-      color: #00583d;
-      border-bottom: 4px solid #00583d;
+      color: $primary-green;
+      border-bottom: 4px solid $primary-green;
     }
 
   }
@@ -70,7 +72,7 @@
   }
 
   a {
-    color: #00755e;
+    color: $primary-green;
     text-decoration: underline;
   }
 }
@@ -105,7 +107,7 @@
   .sizingSection {
   gap: 1rem;
   padding: 10px 0px;
- font-weight:600;
+  font-weight:600;
 
 
 }
@@ -138,7 +140,7 @@
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
       scrollbar-width: thin;
-      scrollbar-color: #00583d transparent;
+      scrollbar-color: $primary-green transparent;
     }
 
     ul::-webkit-scrollbar {

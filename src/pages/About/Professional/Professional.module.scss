@@ -1,6 +1,8 @@
+@import "../../../styles/variables";
+
 .professionalSection {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  background-color: $gray-bg;
 
   h2 {
         font-size: clamp(1.75rem, 5vw, 2.5rem);
@@ -28,7 +30,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: $color-white;
   padding: 1.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -56,14 +58,14 @@
     display: flex;
     align-items: center;
     font-size: 0.95rem;
-    color: #333;
+    color: $dark-text;
     word-break: break-word;
     font-weight: 600;
     cursor:pointer;
   }
 
   .email:hover{
-    color:#b35f06;
+    color:$secondary-color;
   }
 
   .icon {

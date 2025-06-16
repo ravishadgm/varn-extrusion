@@ -1,6 +1,8 @@
+@import '../../../../styles/variables';
+
 .showcaseContainer {
     width: 100%;
-    background: #fafafa; 
+    background: $gray-bg; 
 }
 
 .contentWrapper {
@@ -74,7 +76,7 @@
   position: relative;
   width: fit-content;
   margin: 40px auto;
-  background: #fafafa;
+  background: $gray-bg;
   border-radius: 12px;
  
 }
@@ -91,7 +93,7 @@
   top: 55px;
   left: 360px;
   width: 220px;
-  background: #fafafa;
+  background: $gray-bg;
   padding: 10px;
   height: 330px; 
   object-fit: cover;
