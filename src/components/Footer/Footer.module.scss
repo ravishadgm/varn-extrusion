@@ -23,7 +23,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 88, 61, 0.95);
+      background: $primary-green;
       pointer-events: none;
       z-index: 1;
     }
@@ -291,17 +291,17 @@
           justify-content: center;
           width: 40px;
           height: 40px;
-          background-color: $color-white;
+          background-color: $banner-bg;
           border: 1px solid #e0e0e0;
           border-radius: 50%;
-          color: #666;
+          color:  $color-white;
           transition: all 0.3s ease;
           text-decoration: none;
 
           &:hover {
             background-color: $hover-green;
             color: $color-white;
-            border-color: #2c5530;
+            border-color: $banner-bg;
             transform: translateY(-2px);
           }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import VerticalBlock from "../../../components/common/VerticalNumberBlock/VerticalBlock";
+import VerticalBlock from "../../../../components/common/VerticalNumberBlock/VerticalBlock";
 
 import { FaFilePdf } from "react-icons/fa6";
 import Images  from '@assets/images';

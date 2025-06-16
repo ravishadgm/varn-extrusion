@@ -3,7 +3,8 @@ import Banner from './Banner/Banner';
 import Choice from './Choice/Choice'
 function index() {
   return (
-    <div><Banner/>
+    <div>
+      <Banner/>
     <Choice/>
     </div>
   )

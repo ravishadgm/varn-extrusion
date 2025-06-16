@@ -13,15 +13,15 @@ import Configurations from "@pages/Products/Configurations/Configurations";
 import ManufacturingCapabilities from "@pages/About/ManufacuringCapabilities/ManufacturingCapabilities";
 import CustomBeams from "@pages/Products/CustomBeams/CustomBeams";
 
-import Community from '../pages/Community';
-import News from '../pages/News/News';
+import Community from '../pages/About/Community/index';
+import News from '../pages/About/Community/index';
 import Careers from '../pages/Careers';
-import Fabrication from '../pages/Fabrication/index'
+import Fabrication from '../pages/Services/Fabrication/index'
 import StokeBeams from '@pages/Products/StokeBeams/StokeBeams';
-import Assembly from "../pages/Assembly/index";
-import WoodPallets from "../pages/WoodPallets/index";
-import Utility from "../pages/Utility/index";
-import Board from "../pages/Board/index";
+import Assembly from "../pages/Services/Assembly/index";
+import WoodPallets from "../pages/Products/WoodPallets/index";
+import Utility from "../pages/Products/Utility/index";
+import Board from "../pages/Products/Board/index";
 import Catalog from "../pages/Catalog/Catalog";
 
 const AppRoutes = () => {
@@ -45,8 +45,8 @@ const AppRoutes = () => {
       <Route path="/products/custom-beams" element={<CustomBeams />} />
       <Route path="/products/stoke-beams" element={<StokeBeams />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/community" element={<Community />} />
-      <Route path="/news" element={<News />} />
+      <Route path="/about/community" element={<Community />} />
+      <Route path="/about/news" element={<News />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/services/fabrication" element={<Fabrication />} />
       <Route path="/services/truss-assembly" element={<Assembly />} />

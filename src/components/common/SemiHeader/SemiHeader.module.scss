@@ -2,7 +2,7 @@
 
 .container {
   padding: 4rem 2rem;
-  background-color: $gray-bg;
+  background-color:$banner-bg;
 
   @media (min-width: 768px) {
     padding: 6rem 4rem;
@@ -17,7 +17,7 @@
   h1 {
     font-size: 60px;
     margin-bottom: 30px;
-    color: $dark-text;
+    color:$banner-text;
     text-transform: capitalize;
     text-wrap: balance;
     font-weight: 500;
@@ -61,7 +61,7 @@
 
   p {
     font-size: 1.125rem;
-    color: $dark-text;
+    color: $banner-text;
     line-height: 1.6;
     max-width: 600px;
 

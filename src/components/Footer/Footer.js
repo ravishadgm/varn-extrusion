@@ -19,8 +19,8 @@ import { useNavigate } from "react-router-dom";
 const companyLinks = [
   { name: "About", href: "about" },
   { name: "Projects", href: "projects" },
-  { name: "Community", href: "community" },
-  { name: "In the News", href: "news" },
+  { name: "Community", href: "/about/community" },
+  { name: "In the News", href: "/about/news" },
   { name: "Careers", href: "careers" },
   { name: "Contact", href: "contact" },
 ];
