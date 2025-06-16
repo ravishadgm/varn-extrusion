@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .centerWrapper {
   z-index: 2;
   width: 90vw;
@@ -14,7 +16,7 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 5rem;
-    background-color: #f6f6f6;
+    background-color: $background-color;
     padding: 3rem 2rem;
     border-radius: 12px;
 
@@ -30,7 +32,7 @@
 
       p {
         font-size: 1rem;
-        color: #333;
+        color: $text-color;
         font-weight: 400;
       }
     }
@@ -41,7 +43,7 @@
 
       p {
         font-size: 0.95rem;
-        color: #222;
+        color: $text-color;
         line-height: 1.65;
         margin-bottom: 1.2rem;
       }
@@ -81,7 +83,7 @@
         width: 100%;
         max-width: 545px;
         height: auto;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px $dark-text;
       }
     }
 
@@ -97,7 +99,7 @@
 
       p {
         font-size: 0.95rem;
-        color: #333;
+        color: $text-color;
         line-height: 1.65;
       }
     }

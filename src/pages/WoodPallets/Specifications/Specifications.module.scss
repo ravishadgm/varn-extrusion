@@ -1,6 +1,8 @@
+@import "../../../styles/variables";
+
 .specificationSection {
   padding: 4rem 1rem;
-  background: #fff;
+  background: $color-white;
   text-align: center;
 }
 
@@ -36,20 +38,20 @@
 
   thead th {
     background-color: #005338; 
-    color: #fff;
+    color:$color-white;
     font-size: 1rem;
   }
 
   tbody td {
     font-size: 0.95rem;
-    color: #333;
+    color: $text-color;
     font-weight: bold;
   }
 
   tbody td:first-child {
     text-align: left;
     font-weight: bold;
-    color: #111;
+    color: $text-color;
   }
 }
 

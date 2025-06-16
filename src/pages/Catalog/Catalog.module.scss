@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+
 .catalogContainer {
   max-width: 1440px;
   margin: 0 auto;
@@ -27,7 +28,7 @@
 }
 
 .card {
-  background: #fff;
+  background: $color-white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -58,7 +59,7 @@
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 0.5rem;
-      color: #111;
+      color: $dark-text;
     }
 
     p {
@@ -69,7 +70,7 @@
 
     a.downloadLink {
       font-weight: 600;
-      color: #c62828;
+      color: $error-color;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;

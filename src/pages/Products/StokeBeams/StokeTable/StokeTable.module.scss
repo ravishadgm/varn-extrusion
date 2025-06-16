@@ -1,3 +1,5 @@
+@import '../../../../styles/variables';
+
 .navTabs {
   border-bottom: 1px solid #ddd;
   padding: 10px 0px;
@@ -20,7 +22,7 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        color: #bd8e0f;
+        color: $secondary-color;
       }
     }
 
@@ -29,8 +31,8 @@
 }
 
     .active {
-      color: #00583d;
-      border-bottom: 4px solid #00583d;
+      color: $primary-green;
+      border-bottom: 4px solid $primary-green;
     }
 
   }
@@ -63,7 +65,7 @@
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
       scrollbar-width: thin;
-      scrollbar-color: #00583d transparent;
+      scrollbar-color: $primary-green transparent;
     }
 
     ul::-webkit-scrollbar {

@@ -1,5 +1,7 @@
+@import "../../../styles/variables";
+
 .featuresSection {
-  background-color: #fff;
+  background-color: $color-white;
   padding: 5em 1.5em;
 }
 
@@ -22,7 +24,7 @@
   font-size: 2.8em;
   line-height: 1.2;
   font-weight: 600;
-  color: #1b1b1b;
+  color: $dark-text;
 }
 
 .right {
@@ -35,16 +37,16 @@
   padding-left: 1.5em;
   font-size: 1em;
   line-height: 1.8;
-  color: #222;
+  color: $text-color;
 }
 
 .optionalNote {
   display: inline;
   font-style: italic;
-  color: #333;
+  color: $text-color;
 }
 .grayBg{
-    background-color: #fafafa;
+    background-color: $gray-bg;
 }
 
 @media screen and (max-width: 1024px) {
@@ -79,7 +81,7 @@
 
 .qbSection {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: $color-white;
   font-family: "Inter", sans-serif;
 }
 
@@ -124,11 +126,11 @@
   h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #111;
+    color: $text-color;
   }
 
   .downloadBox {
-    background-color: #f9f9f9;
+    background-color: $background-white;
     padding: 1rem 1.2rem;
     border-radius: 8px;
 
@@ -141,13 +143,13 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: #fff;
+      background: $color-white;
       border: 1px solid #ddd;
       padding: 0.6rem 1rem;
       border-radius: 999px;
       font-weight: 600;
       font-size: 0.95rem;
-      color: #111;
+      color: $text-color;
       text-decoration: none;
       transition: all 0.3s ease;
 
@@ -157,7 +159,7 @@
       }
 
       svg {
-        color: black;
+        color: $text-color;
         font-size: 1.1rem;
       }
     }

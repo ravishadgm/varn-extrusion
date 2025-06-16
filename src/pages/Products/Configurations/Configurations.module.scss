@@ -1,9 +1,11 @@
+@import '../../../styles/variables';
+
 .container {
   padding-bottom: 20px;
 }
 
 .horizontalSection {
-  background-color: #fafafa;
+  background-color: $gray-bg;
   padding: 110px 90px;
   display: flex;
   align-items: center;
@@ -34,7 +36,7 @@
     white-space: nowrap;
     list-style: none;
     scrollbar-width: thin;
-    scrollbar-color: #00583d transparent;
+    scrollbar-color: $primary-green transparent;
 
     &::-webkit-scrollbar {
       display: none;
@@ -50,12 +52,12 @@
       margin-bottom: 16px; 
 
       &:hover {
-        color: #bd8e0f;
+        color: $secondary-color
       }
 
       &.active {
-        color: #00583d;
-        border-bottom: 4px solid #00583d;
+        color: $primary-green;
+        border-bottom: 4px solid $primary-green;
       }
     }
   }
@@ -80,7 +82,7 @@
 
 
 .pdfButton {
-  background: #fafafa;
+  background: $gray-bg;
   border: 1px solid #ccc;
   border-radius: 999px;
   margin-top:20px;
@@ -93,8 +95,8 @@
   transition: 0.2s ease;
 
   &:hover {
-    background-color: #00583d;
-    color: #fff;
+    background-color: $primary-green;
+    color:$color-white;
     border: none;
   }
 }
@@ -102,12 +104,6 @@
 .pdfIcon {
   font-size: 1rem;
 }
-
-
-
-
-
-
 
 
 .ContentTabSection {
