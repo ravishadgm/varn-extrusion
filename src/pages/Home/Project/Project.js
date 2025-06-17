@@ -20,25 +20,25 @@ const projects = [
     title: "Jackson Hole Airport",
     location: "Jackson Hole, Wyoming, USA",
     image: Images.home_swiper_one,
-    link: "#",
+    link: "/projects/jackson-hole-airport",
   },
   {
-    title: "Bespoke Project",
-    location: "Boise, Idaho, USA",
+    title: "Bozman Yellowstone International Airport",
+    location: "Belgrade,Montana,USA",
     image: Images.home_swiper_three,
-    link: "#",
+    link: "/projects/bozeman-yellowstone-international-airport",
   },
   {
     title: "The Fries House",
     location: "Ketchum, Idaho, USA",
     image: Images.home_swiper_two,
-    link: "#",
+    link: "/projects/the-fries-house",
   },
   {
     title: "Kanzan House",
     location: "Blaine County, Idaho, USA",
     image: Images.home_swiper_one,
-    link: "#",
+    link: "/projects/kanzan-house",
   },
 ];
 
@@ -106,9 +106,9 @@ function Project() {
             >
               <div className={styles.imageWrapper}>
                 <img src={project.image} alt={project.title} />
-                {/* <a href={project.link} className={styles.linkIcon}>
+                <a href={project.link} className={styles.linkIcon}>
                   <FiArrowUpRight />
-                </a> */}
+                </a>
               </div>
               <div className={styles.info}>
                 <h3>
