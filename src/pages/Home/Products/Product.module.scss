@@ -1,7 +1,7 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .productSection {
-  padding: 15rem 2rem 7rem 2rem;
+  margin-bottom: 30px;
   background-color: $color-white;
 }
 li {
@@ -15,13 +15,14 @@ li {
   }
 }
 
-
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   gap: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .left {
@@ -38,7 +39,7 @@ li {
   p {
     font-size: 1rem;
     line-height: 1.6;
-    color:$dark-text;
+    color: $dark-text;
     font-weight: 500;
   }
 }
@@ -90,28 +91,34 @@ li {
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;              
-  align-items: center;        
-  gap: 0.5rem;                 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   svg {
     font-size: 1rem;
   }
 
-    &:hover {
-        background-color: $primary-green;
-        color: $color-white;
+  &:hover {
+    background-color: $primary-green;
+    color: $color-white;
 
-        svg {
-        color: $color-white;
-        }
+    svg {
+      color: $color-white;
     }
+  }
 }
+@media (max-width: 1400px) {
+   .container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
+}
 @media (max-width: 768px) {
-    .productSection {
-  padding: 2rem 2rem;
-
-}
+  .productSection {
+    padding: 2rem 2rem;
+  }
   .container {
     flex-direction: column;
   }
@@ -126,12 +133,46 @@ li {
 }
 
 @media (max-width: 1127px) {
-
   .left {
     max-width: 100%;
     margin-bottom: 2rem;
   }
-
-  
 }
 
+.marqueeWrapper {
+  overflow: hidden;
+  padding: 15rem 2rem 7rem 2rem;
+}
+@media (max-width: 768px) {
+  .marqueeWrapper {
+    padding: 2rem 2rem;
+  }
+}
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marqueeContent {
+  display: flex;
+  animation: scrollMarquee 20s linear infinite;
+  gap: 2rem;
+  margin: auto;
+}
+
+.marqueeContent img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

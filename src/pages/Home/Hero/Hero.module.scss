@@ -1,12 +1,20 @@
-
 @import "../../../styles/variables";
+
 .heroSection {
   width: 100%;
   height: 70vh;
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  z-index: 0; 
 }
 
 .imageContainer {
@@ -15,7 +23,7 @@
 
 .overlay {
   background-color: $primary-green;
-  width: 90%;
+  width: 1400px;
   padding: 4rem 2rem;
   color: $color-white;
   position: absolute;
@@ -25,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1; // Above video
 }
 
 .content {
@@ -81,7 +90,8 @@
   font-size: clamp(0.9rem, 2.3vw, 1rem);
   display: flex;
   align-items: center;
-  gap: 0.5rem; 
+  gap: 0.5rem;
+
   &:hover {
     background: $color-white;
     color: $dark-text;
@@ -89,21 +99,27 @@
 }
 
 /* ========== Mobile Responsive ========== */
+@media (max-width: 1400px) {
+
+  .overlay {
+
+    width: 100%;
+ 
+  }
+
+}
 @media (max-width: 768px) {
   .heroSection {
-    background-image: none;
     height: auto;
   }
 
-  .imageContainer {
-    display: block;
-    width: 100%;
+  .videoBackground {
+    height: 100%;
+    object-fit: cover;
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  .imageContainer {
+    display: none;
   }
 
   .overlay {

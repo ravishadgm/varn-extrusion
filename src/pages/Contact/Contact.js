@@ -55,16 +55,26 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!validateForm()) {
-      return;
-    }
+  if (!validateForm()) return;
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    try {
+  try {
+    const response = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert(data.message);
       setFormData({
         firstName: "",
         lastName: "",
@@ -73,15 +83,17 @@ const Contact = () => {
         hearAbout: "",
         message: "",
       });
-
-      alert("Message sent successfully!");
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Error sending message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+    } else {
+      alert(data.message || "Failed to submit form.");
     }
-  };
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Something went wrong.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <div className={styles.contactContainer}>

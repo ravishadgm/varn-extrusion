@@ -58,7 +58,8 @@ import utility_banner from './utility/utility_banner.jpg';
 import woodPellets_banner from './woodPellets/woodPellets_banner.jpeg';
 import utility_treatment from './utility/utility_treatment.jpg';
 import board_banner from './board/board_banner.jpg';
-import board_proparties from './board/board_proparties.jpg'
+import board_proparties from './board/board_proparties.jpg';
+import certificate from './products/product_certificate.jpg'
 
 const images = {
 news_16,
@@ -120,7 +121,8 @@ news_15,
   woodPellets_banner,
   utility_treatment,
   board_banner,
-  board_proparties
+  board_proparties,
+  certificate
 };
 
 export default images;

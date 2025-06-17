@@ -1,10 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import styles from './Hero.module.scss';
-import Images from "@assets/images"; 
-import { Link } from 'react-router-dom'; 
-import { FaArrowRight } from 'react-icons/fa';
-
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "./Hero.module.scss";
+import Images from "@assets/images";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import BannerVideo from "@assets/videos/banner_video.mp4";
 const zoomAnim = {
   initial: {
     scale: 1.1,
@@ -13,7 +13,7 @@ const zoomAnim = {
     scale: 1,
     transition: {
       duration: 1.8,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
 };
@@ -22,30 +22,41 @@ function Hero() {
   return (
     <motion.section
       className={styles.heroSection}
-      style={{ backgroundImage: `url(${Images.home_bg})` }}
       variants={zoomAnim}
       initial="initial"
       animate="animate"
     >
-      <div className={styles.imageContainer}>
-        <img src={Images.home_bg} alt="Hero" />
-      </div>
+      {/* 🔁 Video Background */}
+      <video
+        className={styles.videoBackground}
+        src={BannerVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
 
+      {/* 🔳 Overlay content */}
       <div className={styles.overlay}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h1>Premier Glue Laminated Timber Manufacturer</h1>
-            <p>The product you want, when you want it.</p>
+            <h1>Varn — India’s Pioneer in Ultra-Slim Aluminium Profiles</h1>
+            <p>
+              Crafting precision-engineered profiles with wall thickness as fine
+              as 0.3 mm — where innovation meets elegance.
+            </p>
           </div>
           <div className={styles.right}>
             <p>
-              QB Corp is a premier glue laminated timber manufacturer where
-              excellence is a tradition and innovation knows no limits.
+              Since 2016, <strong>Varn Extrusion Pvt. Ltd.</strong> has led the
+              aluminum manufacturing industry with cutting-edge technology,
+              world-class coating approvals, and an unwavering commitment to
+              quality. Backed by 300+ skilled professionals, we deliver
+              excellence — on time, every time.
             </p>
-      <Link to="/contact" className={styles.ctaButton}>
-  GET A QUOTE <FaArrowRight style={{ marginLeft: '0.5rem' }} />
-
-</Link>
+            <Link to="/contact" className={styles.ctaButton}>
+              GET A QUOTE <FaArrowRight style={{ marginLeft: "0.5rem" }} />
+            </Link>
           </div>
         </div>
       </div>

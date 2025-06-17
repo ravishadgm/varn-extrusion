@@ -36,10 +36,10 @@ function NumberBlock({
   buttonLabel = "ABOUT QB CORP",
   alertBox,
 }) {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
     <section className={styles.customerSection}>
-      {buttonLabel && (
+      {/* {buttonLabel && (
         <motion.img
           src={Images.home_customer}
           alt="Customer Background"
@@ -49,7 +49,7 @@ function NumberBlock({
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         />
-      )}
+      )} */}
 
       <div className={styles.content}>
         <h2>{title}</h2>
@@ -75,7 +75,7 @@ function NumberBlock({
         </div>
 
         {buttonLabel && (
-          <button className={styles.button} onClick={()=>navigate('/about')}>
+          <button className={styles.button} onClick={() => navigate("/about")}>
             {buttonLabel} <FiArrowUpRight className={styles.icon} />
           </button>
         )}
