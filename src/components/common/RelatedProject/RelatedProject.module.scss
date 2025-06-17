@@ -1,0 +1,142 @@
+@import "../../../styles/variables";
+
+.relatedProjects {
+  padding: 5rem 8rem;
+
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  margin-bottom: 3rem;
+}
+
+.card {
+    cursor: pointer;
+
+
+  .image {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0.5rem;
+     
+  text-decoration: none;
+  }
+
+  
+  .location {
+    font-size: 0.95rem;
+    color: #777;
+    margin: 0 1rem 1rem;
+  }
+
+ 
+
+}
+
+ .card:hover{
+   .title{
+     text-decoration: underline;
+ transition: text-decoration 0.3s ease;
+   }
+  }
+
+.buttonWrapper {
+  text-align: start;
+
+  .buttonIsLight {
+    display: inline-flex;
+    align-items: start;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: transparent;
+    color: $dark-text;
+    transition: all 0.3s ease;
+    font-weight:600;
+
+    &:hover {
+      background-color:$hover-green; 
+      color: #fff;
+      border: 1px solid $hover-green; 
+    }
+
+    .buttonText {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .arrowIcon {
+      font-size: 1.1rem;
+      font-weight:600;
+    }
+  }
+}
+
+ @media (max-width: 768px) {
+  .relatedProjects{
+     padding: 1rem 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+  }
+
+    .projectsGrid {
+
+    margin-bottom: 1rem;
+   
+  }
+
+  .card {
+   .image {
+    width:95%;}}
+    
+    .buttonWrapper{
+      padding-bottom:4rem;
+    }
+
+ 
+ }
+  @media (max-width: 480px) {
+    .relatedProjects{
+       padding: 0rem 1rem;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+    }
+
+     .projectsGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+   
+  }
+
+  .card {
+   .image {
+    width:100%;}}
+    
+    .buttonWrapper{
+      padding-bottom:4rem;
+    }
+  }

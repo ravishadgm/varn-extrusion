@@ -25,6 +25,11 @@ import Board from "../pages/Products/Board/index";
 import Catalog from "../pages/Catalog/Catalog";
 import PrivacyPolicy from '../pages/PrivacyPolicy/PrivacyPolicy';
 import TermsAndConditions from '../pages/TermsAndConditions/TermsAndConditions'
+import KanzanHouse from "@pages/ProjectViews/KanzanHouse/KanzanHouse";
+import UnionArena from "@pages/ProjectViews/UnionArena/UnionArena";
+import JacksonHallAirport from "@pages/ProjectViews/JacksonHallAirport/JacksonHallAirport";
+import BozemanAirport from "@pages/ProjectViews/BozemanAirport/BozemanAirport";
+import FriesHouse from "@pages/ProjectViews/FriesHouse/FriesHouse";
 
 const AppRoutes = () => {
   return (
@@ -57,7 +62,12 @@ const AppRoutes = () => {
       <Route path="/products/qb-rim-board" element={<Board />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="/projects/kanzan-house" element={<KanzanHouse />} />
+      <Route path="/projects/idaho-central-credit-union-arena" element={<UnionArena />} />
+      <Route path="/projects/jackson-hole-airport" element={<JacksonHallAirport />} />
+      <Route path="/projects/bozeman-yellowstone-international-airport" element={<BozemanAirport />} />
+      <Route path="/projects/the-fries-house" element={<FriesHouse />} />
     </Routes>
   );
 };
