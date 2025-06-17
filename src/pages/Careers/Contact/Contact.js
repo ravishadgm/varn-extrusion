@@ -53,20 +53,27 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!validateForm()) return;
-    setIsSubmitting(true);
+  if (!validateForm()) return;
+  setIsSubmitting(true);
 
-    try {
-      const submissionData = new FormData();
-      Object.entries(formData).forEach(([key, value]) =>
-        submissionData.append(key, value)
-      );
+  try {
+    const submissionData = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      submissionData.append(key, value);
+    });
 
-      // Simulate submission
-      alert("Form submitted successfully!");
+    const response = await fetch("http://localhost:5000/api/career", {
+      method: "POST",
+      body: submissionData,
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert(result.message || "Form submitted successfully!");
 
       setFormData({
         firstName: "",
@@ -80,13 +87,17 @@ const Contact = () => {
         position: "",
         resume: null,
       });
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Submission failed.");
-    } finally {
-      setIsSubmitting(false);
+    } else {
+      throw new Error(result.message || "Submission failed");
     }
-  };
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Submission failed.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
   return (
     <>
       <div>
