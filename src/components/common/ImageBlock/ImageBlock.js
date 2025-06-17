@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./ImageBlock.module.scss";
+import { FiArrowUpRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const cardVariants = {
   hidden: { opacity: 0, x: -20 },
@@ -16,6 +18,7 @@ const cardVariants = {
 };
 
 const ImageBlock = ({ data = [] }) => {
+    const navigate = useNavigate();
   return (
     <section className={styles.imageBlock}>
       <div className={styles.grid}>
@@ -29,9 +32,16 @@ const ImageBlock = ({ data = [] }) => {
             variants={cardVariants}
             custom={idx}
           >
-            <img src={item.image} alt={item.title} />
+            <div className={styles.imageWrapper} onClick={()=>navigate(item.link)}>
+              <img src={item.image} alt={item.title} />
+              {item.link && (
+                <a href={item.link} className={styles.linkIcon}>
+                  <FiArrowUpRight />
+                </a>
+              )}
+            </div>
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <p className={styles.descriptionText}>{item.description}</p>
           </motion.div>
         ))}
       </div>

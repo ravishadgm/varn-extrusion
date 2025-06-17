@@ -87,7 +87,6 @@ const Contact = () => {
       alert(data.message || "Failed to submit form.");
     }
   } catch (error) {
-    console.error("Error:", error);
     alert("Something went wrong.");
   } finally {
     setIsSubmitting(false);

@@ -63,9 +63,9 @@ function Project() {
           Collaborations with talented <br /> architects, builders, and
           designers
         </h2>
-        <Link to="/projects" className={styles.allProjectsBtn}>
+        {/* <Link to="/projects" className={styles.allProjectsBtn}>
           All Projects <FiArrowUpRight />
-        </Link>
+        </Link> */}
       </div>
 
       <Swiper

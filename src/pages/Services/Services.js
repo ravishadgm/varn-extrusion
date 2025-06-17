@@ -10,18 +10,21 @@ const imageData = [
     description:
       "Fabrication services with cutting-edge technology, extensive capabilities, and superior results",
     image: Images.services_fab,
+    link:'/services/fabrication'
   },
   {
     title: "Timber Truss Assembly",
     description:
       "QB Corporation is your go-to solution for premium glued laminated timber trusses.",
     image: Images.services_timber,
+    link:'/services/truss-assembly'
   },
   {
     title: "Pre-Fit Connections",
     description:
       "More info coming soon.",
     image: Images.services_fit,
+    
   }
 ];
 
@@ -40,7 +43,7 @@ function Services() {
         buttonLink="/contact"
       />
       <ImageBlock data={imageData} />
-      <Technology/>
+      {/* <Technology/> */}
     </>
   );
 }

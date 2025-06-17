@@ -14,7 +14,7 @@
 
 .leftSection {
   flex: 1;
-//   background-color: #fafafa;
+  //   background-color: #fafafa;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,12 +24,9 @@
   padding: 80px 60px;
 
   @media (max-width: 1024px) {
-            min-height: 35vh;
-        padding: 0px 33px;
-
+    min-height: 35vh;
+    padding: 0px 33px;
   }
-
- 
 }
 
 .leftContent {
@@ -38,9 +35,9 @@
   color: $dark-text;
   max-width: 600px;
   margin: auto;
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     align-items: center; // horizontally centers content
-    text-align: center;  // ensures text like paragraphs align nicely
+    text-align: center; // ensures text like paragraphs align nicely
   }
 }
 
@@ -66,10 +63,10 @@
 
 .description {
   font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-    color: $dark-text;
-    width: 300px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: $dark-text;
+  width: 300px;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -115,7 +112,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-//    background-color: rgba(22, 46, 32, 0.3);
+  //    background-color: rgba(22, 46, 32, 0.3);
   z-index: 1;
 }
 
@@ -178,7 +175,7 @@
 
 .formTitle {
   font-size: 25px;
-    font-weight: lighter;
+  font-weight: lighter;
   color: $dark-text;
   margin-bottom: 10px;
   text-align: left;
@@ -253,24 +250,25 @@
 .errorText {
   color: $error-color;
   font-size: 0.875rem;
-  margin-top: 0.25rem;
+  margin-top: 0.25rem;  
 }
 
 .submitBtn {
-border: 1px solid $gray-bg;
-    color: $dark-text;
-    padding: 0.5rem 3rem;
-    border-radius: 15px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 1rem;
-    align-self: flex-start;
+  border: 1px solid #1f1f1f40;
+  color: $dark-text;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+font-size: .9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  align-self: flex-start;
 
   &:hover {
     background-color: $hover-green;
     transform: translateY(-2px);
+      color:white;
   }
 
   &:active {
@@ -354,6 +352,6 @@ border: 1px solid $gray-bg;
   }
 }
 
-.resume_upload{
-    width: 100%;
+.resume_upload {
+  width: 100%;
 }
