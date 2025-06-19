@@ -64,8 +64,9 @@ const Contact = () => {
       Object.entries(formData).forEach(([key, value]) => {
         submissionData.append(key, value);
       });
+    const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/api/career`;
 
-      const response = await fetch("http://localhost:5000/api/career", {
+      const response = await fetch(apiUrl, {
         method: "POST",
         body: submissionData,
       });
