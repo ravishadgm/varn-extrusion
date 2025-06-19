@@ -102,20 +102,26 @@
 @media (max-width: 1400px) {
 
   .overlay {
-
     width: 90%;
- 
   }
 
 }
 @media (max-width: 768px) {
   .heroSection {
-    height: auto;
+    height: 100vh;
+    position:relative;
   }
 
   .videoBackground {
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    display: block;
+
   }
 
   .imageContainer {
@@ -123,13 +129,14 @@
   }
 
   .overlay {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     padding: 2rem 1rem;
     display: block;
+    z-index: 1;
   }
 
   .content {

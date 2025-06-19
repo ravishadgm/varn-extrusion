@@ -1,4 +1,5 @@
 import NumberBlock from "@components/common/NumberBlock/NumberBlock";
+import styles from "./Custromer.module.scss"
 
 
 const infoList = [
@@ -26,15 +27,17 @@ const infoList = [
 
 export default function SomePage() {
   return (
-    <NumberBlock
-      title={
-        <>
-          We strive for 100% on-time deliveries <br />
-          and 100% customer satisfaction
-        </>
-      }
-      infoList={infoList}
-      buttonLabel="ABOUT QB CORP"
-    />
+    <div className={styles.container}>
+      <NumberBlock
+        title={
+          <>
+            We strive for 100% on-time deliveries <br />
+            and 100% customer satisfaction
+          </>
+        }
+        infoList={infoList}
+        buttonLabel="ABOUT QB CORP"
+      />
+    </div>
   );
 }

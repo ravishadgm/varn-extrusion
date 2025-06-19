@@ -29,7 +29,15 @@ background-color: $gray-bg;
 
       @media (max-width: 768px) {
         font-size: 27px;
+        text-align: left;
+        
       }
+
+       @media (max-width: 480px) {
+            font-size:25px;
+            margin-bottom: 2rem;
+        }
+
     }
 
     .infoGrid {
@@ -55,13 +63,27 @@ background-color: $gray-bg;
         flex-shrink: 0;
         line-height: 1.4;
         min-width: 40px;
+
+        @media (max-width: 768px){
+          font-size: 1.6rem;  
+        }
+
+        @media (max-width: 480px) {
+            font-size:1.5rem;
+        }
       }
+
+    
 
       h3 {
         margin: 0;
         font-size: 1.25rem;
         font-weight: 700;
         color: #111;
+
+         @media (max-width: 480px) {
+            font-size:1.1rem;
+        }
       }
 
       p {
@@ -69,6 +91,10 @@ background-color: $gray-bg;
         font-size: 0.95rem;
         color: #333;
         line-height: 1.5;
+
+         @media (max-width: 480px) {
+            font-size:0.85rem;
+        }
       }
     }
 
@@ -96,10 +122,25 @@ background-color: $gray-bg;
       }
       @media (max-width: 768px) {
         display: flex;
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
       }
+
+       @media (max-width: 480px) {
+        margin-left: 0;
+        margin-bottom:20px;
+      }
     }
+    
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 60px 30px;
+  }
+
+   @media (max-width: 480px) {
+    width: 100%;
+    padding: 50px 10px;
+  }
   }
 }
 
@@ -123,3 +164,4 @@ background-color: $gray-bg;
   color: #111;
   line-height: 1.4;
 }
+

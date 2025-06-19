@@ -1,8 +1,9 @@
 import React from "react";
 import VerticalBlock from "../../../../components/common/VerticalNumberBlock/VerticalBlock";
+import styles from "./Advantages.module.scss"
 
 import { FaFilePdf } from "react-icons/fa6";
-import Images  from '@assets/images';
+import Images from '@assets/images';
 const featuresData = [
   {
     number: "01",
@@ -34,7 +35,7 @@ const featuresData = [
     title: "Carbon Neutral",
     text: "Pellets are considered a carbon-neutral fuel because the carbon dioxide released during combustion is almost equivalent to the carbon dioxide absorbed by trees during their growth. This carbon uptake and release cycle helps minimize the net increase of greenhouse gases in the atmosphere.",
   },
-   {
+  {
     number: "07",
     title: "Utilization of Wood Waste",
     text: "Wood pellets are valuable for wood residues that would otherwise be discarded or decomposed. By utilizing these by-products, wood pellet production contributes to waste reduction and maximizes the use of available resources.",
@@ -44,15 +45,16 @@ const featuresData = [
 function Advantages() {
   return (
     <>
-   
-    <VerticalBlock
-      title="Wood pellet fuel offers several advantages"
-      description="Overall, wood pellet fuel offers an efficient, environmentally friendly, and sustainable alternative to traditional heating fuels, making it an attractive option for residential, commercial, and industrial applications."
-      features={featuresData}
-    />
+      <div className={styles.verticalContent}>
+        <VerticalBlock
+          title="Wood pellet fuel offers several advantages"
+          description="Overall, wood pellet fuel offers an efficient, environmentally friendly, and sustainable alternative to traditional heating fuels, making it an attractive option for residential, commercial, and industrial applications."
+          features={featuresData}
+        />
+      </div>
 
- 
-     </>
+
+    </>
   );
 }
 

@@ -41,25 +41,28 @@ const Choice = () => {
   return (
 
     <>
-     <section className={styles.strengthBlock}>
-      <div className={styles.text}>
-        When it comes to strength and flexibility, Glulam outperforms steel in
-        many ways. Glulam offers superior load-bearing capacity with a
-        strength-to-weight ratio that is three times greater than steel. This
-        means that pound for pound, Glulam is indeed stronger than steel.
-      </div>
+      <section className={styles.strengthBlock}>
+        <div className={styles.text}>
+          When it comes to strength and flexibility, Glulam outperforms steel in
+          many ways. Glulam offers superior load-bearing capacity with a
+          strength-to-weight ratio that is three times greater than steel. This
+          means that pound for pound, Glulam is indeed stronger than steel.
+        </div>
 
-      <div className={styles.imageWrapper}>
-        <img src={Images.choice_bg} alt="Glulam Truss" />
+        <div className={styles.imageWrapper}>
+          <img src={Images.choice_bg} alt="Glulam Truss" />
+        </div>
+      </section>
+      <div className={styles.innerBlock}>
+        <VerticalBlock
+          title="Glulam Trusses are the Preferred Choice over the Alternatives"
+          description="When it comes to strength and flexibility, Glulam outperforms steel in many ways. Glulam offers superior load-bearing capacity with a strength-to-weight ratio that is three times greater than steel. This means that pound for pound, Glulam is indeed stronger than steel."
+          features={featuresData}
+
+        />
       </div>
-    </section>
-      <VerticalBlock
-      title="Glulam Trusses are the Preferred Choice over the Alternatives"
-      description="When it comes to strength and flexibility, Glulam outperforms steel in many ways. Glulam offers superior load-bearing capacity with a strength-to-weight ratio that is three times greater than steel. This means that pound for pound, Glulam is indeed stronger than steel."
-      features={featuresData}
-    />
     </>
-    
+
   );
 };
 

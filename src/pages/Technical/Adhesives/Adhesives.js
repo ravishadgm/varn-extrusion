@@ -8,7 +8,7 @@ function Adhesives() {
             <div className={styles.textContent}>
                 <h2>Adhesives Information</h2>
                 <p>
-                    QB Corporation uses durable waterproof structural adhesives in the
+                    Varn Extrusion uses durable waterproof structural adhesives in the
                     manufacturing process. Both PRF and Melamine adhesives are available.
                     Adhesives have been tested to comply with different types of standards.
                 </p>

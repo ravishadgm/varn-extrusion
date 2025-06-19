@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .container{
     width:100%;
     padding:3rem 8rem;
@@ -57,13 +59,13 @@ width:60%;
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0 0 0.5rem;
-  color: #222;
+  color: $dark-text;
 }
 
 .description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: $dark-text;
   font-weight: 600;
 }
 

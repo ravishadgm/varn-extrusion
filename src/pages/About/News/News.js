@@ -183,7 +183,7 @@ const newsItems = [
 
 const News = () => {
   return (
-  <section className={styles.newsSection}>
+    <section className={styles.newsSection}>
       <div className={styles.container}>
         <h2 className={styles.heading}>VARN Extrusion In The News</h2>
         <p className={styles.subheading}>

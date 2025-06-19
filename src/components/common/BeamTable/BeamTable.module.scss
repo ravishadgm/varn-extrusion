@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+
 .tableWrapper {
   width: 100%;
   overflow-x: auto;
@@ -22,7 +23,7 @@
     padding-left:22px;
     text-align: left;
     font-weight: 600;
-    border: 1px solid #fafafa;
+    border: 1px solid $banner-bg;
   }
 
   thead {

@@ -166,6 +166,11 @@
       align-items: flex-start;
     }
 
+    @media(max-width:767px){
+      align-items: start;
+      text-align: start;
+    }
+
     .socialLinks,
     .certifications {
       justify-content: center;
@@ -186,6 +191,12 @@
     @media (min-width: 768px) {
       align-items: flex-start;
       text-align: left;
+    }
+
+    @media (max-width: 767px){
+      align-items: flex-start;
+      text-align: left;
+    
     }
 
     ul {
@@ -221,6 +232,8 @@
           justify-content: center;
         }
 
+         
+
         svg {
           margin-top: 0.25rem;
           color: $hover-green;
@@ -241,6 +254,11 @@
           }
         }
       }
+
+      @media (max-width: 480px) {
+          text-align: left;
+          align-items: flex-start;
+        }
     }
   }
 }
@@ -509,6 +527,25 @@
       display: block;
       margin-bottom: 0.25rem;
       color: $hover-green;
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+    .brandSection,
+    .contactSection {
+      grid-column: 1 / -1; // take full width
+    }
+
+    .linkSection {
+      grid-column: span 1;
     }
   }
 }

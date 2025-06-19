@@ -17,12 +17,12 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const companyLinks = [
-  { name: "About", href: "about" },
-  { name: "Projects", href: "projects" },
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
   // { name: "Community", href: "/about/community" },
   { name: "In the News", href: "/about/news" },
   { name: "Careers", href: "careers" },
-  { name: "Contact", href: "contact" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const resourcesLinks = [
@@ -37,36 +37,36 @@ const resourcesLinks = [
 const contactInfo = [
   {
     icon: FaMapMarkerAlt,
-   content: (
-    <div className={styles.addressBlock}>
-      <div>
-        <strong>Corporate Office:</strong><br />
-        Plot No - 8, First Floor - Kalidas Nagar,<br />
-        Near Trikam Nagar, L. H. Road, Varachha,<br />
-        Surat, 395006 Gujarat, India.
-      </div>
+    content: (
+      <div className={styles.addressBlock}>
+        <div>
+          <strong>Corporate Office:</strong><br />
+          Plot No - 8, First Floor - Kalidas Nagar,<br />
+          Near Trikam Nagar, L. H. Road, Varachha,<br />
+          Surat, 395006 Gujarat, India.
+        </div>
 
-      <div>
-        <strong>Unit - 1: Varn Extrusion Pvt Ltd</strong><br />
-        Block No.594/A, Plot No. 71-86, Shivalay Industrial Estate,<br />
-        B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
-        At- Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
-      </div>
+        <div>
+          <strong>Unit - 1: Varn Extrusion Pvt Ltd</strong><br />
+          Block No.594/A, Plot No. 71-86, Shivalay Industrial Estate,<br />
+          B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
+          At- Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
+        </div>
 
-      <div>
-        <strong>Unit - 2: Varn Extrusion Pvt Ltd</strong><br />
-        Block No. 599/1, Plot No. 55 to 78, Shivalay Industrial Estate,<br />
-        B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
-        At - Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
-      </div>
+        <div>
+          <strong>Unit - 2: Varn Extrusion Pvt Ltd</strong><br />
+          Block No. 599/1, Plot No. 55 to 78, Shivalay Industrial Estate,<br />
+          B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
+          At - Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
+        </div>
 
-      <div>
-        <strong>Unit - 3: Regal Allufin Industries</strong><br />
-        Block No-593/1, Shivalay Industrial Estate,<br />
-        B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
-        At-Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
+        <div>
+          <strong>Unit - 3: Regal Allufin Industries</strong><br />
+          Block No-593/1, Shivalay Industrial Estate,<br />
+          B/H I Shree Khodiyar Petrol Pump, NH-8,<br />
+          At-Kosamba, Ta. Mangrol, Surat, Gujarat - 394120, India.
+        </div>
       </div>
-    </div>
     ),
   },
   {

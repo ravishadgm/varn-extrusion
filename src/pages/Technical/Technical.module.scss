@@ -1,6 +1,8 @@
 @import '../../styles/variables';
 
 .container {
+  width:100%;
+  position: relative;
   padding-bottom: 20px;
 }
 
@@ -25,14 +27,18 @@
   border-bottom: 1px solid #ddd;
   padding: 10px 0px;
 
+
   
-  > ul {
+  ul {
     
     display: flex;
     gap: 24px;
     padding: 0;
     margin: 0;
-      
+
+    ul:hover{
+      background-color: $secondary-color;
+    }
 
     li {
       text-transform: uppercase;
@@ -42,9 +48,13 @@
       padding: 12px 0;
       border-bottom: 2px solid transparent;
 
-      &:hover {
-        color: $secondary-color;
-      }
+    
+
+      &:active {
+      color: $primary-green;
+      border-bottom: 4px solid $primary-green;
+    }
+      
     }
 
     .navTabs li {
@@ -55,6 +65,7 @@
       color: $primary-green;
       border-bottom: 4px solid $primary-green;
     }
+
 
   }
 }
@@ -83,6 +94,7 @@
     font-size: 2.4rem;
     margin-bottom: 20px;
     font-weight: bold;
+    // align-items:left;
   }
 
   p {
@@ -106,6 +118,7 @@
 }
 
 .documentCard {
+
   background-color:$gray-bg;
   padding: 20px 30px;
   margin-bottom: 20px;
@@ -229,8 +242,18 @@
 
   .sideInfo {
   width:100%;
-  max-width: 600px;
-  }
+  max-width: 800px;
+
+
+  .documentCard {
+    width:90vw;
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: clamp(1rem, 2.5vw, 2rem); 
+      width: 100%;
+  }}
 
   .cardAdhevsives{
     width:100%;
@@ -247,15 +270,21 @@
   }
 
   .card {
-    width: 48%;
-    max-width: 48%;
-    flex: 0 0 48%;
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
   }
 
   .card li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
 }
+
+.contentSection{
+  padding: 15px 0px;
+
+}
+
 
    
 }
@@ -276,13 +305,15 @@
   }
 
   .contentSection{
-     padding: 20px 1px;
+    padding: 20px 1px;
     gap: 20px;
   }
     
   .textContent{
     h2 {
+      width:100%;
       font-size: 1.5rem;
+      text-align:left;
     }
 
     p {
@@ -294,6 +325,7 @@
   .sideInfo {
      h3 {
       font-size: 1.1rem;
+      gap:0rem;
     }
 }
 
@@ -328,6 +360,17 @@
     width: 100%;
     flex: unset;
   }
+
+  .documentCard {
+    align-items: start;
+    text-align: left;
+  flex-direction: column;
+  gap:0rem;
+  width:90vw;
+
+}
+
+
 }
 
 

@@ -25,14 +25,20 @@
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:  repeat(2, 1fr);
+    gap:1rem;
   }
+
+  @media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }}
 }
 
 .card {
   background-color: $color-white;
   padding: 1.5rem 2rem;
-  border-radius: 8px;
+  // border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 
