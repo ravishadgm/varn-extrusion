@@ -148,23 +148,8 @@ li {
 
 @media (max-width: 768px) {
   .marqueeWrapper {
-    padding: 2rem 2rem;
-  }
+            padding: 147px 10px 10px 10px;
 
-}
-
-@media (max-width:480px){
-  .container{
-    gap:0rem;
-  }
-   .productSection {
-    padding: 2rem 1rem;
-  }
-  .left {
-     h2 {
-      width:90%;
-      text-align: left;
-     }
   }
 }
 
@@ -173,6 +158,7 @@ li {
   display: flex;
   overflow: hidden;
   white-space: nowrap;
+  padding-top: 10px;
 }
 
 .marqueeContent {

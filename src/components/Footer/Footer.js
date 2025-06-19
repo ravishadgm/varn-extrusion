@@ -167,7 +167,8 @@ const Footer = () => {
               </div> */}
             </div>
 
-            <div className={styles.linkSection}>
+            <div className={styles.middleSection}>
+<div className={styles.linkSection}>
               <h3>Company</h3>
               <ul>
                 {companyLinks.map((link, index) => (
@@ -189,6 +190,9 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+            </div>
+
+            
 
             {/* Contact Section */}
             <div className={styles.contactSection}>
