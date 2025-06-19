@@ -106,9 +106,9 @@ function Project() {
             >
               <div className={styles.imageWrapper}>
                 <img src={project.image} alt={project.title} />
-                <a href={project.link} className={styles.linkIcon}>
+                {/* <a href={project.link} className={styles.linkIcon}>
                   <FiArrowUpRight />
-                </a>
+                </a> */}
               </div>
               <div className={styles.info}>
                 <h3>

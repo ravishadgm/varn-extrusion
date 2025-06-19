@@ -4,6 +4,8 @@
   padding: 4rem 1rem;
   background: $color-white;
   text-align: center;
+
+  
 }
 
 .container {
@@ -55,7 +57,20 @@
   }
 }
 
+.woodPelletsImage{
+    width: 1400px;
+    padding-top: 50px;
+    height: 680px;
+    margin: auto;
+}
+
+
+
 @media (max-width: 768px) {
+
+  .specificationSection {
+    padding:4rem 2.2rem;
+  }
   .title {
     font-size: 1.6rem;
   }
@@ -68,11 +83,30 @@
   .table td {
     padding: 0.75rem;
   }
+
+  .woodPelletsImage{
+    width: 1400px;
+    padding-top: 50px;
+    height: 600px;
+}
+  
 }
 
-.woodPelletsImage{
-        width: 1400px;
+
+
+
+@media (max-width: 768px) {
+
+  .specificationSection {
+    padding:4rem 1rem;
+  }
+  
+  .woodPelletsImage{
+    width: 1400px;
     padding-top: 50px;
-    height: 640px;
-    margin: auto;
+    height:380px;
+   
+}
+
+  
 }

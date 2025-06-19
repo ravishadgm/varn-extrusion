@@ -6,57 +6,57 @@ const teamMembers = [
   {
     name: "Mike Lane",
     role: "President",
-    email: "mlaneqb@qbcorp.com",
+    email: "mlaneqb@varnextrusion.com",
   },
   {
     name: "Michael Lane",
     role: "General Manager & Vice President",
-    email: "mwlane2@qbcorp.com",
+    email: "mwlane2@varnextrusion.com",
   },
   {
     name: "Rockie Walker",
     role: "Maintenance Manager & Pellet Sales",
-    email: "qbrock@qbcorp.com",
+    email: "qbrock@varnextrusion.com",
   },
   {
     name: "Clay Buhler",
     role: "Shipping & Lumber Purchaser",
-    email: "clay@qbcorp.com",
+    email: "clay@varnextrusion.com",
   },
   {
     name: "Ben Lane",
     role: "Quality Assurance",
-    email: "blane@qbcorp.com",
+    email: "blane@varnextrusion.com",
   },
   {
     name: "Shawn Anderson",
     role: "Production Manager",
-    email: "anderson@qbcorp.com",
+    email: "anderson@varnextrusion.com",
   },
   {
     name: "Karl Nichols",
     role: "Sales",
-    email: "karl@qbcorp.com",
+    email: "karl@varnextrusion.com",
   },
   {
     name: "Bob Butch",
     role: "Sales Manager",
-    email: "bob@qbcorp.com",
+    email: "bob@varnextrusion.com",
   },
   {
     name: "Zac Troughton",
     role: "Sales & CNC Operations",
-    email: "ztroughton@qbcorp.com",
+    email: "ztroughton@varnextrusion.com",
   },
   {
     name: "Tyler Aldous",
     role: "CNC Operations",
-    email: "taldous@qbcorp.com",
+    email: "taldous@varnextrusion.com",
   },
   {
     name: "Paul Drace",
     role: "Director of Sales & Marketing",
-    email: "pdrace@qbcorp.com",
+    email: "pdrace@varnextrusion.com",
   },
 ];
 

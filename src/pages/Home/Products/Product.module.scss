@@ -120,6 +120,7 @@ li {
     padding: 2rem 2rem;
   }
   .container {
+    width:100%;
     flex-direction: column;
   }
 
@@ -143,11 +144,31 @@ li {
   overflow: hidden;
   padding: 15rem 2rem 7rem 2rem;
 }
+
+
 @media (max-width: 768px) {
   .marqueeWrapper {
     padding: 2rem 2rem;
   }
+
 }
+
+@media (max-width:480px){
+  .container{
+    gap:0rem;
+  }
+   .productSection {
+    padding: 2rem 1rem;
+  }
+  .left {
+     h2 {
+      width:90%;
+      text-align: left;
+     }
+  }
+}
+
+
 .marquee {
   display: flex;
   overflow: hidden;

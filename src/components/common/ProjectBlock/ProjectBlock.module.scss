@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .wrapper {
   width: 100%;
 }
@@ -11,7 +13,7 @@
 }
 
 .infoCard {
-  background-color: #fafafa;
+  background-color: $banner-bg;
   padding: 2.6rem 4rem;
   margin: -100px auto 2rem auto;
   width: 90%;

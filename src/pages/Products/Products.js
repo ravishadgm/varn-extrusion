@@ -9,35 +9,35 @@ const imageData = [
     description:
       "Get the perfect fit for your project with QB Corporation’s custom and curved glulam beams.",
     image: Images.product_custom,
-    link:'/products/custom-beams'
+    link: '/products/custom-beams'
   },
   {
     title: "Stock Glulam Beams",
     description:
       "Get your construction project completed faster and more efficiently with our stock glulam beams.",
     image: Images.product_stock,
-    link:'/products/stock-beams'
+    link: '/products/stoke-beams'
   },
   {
     title: "QB Rim Board",
     description:
       "QB Rim Board has enhanced strength, stability, and resistance to warping or splitting.",
     image: Images.prodcut_qb,
-    link:'/products/qb-rim-board'
+    link: '/products/qb-rim-board'
   },
   {
     title: "Utility Structures",
     description:
       "An excellent solution for expanding the nation’s infrastructure efficiently.",
     image: Images.product_utility,
-    link:'/products/utility-structures'
+    link: '/products/utility-structures'
   },
   {
     title: "Wood Pellets",
     description:
       "Our pellets are renewable, sustainable, and rated as high-performance fuel.",
     image: Images.product_Wood,
-    link:'/products/wood-pellets'
+    link: '/products/wood-pellets'
   },
 ];
 

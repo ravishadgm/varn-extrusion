@@ -31,6 +31,7 @@
   @media (max-width: 1024px) {
     min-height: 50vh;
     padding: 60px 40px;
+    padding-bottom:120px;
   }
 
   @media (max-width: 768px) {
@@ -44,6 +45,10 @@
   color: $color-white;
   max-width: 600px;
   margin: auto;
+ 
+   @media (max-width: 768px) {
+    padding-bottom: 7rem;
+  }
 }
 
 .title {
@@ -84,8 +89,14 @@
   gap: 2rem;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 2fr;
     gap: 1.5rem;
+  }
+
+  @media (max-width:480px){
+    grid-template-columns: 1fr;
+    gap:1rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -166,6 +177,8 @@
 
   @media (max-width: 1024px) {
     margin: 2rem auto;
+    margin-left :auto;
+    margin-top:-170px;
   }
 
   @media (max-width: 768px) {
@@ -331,8 +344,4 @@
     color: $dark-text;
   }
 
-  .bgOverlay,
-  .rightBgOverlay {
-    display: none;
-  }
 }

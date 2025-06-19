@@ -11,7 +11,7 @@ const Checking = () => {
                     Checking is a natural phenomenon of wood that occurs when the wood dries and shrinks. The stresses built up from the shrinkage will cause a slight split. This typically is not an issue if the checking unless the checking is very severe.
                 </p>
                 <p>
-                    QB places a great deal of attention on moisture during the manufacturing process. Our raw materials are dried to specific moisture contents, and we monitor this throughout the assembly process. Since shrinkage results from the moisture leaving the board, QB's attention will minimize any checking you may see in the beams. However, as wood is a natural material and some locations are arid climates, some checking may still occur. It is also crucial that the product be appropriately handled and stored during any inventory or installation process to minimize checking issues.
+                    Varn places a great deal of attention on moisture during the manufacturing process. Our raw materials are dried to specific moisture contents, and we monitor this throughout the assembly process. Since shrinkage results from the moisture leaving the board, Varn's attention will minimize any checking you may see in the beams. However, as wood is a natural material and some locations are arid climates, some checking may still occur. It is also crucial that the product be appropriately handled and stored during any inventory or installation process to minimize checking issues.
                 </p>
             </div>
 

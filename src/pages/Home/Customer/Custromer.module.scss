@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+.container{
+    background-color: $gray-bg;
+    padding:5rem 0rem;
+
+    @media (max-width:480px){
+         padding:0rem 1rem;
+    }
+}
+

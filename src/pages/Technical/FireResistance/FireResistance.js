@@ -17,7 +17,7 @@ const FireResistance = () => {
                     Glulam beams with proper design can accomplish fire-resistant design by using larger sections. Using wood's natural characteristics to char when exposed to high temperature and combustion. This charring develops natural insulation to fire, protecting the interior wood fiber from high temperature and flame. Of course, this charring only protects the wood for a relatively short time, just as insulation or gypsum protects other products for a short time.
 
                 </p>
-                <p>The bottom line, you can protect your structure and have the desired appearance by designing your QB Corporation members for fire resistance construction. You should consult a licensed design professional in this area, although some basic information is available in the Timber Construction Manual, published by the American Institute of Timber Construction.</p>
+                <p>The bottom line, you can protect your structure and have the desired appearance by designing your Varn Extrusion members for fire resistance construction. You should consult a licensed design professional in this area, although some basic information is available in the Timber Construction Manual, published by the American Institute of Timber Construction.</p>
             </div>
 
             <div className={styles.sideInfo}>
