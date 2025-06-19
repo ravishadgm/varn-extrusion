@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import mainImage from "../../../../assets/images/Manufacture/ManufactureFirst.jpeg";
 import overlayImage from "../../../../assets/images/Manufacture/ManufactureSecond.jpeg";
 import styles from './AboutManufacture.module.scss';
@@ -9,7 +10,18 @@ const AboutManufacture = () => {
             <div className={styles.contentWrapper}>
                 <div className={styles.imagesSection}>
                     <div className={styles.imageWrapper}>
-                        <img src={mainImage} alt="Main Beam" className={styles.mainImage} />
+
+                        <motion.img
+                            src={mainImage}
+                            alt="Main Beam"
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, ease: "easeOut" }}
+                            className={styles.mainImage}
+                        />
+
+
+                        {/* <img src={mainImage} alt="Main Beam" className={styles.mainImage} /> */}
                         {/* <img src={overlayImage} alt="Overlay Detail" className={styles.overlayImage} /> */}
                     </div>
 
