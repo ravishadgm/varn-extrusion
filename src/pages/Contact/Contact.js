@@ -55,57 +55,59 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  if (!validateForm()) return;
+    if (!validateForm()) return;
 
-  setIsSubmitting(true);
+    setIsSubmitting(true);
 
-  try {
-    const response = await fetch("http://localhost:5000/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await response.json();
-
-    if (response.ok) {
-      alert(data.message);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        hearAbout: "",
-        message: "",
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    } else {
-      alert(data.message || "Failed to submit form.");
-    }
-  } catch (error) {
-    alert("Something went wrong.");
-  } finally {
-    setIsSubmitting(false);
-  }
-};
 
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          hearAbout: "",
+          message: "",
+        });
+      } else {
+        alert(data.message || "Failed to submit form.");
+      }
+    } catch (error) {
+      alert("Something went wrong.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className={styles.contactContainer}>
       <div className={styles.leftSection}>
         <div className={styles.leftContent}>
           <h1 className={styles.title}>
-            Contact QB Corp. To Get In Touch With An Expert
+            Contact VARN Extrusion Pvt. Ltd. to speak with an aluminium profile
+            expert today.
           </h1>
 
           <p className={styles.description}>
-            QB Corporation is a quality producer of Engineered Wood Products
-            sold through a distribution network. Requests for quotes on
-            individual projects will be referred to our dealer network.
+            VARN Extrusion Pvt. Ltd. is a trusted manufacturer of high-precision
+            aluminium profiles, serving a wide range of industries through
+            direct partnerships and B2B collaborations. For project inquiries or
+            customized solutions, please contact our team — we’re here to assist
+            with expert guidance and tailored offerings.
           </p>
 
           <div className={styles.contactInfo}>
@@ -124,7 +126,6 @@ const Contact = () => {
                 </svg>
               </div>
               <span>info@varnextrusion.in</span>
-
             </div>
 
             <div className={styles.contactItem}>

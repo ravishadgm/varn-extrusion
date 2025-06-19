@@ -47,7 +47,7 @@ function Products() {
       <SemiHeader
         title={
           <>
-            QB Corp. Produces Dependable Products <br />
+            Varn Extrusion Produces Dependable Products <br />
             With Unmatched Strength And Durability
           </>
         }

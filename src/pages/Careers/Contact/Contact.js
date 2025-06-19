@@ -53,59 +53,61 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  if (!validateForm()) return;
-  setIsSubmitting(true);
+    if (!validateForm()) return;
+    setIsSubmitting(true);
 
-  try {
-    const submissionData = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      submissionData.append(key, value);
-    });
-
-    const response = await fetch("http://localhost:5000/api/career", {
-      method: "POST",
-      body: submissionData,
-    });
-
-    const result = await response.json();
-
-    if (response.ok) {
-      alert(result.message || "Form submitted successfully!");
-
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        address: "",
-        city: "",
-        state: "",
-        zip: "",
-        position: "",
-        resume: null,
+    try {
+      const submissionData = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        submissionData.append(key, value);
       });
-    } else {
-      throw new Error(result.message || "Submission failed");
+
+      const response = await fetch("http://localhost:5000/api/career", {
+        method: "POST",
+        body: submissionData,
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert(result.message || "Form submitted successfully!");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          address: "",
+          city: "",
+          state: "",
+          zip: "",
+          position: "",
+          resume: null,
+        });
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Submission failed.");
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    console.error("Error:", error);
-    alert("Submission failed.");
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
   return (
     <>
       <div>
         <p className={styles.commitmentSection}>
-          QB Corporation’s commitment and extra attention to quality set us
-          apart. Quality to us is much more than just the essential product. It
-          is all of the aspects of the business, from sales to manufacturing to
-          shipping.
+          At VARN Extrusion Pvt. Ltd., our unwavering commitment to quality sets
+          us apart. For us, quality goes far beyond the final product — it’s
+          embedded in every aspect of our operations, from customer service and
+          precision manufacturing to surface finishing and reliable delivery.
+          Every profile we produce reflects our dedication to engineering
+          excellence and total customer satisfaction.
         </p>
       </div>
       <div className={styles.contactContainer}>

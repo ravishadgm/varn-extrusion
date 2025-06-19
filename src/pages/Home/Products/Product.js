@@ -45,9 +45,9 @@ const Product = () => {
           custom={0}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2>QB Corp. Products And Services</h2>
+          <h2>Varn Extrusion Products And Services</h2>
           <p>
-            QB Corporation offers more than just glulam beams – we provide a comprehensive solution that enhances your business capabilities.
+            Varn Extrusion  offers more than just glulam beams – we provide a comprehensive solution that enhances your business capabilities.
           </p>
         </motion.div>
 

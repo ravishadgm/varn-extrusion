@@ -5,13 +5,14 @@ const CorpProject = () => {
   return (
     <section className={styles.container}>
       <div className={styles.inner}>
-        <h2>QB Corp. Projects</h2>
+        <h2>VARN Extrusion Projects</h2>
         <p>
-          With QB Corporation’s products being amongst the best of the industry,
-          clients can trust in the strength, reliability, and versatility,
-          ensuring the success and longevity of their projects. While not every
-          project is able to be shared or seen after it’s finished, here are a
-          few projects we are fortunate enough to display.
+          With VARN Extrusion Pvt. Ltd. at the forefront of ultra-slim aluminium
+          profile innovation, our clients rely on us for unmatched precision,
+          durability, and design flexibility — key elements that ensure the
+          success and longevity of their projects. While many of our solutions
+          are integrated into projects not publicly showcased, here are a few
+          select applications we’re proud to highlight.
         </p>
       </div>
     </section>

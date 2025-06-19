@@ -5,7 +5,7 @@ function Careers() {
   const corpContent = {
     heading: (
       <>
-        Careers At QB Corp.
+        Careers At VARN Extrusion Pvt. Ltd.
       </>
     ),
     subtext: "Join Our Commitment to Excellence", 

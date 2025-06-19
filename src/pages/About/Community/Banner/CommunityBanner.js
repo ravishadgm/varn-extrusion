@@ -7,7 +7,7 @@ const CommunityBanner = () => {
   return (
     <section className={styles.banner}>
       <div className={styles.container}>
-        <h1 className={styles.title}>QB Corp's Community Involvement</h1>
+        <h1 className={styles.title}>VARN Extrusion’s Community Involvement</h1>
         <div className={styles.content}>
           <div className={styles.quote}>
             <p className={styles.quoteText}>
@@ -17,19 +17,22 @@ const CommunityBanner = () => {
           </div>
           <div className={styles.description}>
             <p>
-              QB Corporation is located in Salmon, Idaho. The setting of the
-              plant is adjacent to the Lemhi River. The Salmon River, “the river
-              of no return,” runs through downtown Salmon. The Bitterroot and
-              White Cloud mountain ranges provide a majestic backdrop to the
-              community.
+              VARN Extrusion Pvt. Ltd. is proudly based in India, operating from
+              a state-of-the-art manufacturing facility equipped with advanced
+              aluminium extrusion, coating, and fabrication technologies.
+              Surrounded by a dynamic industrial ecosystem, our location
+              supports efficient logistics and seamless nationwide and global
+              distribution.
             </p>
             <p>
-              River rafting, hiking and camping, Steelhead and Salmon fishing,
-              skiing, and hunting are all abundant in Salmon. QB supports the
-              community in a variety of ways. As a major employer, we provide
-              jobs for local families. We are active in the community and
-              support many community projects, including constructing a local
-              hospital and school.
+              VARN Extrusion Pvt. Ltd. is proud to play an active role in the
+              local community. As a major employer in the region, we provide
+              stable job opportunities for hundreds of skilled professionals and
+              their families. Beyond business, we are committed to supporting
+              community development through initiatives in education,
+              healthcare, and sustainability. From infrastructure contributions
+              to local partnerships, VARN is dedicated to building a stronger,
+              more inclusive future.
             </p>
           </div>
         </div>

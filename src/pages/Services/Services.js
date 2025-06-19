@@ -32,10 +32,10 @@ function Services() {
   return (
     <>
       <SemiHeader
-        title={<>QB Corp. Provides Exceptional Services</>}
+        title={<>Varn Extrusion Provides Exceptional Services</>}
         description={
           <>
-            QB Corporation offers more than glulam beam products – we provide a
+            Varn Extrusion offers more than glulam beam products – we provide a
             comprehensive solution that enhances your business capabilities.
           </>
         }

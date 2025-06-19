@@ -185,9 +185,9 @@ const News = () => {
   return (
   <section className={styles.newsSection}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>QB Corp. In The News</h2>
+        <h2 className={styles.heading}>VARN Extrusion In The News</h2>
         <p className={styles.subheading}>
-          Below you can find links to different media types, including QB Corporation, our products, and interviews with our staff members.
+  Below you can find links to various media features, including coverage of VARN Extrusion Pvt. Ltd., our innovative aluminium products, and interviews with key members of our team.
         </p>
         <div className={styles.grid}>
           {newsItems.map((item, index) => (
