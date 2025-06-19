@@ -27,15 +27,28 @@
 
 
 @media (max-width: 768px) {
-  .horizontalSection {
-    padding: 90px 20px;
-    align-items: start;
+  
+.manufacutureContainer{
+    width:100%;
+    padding-top:80px;
+    padding-bottom:60px;
+  }
 
-    h1 {
-      font-size: 2.2rem;
-      margin: 0;
+  .horizontalSection {
+    padding: 0px 10px;
+    align-items: start;
+    gap:0px;
+
+    .innerContent{
+      h1 {
+        font-size: 2.2rem;
+        margin: 0;
+        padding-left: 28px;
+      }
     }
   }
+
+  
 }
 
 @media (max-width: 480px){
@@ -48,10 +61,13 @@
 }
 
 .horizontalSection {
+  .innerContent{
     h1 {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       margin: 0;
-    }
+      padding-left: 10px;
+      padding-top: 40px;
+    }}
   }
 }
 
