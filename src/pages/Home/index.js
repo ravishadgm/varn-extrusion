@@ -3,7 +3,7 @@ import Hero from './Hero/Hero';
 import Product from './Products/Product';
 import Customer from './Customer/Customer';
 import Project from './Project/Project';
-import About from './About/About'
+import About from './AboutVarn/About'
 function index() {
   return (
     <>
