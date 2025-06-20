@@ -2,85 +2,79 @@
 
 .productsContainer {
   background-color: $color-white;
-  padding:2rem 6rem;
+  width: 1400px;
+  margin: auto;
+  @media (max-width: 1400px) {
+    width: 100%;
+    padding: 30px;
+  }
 
-  
-@media(max-width:768px){
- padding:2rem 1.5rem;
-}
+  @media (max-width: 768px) {
+    padding:1rem 1rem;
+  }
 
-@media(max-width:480px){
-padding:2rem 1rem;
-}
-
-  .productHeader{
-    width:100%;
+ 
+  .productHeader {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media(max-width:768px){
- flex-direction: column;
- align-items: flex-start;
- gap:1.5rem;
- }
-    
-    .heading{
-        width:60%;
-
-        h1{
-            font-size:32px;
-            font-weight: 700;
-        }
-
-        p{
-            font-size:16px;
-            padding:2px 0px;
-        }
-
-        @media(max-width:768px){
-          width:100%;
-        }
-
-        @media(max-width:480px){
-          width:100;
-           
-          h1{
-            font-size: 22px;
-
-          }
-
-          p{
-            font-size:14px;
-            font-weight:600;
-          }
-        }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
     }
 
-   
+    .heading {
+      width: 60%;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 2px 0px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        width: 100;
+
+        h1 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
 
+.card {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem 0rem;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 
- .card {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        padding: 3rem 0rem;
-        border:1 px sold black;
-        border-radius:10px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-             @media(max-width:768px){
-                gap:2.2rem;
-            }
-            @media(max-width:480px){
-                gap:1.2rem;
-                align-items: center;
-                
-            }
-          
-  
-    }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
 
 .button {
   background: transparent;
@@ -107,13 +101,7 @@ padding:2rem 1rem;
     }
   }
 
-
-  @media(max-width:480px){
-
-         padding: 0.65rem 1rem;
-        }
+  @media (max-width: 480px) {
+    padding: 0.65rem 1rem;
+  }
 }
-
-
-
-

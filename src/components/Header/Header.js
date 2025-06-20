@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 import Images from "@assets/images";
 import {
@@ -36,30 +36,7 @@ const navLinks = [
         path: "/services/truss-assembly",
         isReal: true,
       },
-      {
-        title: "Structural Engineering",
-        icon: <FaDraftingCompass />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Surface Treatment & Finishing",
-        icon: <FaShieldAlt />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Custom System Design",
-        icon: <FaLaptopCode />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Automation & ERP Integration",
-        icon: <FaCogs />,
-        path: "/services",
-        isReal: false,
-      },
+    
     ],
   },
   // { name: "Technical", path: "/technical" },
@@ -69,6 +46,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesModalOpen, setServicesModalOpen] = useState(false);
   const hoverTimeoutRef = useRef(null);
@@ -222,7 +200,7 @@ const Header = () => {
                 <h4>
                   Strengthen Your Builds with Varn's Dedicated Aluminum Experts
                 </h4>
-                <button className={styles.hireUsBtn}>Hire Us</button>
+                <button className={styles.hireUsBtn} onClick={()=>{navigate('/contact');closeMenu(); setServicesModalOpen(false) }}>Contact Us</button>
               </div>
             </div>
             <div className={styles.featuresSection}>

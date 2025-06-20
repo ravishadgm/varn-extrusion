@@ -16,12 +16,13 @@ function index() {
       <Business />
       {/* <Product /> */}
       <Services />
+            <About />
       <TrustedByBrands />
       <WhyUs />
-      <Customer />
+      {/* <Customer /> */}
 
-      <Project />
-      <About />
+      {/* <Project /> */}
+
     </>
   )
 }
