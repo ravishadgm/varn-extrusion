@@ -6,7 +6,6 @@
   display: flex;
   min-height: 100vh;
   font-family: "Arial", sans-serif;
-  background-color: $gray-bg;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -28,10 +27,6 @@
     min-height: 35vh;
     padding: 0px 33px;
   }
-
-   
-
-  
 }
 
 .leftContent {
@@ -43,14 +38,6 @@
   @media (max-width: 768px) {
     align-items: center; // horizontally centers content
     text-align: center; // ensures text like paragraphs align nicely
-    padding:3rem 0rem;
-    padding-bottom:20rem;
-  }
-
-   @media (max-width: 480px) {
-    padding:0rem 0rem;
-   padding-bottom:200px;
-   margin:0;
   }
 }
 
@@ -67,7 +54,6 @@
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
-    text-align: start;
   }
 
   @media (max-width: 480px) {
@@ -83,10 +69,8 @@
   width: 300px;
 
   @media (max-width: 768px) {
-    width:100%;
     font-size: 1rem;
     margin-bottom: 2rem;
-    text-align: start;
   }
 }
 
@@ -98,9 +82,6 @@
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    text-align: start;
-    
-    
   }
 }
 
@@ -114,7 +95,7 @@
     flex-shrink: 0;
     width: 24px;
     height: 24px;
-    color: $dark-text;
+    color: $gray-bg;
     margin-top: 2px;
   }
 
@@ -185,15 +166,11 @@
 
   @media (max-width: 768px) {
     padding: 2rem;
-    margin-top:-45%;
   }
 
   @media (max-width: 480px) {
     padding: 1.5rem;
-    margin-top:-55%;
   }
-
-   
 }
 
 .formTitle {
@@ -212,8 +189,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
- 
 }
 
 .formRow {
@@ -360,21 +335,25 @@ font-size: .9em;
   flex-direction: column; // stack children vertically by default
   align-items: center;
   text-align: center;
-  padding: 5em 1em; // horizontal padding for small screens
+      padding: 0em 5em 4em 5em;
   width: 90vw;
   max-width: 800px;
   margin: auto;
   font-size: 1.5em;
 
+ @media (max-width: 1024px) {
+    padding: 4em 0em;
+
+  }
+
   @media (max-width: 768px) {
     font-size: 1.2em; // slightly smaller font on tablets
-    padding: 4em 0em;
-    text-align: start;
+    padding: 4em 1em;
   }
 
   @media (max-width: 480px) {
     font-size: 1em; // even smaller on mobile
-    padding: 3em 0em;
+    padding: 3em 1em;
   }
 }
 

@@ -21,7 +21,7 @@ const companyLinks = [
   { name: "Projects", href: "/projects" },
   // { name: "Community", href: "/about/community" },
   { name: "In the News", href: "/about/news" },
-  { name: "Careers", href: "careers" },
+  { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
 
