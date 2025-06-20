@@ -106,23 +106,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Strengths Section */}
-      <section className={styles.strengthsSection}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Our Strengths</h2>
-          <div className={styles.strengthsGrid}>
-            {strengthsData.map((strength, index) => (
-              <div key={index} className={styles.strengthCard}>
-                <div className={styles.strengthIcon}>
-                  {strength.icon}
-                </div>
-                <h4>{strength.title}</h4>
-                <p>{strength.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
     
 
