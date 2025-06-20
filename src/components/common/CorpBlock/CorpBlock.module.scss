@@ -21,6 +21,9 @@
     padding-left: 5vw;
     padding-right: 5vw;
     position: relative;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 }
 .sideImageSection {
     grid-column-gap: 6em;
@@ -45,11 +48,14 @@
     position: relative;
 }
 .heroHeadingBlock {
-    grid-row-gap: 2em;
+    grid-row-gap: 1em;
     flex-direction: column;
     max-width: 720px;
-    display: flex
-;
+    display: flex;
+
+      @media screen and (max-width: 768px) {
+       grid-row-gap:0em;
+    }
 }
 .headingLarge{
   
