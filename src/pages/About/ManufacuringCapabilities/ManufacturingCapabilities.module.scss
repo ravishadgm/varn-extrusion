@@ -27,28 +27,15 @@
 
 
 @media (max-width: 768px) {
-  
-.manufacutureContainer{
-    width:100%;
-    padding-top:80px;
-    padding-bottom:60px;
-  }
-
   .horizontalSection {
-    padding: 0px 10px;
+    padding: 90px 20px;
     align-items: start;
-    gap:0px;
 
-    .innerContent{
-      h1 {
-        font-size: 2.2rem;
-        margin: 0;
-        padding-left: 28px;
-      }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
     }
   }
-
-  
 }
 
 @media (max-width: 480px){
@@ -61,13 +48,10 @@
 }
 
 .horizontalSection {
-  .innerContent{
     h1 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       margin: 0;
-      padding-left: 10px;
-      padding-top: 40px;
-    }}
+    }
   }
 }
 

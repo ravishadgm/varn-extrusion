@@ -48,10 +48,6 @@
       padding: 12px 0;
       border-bottom: 2px solid transparent;
 
-       &:not(.active):hover {
-        color:$secondary-color;
-      }
-
     
 
       &:active {
@@ -182,7 +178,7 @@
 .card h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card ul {
@@ -198,11 +194,9 @@
   margin-bottom: 0.5rem;
   line-height: 1.4;
   font-weight:600;
-  
 }
 
 .cardImage {
-  margin-top: 2rem;;
   width: 100%;
   height: auto;
 }
@@ -224,15 +218,14 @@
   }
 
   .navTabs {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0px;
+    border-bottom: none;
     
 
     ul {
       display: flex;
       gap: 24px;
 
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       margin: 0;
       overflow-x: auto;
       overflow-y: hidden;
@@ -253,19 +246,13 @@
 
 
   .documentCard {
-      width:100%;
+    width:90vw;
       display: flex;
-      flex-flow:row;
       // align-items: center;
       justify-content: space-between;
-      align-items: center;
-   
-
-      p{
-        width:60%;
-        margin-bottom: 0px;
-        padding:10px 0px;
-      }
+      flex-wrap: wrap;
+      gap: clamp(1rem, 2.5vw, 2rem); 
+      width: 100%;
   }}
 
   .cardAdhevsives{
@@ -298,9 +285,7 @@
 
 }
 
-.beamLayupsWrapper {
- margin-bottom:40px;
-}
+
    
 }
 
@@ -313,7 +298,6 @@
 }
 
 .horizontalSection {
-  padding: 80px 25px;
     h1 {
       font-size: 1.9rem;
       margin: 0;
@@ -321,7 +305,7 @@
   }
 
   .contentSection{
-    padding: 20px 1px 20px 1px;
+    padding: 20px 1px;
     gap: 20px;
   }
     
@@ -343,46 +327,15 @@
       font-size: 1.1rem;
       gap:0rem;
     }
-
-      .documentCard {
-    // align-items: start;
-    // text-align: left;
-    // flex-direction: column;
-    // gap:0rem;
-    // width:90vw;
-    
-    width:100%;
-      display: flex;
-      flex-flow:column;
-      padding: 10px 15px 22px 15px;
-      // align-items: center;
-     
-      align-items: flex-start;
-   
-
-      p{
-        width:100%;
-        margin-bottom: 0px;
-        padding:10px 0px;
-      }
-    
-}
 }
 
-.navTabs{
-  ul{
-    padding-bottom: 5px;
-  }
+.documentCard{
+   padding: 14px 16px;
+
+    p {
+      font-size: 0.75rem;
+    }
 }
-
-// .documentCard{
-//    padding: 14px 16px;
-
-//     p {
-//       font-size: 0.75rem;
-   
-//     }
-// }
  
 .pdfButton{
      padding: 6px 14px;
@@ -408,11 +361,15 @@
     flex: unset;
   }
 
+  .documentCard {
+    align-items: start;
+    text-align: left;
+  flex-direction: column;
+  gap:0rem;
+  width:90vw;
 
-
-.beamLayupsWrapper {
- margin-bottom:40px;
 }
+
 
 }
 

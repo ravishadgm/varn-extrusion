@@ -26,7 +26,7 @@ const QualityAssurance = () => {
             <div className={styles.sideInfo}>
                 <h3>Span and Load Charts</h3>
                 <div className={styles.documentCard}>
-                    <p>Douglas Fir - Larch Glulam PLF Charts::</p>
+                    <p>AITC Technical Note 21:</p>
 
                     <a
                         href="https://drive.google.com/file/d/1lio3vi12HfSFiXJsjRL9YvaoFvEn1B_s/view"

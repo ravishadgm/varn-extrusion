@@ -1,14 +1,12 @@
 @import '../../../../styles/variables';
 
 .container {
-  padding: 80px 130px;
+  padding: 80px 100px;
   background-color: $gray-bg;
-  padding-top:15rem;
 
   h1 {
     font-size: 32px;
     margin-bottom: 40px;
-    width:50%;
   }
 }
 
@@ -53,13 +51,11 @@
 
 @media (max-width: 768px) {
  .container{
-    padding: 50px 50px;
-    padding-top:9rem;
+    padding: 80px 50px;
 
      h1 {
     font-size: 25px;
     margin-bottom: 25px;
-    width:100%;
   }
 }
 .card{
@@ -74,7 +70,6 @@
  @media (max-width: 480px) {
     .container{
         padding:50px 30px;
-         padding-top:6rem;
     }
 
     .card{
