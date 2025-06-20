@@ -2,7 +2,16 @@
 
 .featuresSection {
   background-color: $color-white;
-  padding: 5em 1.5em;
+  padding: 0em 1.5em;
+
+  @media (max-width: 1024px) {
+    .featuresSection {
+      padding: 6em 1.5em;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 3em 1.5em;
+  }
 }
 
 .container {
@@ -13,8 +22,6 @@
   align-items: flex-start;
   gap: 4em;
   flex-wrap: wrap;
-
-
 }
 
 .left {
@@ -47,8 +54,8 @@
   font-style: italic;
   color: $dark-text;
 }
-.grayBg{
-    background-color: $gray-bg;
+.grayBg {
+  background-color: $gray-bg;
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,7 +79,6 @@
 @media screen and (max-width: 480px) {
   .container {
     text-align: start;
- 
   }
 
   .left h2 {
@@ -84,16 +90,13 @@
   }
 }
 
-
-
 .qbSection {
   padding: 60px 20px;
   background-color: $color-white;
   font-family: "Inter", sans-serif;
 
-
-  @media (max-width:480px){
-    padding:60px 15px;
+  @media (max-width: 480px) {
+    padding: 60px 15px;
   }
 }
 
@@ -121,9 +124,9 @@
     margin-bottom: 20px;
     text-align: left;
 
-    @media(max-width:480px){
+    @media (max-width: 480px) {
       font-size: 1.5rem;
-      width:70%;
+      width: 70%;
     }
   }
 
@@ -179,61 +182,54 @@
         color: $dark-text;
         font-size: 1.1rem;
       }
-
     }
 
-    @media (max-width:480px){
+    @media (max-width: 480px) {
       width: 100%;
       align-items: flex-start;
       margin: 0;
       border-radius: 0px;
-      padding:1rem 5rem 1rem 1rem;
+      padding: 1rem 5rem 1rem 1rem;
     }
   }
-
 }
 
+.errorMessage {
+  padding: 1rem 3rem;
 
-.errorMessage{
-  padding:1rem 3rem;
-
-  @media(max-width:768px){
-    padding:0rem 1.5rem 2rem 1.5rem; 
+  @media (max-width: 768px) {
+    padding: 0rem 1.5rem 2rem 1.5rem;
   }
 
-  @media(max-width:480px){
-    padding:0rem 1.2rem 2rem 1.2rem;
+  @media (max-width: 480px) {
+    padding: 0rem 1.2rem 2rem 1.2rem;
   }
 }
 
 .warningBox {
-    margin:15px 0px;
-    background-color: #ffeded; 
-    border-radius: 4px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-size: 14px;
-    line-height: 1.5; 
+  margin: 15px 0px;
+  background-color: #ffeded;
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .icon {
-    margin-top: 2px;
+  margin-top: 2px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .warningBox {
+    font-size: 14px;
+  }
+
+  .icon {
     font-size: 18px;
-    flex-shrink: 0;
+  }
 }
-
-
-
-@media (max-width: 480px){
-    .warningBox {
-        font-size:14px;
-    }
-
-    .icon{
-           font-size: 18px;
-    }
-}
-
-

@@ -97,11 +97,15 @@
 }
 
 
-
+@media (max-width: 1024px) {
+   .containerBox {
+    padding: 25px 30px;
+  }
+}
 
 @media (max-width: 768px) {
    .containerBox {
-    padding: 0px 30px;
+    padding: 25px 30px;
   }
 
   .sizingSection {

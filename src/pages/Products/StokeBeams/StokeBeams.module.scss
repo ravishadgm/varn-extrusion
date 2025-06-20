@@ -1,12 +1,13 @@
 .stokeContainer{
     width:100%;
-    padding:90px 120px;
+    padding:5px 120px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 .stokeContainer{
     padding:60px 30px;
 }}
+
+
 
 @media (max-width: 480px) {
     .stokeContainer{

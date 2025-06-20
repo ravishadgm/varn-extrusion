@@ -360,11 +360,16 @@ font-size: .9em;
   flex-direction: column; // stack children vertically by default
   align-items: center;
   text-align: center;
-  padding: 5em 1em; // horizontal padding for small screens
+      padding: 0em 5em 4em 5em;
   width: 90vw;
   max-width: 800px;
   margin: auto;
   font-size: 1.5em;
+
+ @media (max-width: 1024px) {
+    padding: 4em 0em;
+
+  }
 
   @media (max-width: 768px) {
     font-size: 1.2em; // slightly smaller font on tablets
