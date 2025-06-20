@@ -2,38 +2,30 @@
 
 .heroSection {
   width: 100%;
-  height: 70vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .videoBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
-  z-index: 0; 
-}
-
-.imageContainer {
-  display: none;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .overlay {
   background-color: $primary-green;
-  width: 75%;
-  padding: 4rem 2rem;
+  width: 100%;
+  margin: 0;
+  padding-top: 0;
+  padding: 0rem 2rem;
   color: $color-white;
-  position: absolute;
-  bottom: -11rem;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; // Above video
 }
 
 .content {
@@ -42,7 +34,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  gap: 2rem;
 }
 
 .left {
@@ -50,16 +43,15 @@
   padding-right: 2rem;
 
   h1 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: 2.2rem;   
     line-height: 1.3;
     font-weight: bold;
-    width: 100%;
+    margin-bottom: 1rem;
   }
 
   p {
-    margin-top: 1rem;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    font-weight: bold;
+    font-size: 1.1rem;    
+    font-weight: 600;
     line-height: 1.5;
   }
 }
@@ -72,25 +64,24 @@
 
   p {
     margin-bottom: 1.5rem;
-    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    font-size: 1.05rem;   
     line-height: 1.6;
-    text-align: left;
   }
 }
 
 .ctaButton {
   padding: 1rem 2rem;
+  font-size: 1rem;      
   font-weight: bold;
   border-radius: 999px;
   border: 1px solid #ffffff40;
   cursor: pointer;
-  transition: background 0.3s;
   color: $color-white;
   text-decoration: none;
-  font-size: clamp(0.9rem, 2.3vw, 1rem);
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: background 0.3s, color 0.3s;
 
   &:hover {
     background: $color-white;
@@ -98,61 +89,27 @@
   }
 }
 
-/* ========== Mobile Responsive ========== */
 @media (max-width: 1400px) {
-
   .overlay {
-    width: 90%;
+    padding: 5rem 1.5rem;
   }
-
 }
+
 @media (max-width: 768px) {
-  
-
-  .videoBackground {
-        position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  // .imageContainer {
-  //   display: none;
-  // }
-
-  .overlay {
-     position: relative;
-        left: auto;
-        transform: none;
-        width: 100%;
-        /* padding: 2rem 1rem; */
-        display: block;
-        width: 100%;
-        bottom: -17rem;
-    
-  }
-
   .content {
     flex-direction: column;
   }
 
-  .left {
+  .left,
+  .right {
     padding-right: 0;
-
-    h1 {
-      width: 100%;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      margin-top: 0.5rem;
-    }
   }
 
   .right {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .videoBackground {
+    height: 300px;
   }
 }

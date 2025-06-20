@@ -1,0 +1,60 @@
+@import "../../../styles/variables";
+
+.businessContainer {
+  width: 100%;
+  height:auto;
+  padding: 6rem 2rem;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.businessHeading {
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.4rem;
+    color: $primary-green;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+.businessContent {
+  max-width: 900px;
+
+  p {
+    font-size: 1.1rem;
+    color: $dark-text;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .businessContainer {
+    padding: 3rem 1.5rem;
+    align-items: flex-start;
+  text-align: start;
+  }
+
+  .businessHeading h1 {
+    font-size: 2rem;
+  }
+
+  .businessContent p {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:480px){
+  .businessContainer {
+    padding: 3rem 1rem;
+  }
+
+  .businessHeading h1 {
+    font-size: 1.7rem;
+  }
+}
