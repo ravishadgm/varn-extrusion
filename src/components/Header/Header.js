@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-import React, { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
-=======
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
->>>>>>> Stashed changes
 import styles from "./Header.module.scss";
 import {
   FaIndustry,
@@ -35,33 +30,6 @@ const navLinks = [
         path: "/services/truss-assembly",
         isReal: true,
       },
-<<<<<<< Updated upstream
-      {
-        title: "Structural Engineering",
-        icon: <FaDraftingCompass />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Surface Treatment & Finishing",
-        icon: <FaShieldAlt />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Custom System Design",
-        icon: <FaLaptopCode />,
-        path: "/services",
-        isReal: false,
-      },
-      {
-        title: "Automation & ERP Integration",
-        icon: <FaCogs />,
-        path: "/services",
-        isReal: false,
-      },
-=======
->>>>>>> Stashed changes
     ],
   },
   { name: "Company Varn", path: "/about" },
