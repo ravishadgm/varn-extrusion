@@ -1,11 +1,12 @@
 @import "../../styles/variables";
 
 .header {
-  background: $color-white;
+  background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
+  position: fixed; 
   top: 0;
   z-index: 999;
+  width: 100%;
 }
 
 .headerContainer {
@@ -25,6 +26,7 @@
 .headerNav {
   display: flex;
   gap: 2rem;
+  
 
   a {
     text-transform: uppercase;
@@ -319,7 +321,7 @@
 
 .open {
   display: flex !important;
-  height: 100vh;
+  height:fit-content;
   flex-direction: column;
 }
 
@@ -381,160 +383,376 @@
 
 }
 
-@media (max-width: 768px) {
-  .headerNav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background: $color-white;
-    border-top: 1px solid #ddd;
-    padding: 1rem;
-    display: none;
-    z-index: 999;
-  }
+  @media (max-width: 768px) {
+    .header{
+      position: relative;
+    }
+    .headerNav {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: $color-white;
+      border-top: 1px solid #ddd;
+      padding: 1rem;
+      display: none;
+      height: 100vh;
+      z-index: 999;
+    }
 
-  .headerSeparator {
-    display: none;
-  }
-
-  .headerMenuIcon {
-    display: flex;
-    flex-direction: column;
-  }
-
-  // Mobile modal styles
-  .servicesModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    transform: none;
-    animation: mobileModalFadeIn 0.3s ease-out;
-
-    &::before,
-    &::after {
+    .headerSeparator {
       display: none;
     }
+
+    .headerMenuIcon {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // Mobile modal styles
+    .servicesModal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      transform: none;
+      animation: mobileModalFadeIn 0.3s ease-out;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .modalContent {
+      width: 100%;
+      margin: 2rem 0;
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+      background: #f4f9ff;
+      padding-bottom: 2rem;
+    }
+
+    // Enhanced close button styling for mobile
+
+    .servicesGrid {
+      grid-template-columns: 1fr;
+      padding: 1rem 0;
+    }
+
+    .featuresSection {
+      padding: 1.5rem 2rem;
+    }
+
+    .featuresGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .featureItem h5 {
+      font-size: 12px;
+    }
+
+    .featureIcon {
+      width: 40px;
+      height: 40px;
+      font-size: 1.25rem;
+    }
+
+    .ctaSection {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
   }
 
-  .modalContent {
-    width: 100%;
-    margin: 2rem 0;
-    max-height: calc(100vh - 4rem);
-    overflow-y: auto;
-    background: #f4f9ff;
-    padding-bottom: 2rem;
+  @keyframes mobileModalFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
-  // Enhanced close button styling for mobile
+  @media (max-width: 480px) {
+    .headerLogo img {
+      height: 50px;
+    }
 
-  .servicesGrid {
-    grid-template-columns: 1fr;
-    padding: 1rem 0;
+    .modalContent {
+      margin: 1rem 0 3rem 0;
+      max-height: calc(100vh - 4rem);
+      padding-bottom: 2rem;
+    }
+
+
+    .featuresSection {
+      padding: 1rem;
+    }
+
+    .featuresGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .serviceItem {
+      padding: 15px;
+      margin: 0 0.5rem;
+    }
+
+    .modalHeader {
+      padding: 15px;
+    }
+
+    .modalFooter {
+      padding: 15px;
+    }
   }
 
-  .featuresSection {
-    padding: 1.5rem 2rem;
+  .mobileCloseBtn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001;
+    padding: 5px;
+    
+    /* Hide on desktop/tablet devices */
+    @media (min-width: 769px) {
+      display: none;
+    }
+    
+    /* Show only on mobile devices */
+    @media (max-width: 768px) {
+      display: block;
+    }
+    
+    &:hover {
+      color: #666;
+    }
+  }
+  .mobileAccordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #f9f9f9;
+
+  &.open {
+    max-height: 1000px; // large enough to contain all dropdown items
   }
 
-  .featuresGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .accordionContent {
+    padding: 0.5rem 1rem;
   }
 
-  .featureItem h5 {
-    font-size: 12px;
-  }
+  .accordionItem {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
 
-  .featureIcon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.25rem;
-  }
+    &:hover {
+      background-color: #f0f0f0;
+    }
 
-  .ctaSection {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-
-    h4 {
-      font-size: 16px;
+    .accordionIcon {
+      margin-right: 0.5rem;
     }
   }
 }
+// Dropdown container
 
-@keyframes mobileModalFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.dropdownMenu {
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.mainDropMenu {
+ position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #f5faff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  padding: 40px 0;
+  margin-top: 0;
+  border-radius: 0 0 12px 12px;
+
+  
+  // Ensure it doesn't go outside viewport
+  @media (max-width: 1200px) {
+    width: 95vw;
+    left: 0;
+    transform: translateX(-50%);
+    margin-left: 50vw;
   }
 }
 
-@media (max-width: 480px) {
-  .headerLogo img {
-    height: 50px;
-  }
 
-  .modalContent {
-    margin: 1rem 0 3rem 0;
-    max-height: calc(100vh - 4rem);
-    padding-bottom: 2rem;
-  }
-
-
-  .featuresSection {
-    padding: 1rem;
-  }
-
-  .featuresGrid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .serviceItem {
-    padding: 15px;
-    margin: 0 0.5rem;
-  }
-
-  .modalHeader {
-    padding: 15px;
-  }
-
-  .modalFooter {
-    padding: 15px;
-  }
-}
-
-.mobileCloseBtn {
+// Optional: Add a small invisible bridge to prevent gaps
+.navItem.hasDropdown::after {
+  content: '';
   position: absolute;
-  top: 12px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: #333;
-  z-index: 1001;
-  padding: 5px;
-  
-  /* Hide on desktop/tablet devices */
-  @media (min-width: 769px) {
-    display: none;
-  }
-  
-  /* Show only on mobile devices */
-  @media (max-width: 768px) {
-    display: block;
-  }
-  
-  &:hover {
-    color: #666;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2px; // Small invisible bridge
+  background: transparent;
+  z-index: 999;
+}
+
+.dropdownHeader {
+  font-size: 18px;
+  font-weight: 700;
+  color: #9e9e9e;
+  margin-bottom: 24px;
+}
+
+.dropdownGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom:15px;
+  border-bottom: 2px solid lightgray;
+}
+
+.dropdownItem {
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover .dropdownTitle {
+    color: #0b3b67;
   }
 }
+
+.dropdownIcon {
+  background: #eef5ff;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdownTitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.empowerSection {
+  text-align: center;
+  margin-bottom: 32px;
+      display: flex
+;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid lightgray;
+    align-items: center;
+}
+
+.empowerText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.hireButton {
+  background: #0b3860;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #072e4f;
+  }
+}
+
+.benefitsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 30px;
+}
+
+.benefitIcon {
+  background-color: #f2f6fc; // light background (customize per icon if needed)
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #6941c6; // sample purple tone like in your screenshot
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.benefitIcon {
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitIcon.delivery {
+  background-color: #f4efff;
+  color: #6941c6;
+}
+
+.benefitIcon.transparency {
+  background-color: #e0fbff;
+  color: #02799e;
+}
+
+.benefitIcon.communication {
+  background-color: #ffeee8;
+  color: #bc4313;
+}
+
+.benefitIcon.models {
+  background-color: #fff5e0;
+  color: #b54708;
+}
+
