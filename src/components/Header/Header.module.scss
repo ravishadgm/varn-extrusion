@@ -3,7 +3,8 @@
 .header {
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: fixed; 
+  position: relative; // this is okay
+  overflow: visible;  // important 
   top: 0;
   z-index: 999;
   width: 100%;
@@ -21,11 +22,14 @@
 .headerLogo img {
   height: 48px;
   object-fit: contain;
+  position: relative;
+  z-index: 1001;
+
 }
 
 .headerNav {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   
 
   a {
@@ -332,10 +336,6 @@
     padding: 1rem 2rem;
   }
 
-  .headerLogo img {
-    height: 60px;
-  }
-
   .headerNav {
     gap: 1.2rem;
   }
@@ -363,10 +363,6 @@
     padding: 1rem 1.5rem;
   }
 
-  .headerLogo img {
-    height: 56px;
-    max-width: 160px;
-  }
 
   .servicesModal {
     width: 700px;
@@ -484,9 +480,7 @@
   }
 
   @media (max-width: 480px) {
-    .headerLogo img {
-      height: 50px;
-    }
+  
 
     .modalContent {
       margin: 1rem 0 3rem 0;
@@ -545,67 +539,136 @@
     }
   }
   .mobileAccordion {
-  max-height: 0;
+max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  background: #f9f9f9;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-top: 0.5rem;
+
 
   &.open {
     max-height: 1000px; // large enough to contain all dropdown items
   }
 
   .accordionContent {
-    padding: 0.5rem 1rem;
-  }
-
-  .accordionItem {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 0;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-
-    &:hover {
-      background-color: #f0f0f0;
+    padding: 1rem;
+     .dropdownHeader {
+      font-weight: 700;
+      color: #999;
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
-    .accordionIcon {
-      margin-right: 0.5rem;
+     .accordionItem {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      .accordionIcon {
+        background: #e8f0ff;
+        padding: 0.5rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      .accordionTitle {
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
     }
   }
+
 }
 // Dropdown container
-
-.dropdownMenu {
-  margin: auto;
-  width: 80%;
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.mainDropMenu {
- position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: #f5faff;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-  padding: 40px 0;
-  margin-top: 0;
-  border-radius: 0 0 12px 12px;
 
-  
-  // Ensure it doesn't go outside viewport
-  @media (max-width: 1200px) {
-    width: 95vw;
-    left: 0;
-    transform: translateX(-50%);
-    margin-left: 50vw;
+
+.navItem {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  // Optional hover style
+  &:hover {
+    color: #007aff;
   }
 }
+.mainDropMenu {
+ position: absolute;
+ top: calc(100% + 0px);
+ left: 50%;
+ transform: translateX(-50%);
+ width: 100vw;
+ background-color: white;
+ z-index: 999;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ overflow: hidden;
+
+ @media (max-width: 768px) {
+   position: static;
+   transform: none;
+   width: 100%;
+   box-shadow: none;
+   border-radius: 0;
+ }
+}
+
+.dropdownWrapper {
+//  position: relative;
+
+ &::before {
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   height: 5px;
+   background: transparent;
+   z-index: 998;
+ }
+}
+
+.dropdownMenu {
+  background-color: #f5faff;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  
+  a {
+    padding: 0.75rem 0;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #007aff;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+
 
 
 // Optional: Add a small invisible bridge to prevent gaps
@@ -756,3 +819,14 @@
   color: #b54708;
 }
 
+.dropdownTrigger {
+  position: relative;
+  display: inline-block;
+}
+.innerMenu{
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 17px 30px;
+  border-radius: 12px;
+}

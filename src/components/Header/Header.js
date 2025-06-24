@@ -10,6 +10,7 @@ import {
   FaComments,
 } from "react-icons/fa";
 import Images from "@assets/images";
+
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Products", path: "/products" },
@@ -41,6 +42,7 @@ const Header = () => {
   const [servicesOpenMobile, setServicesOpenMobile] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [dropdownTimeout, setDropdownTimeout] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -56,46 +58,68 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Clean up timeout on component unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout);
+      }
+    };
+  }, [dropdownTimeout]);
+
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => {
     setMenuOpen(false);
     setServicesOpenMobile(false);
     setShowDropdown(false);
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout);
+      setDropdownTimeout(null);
+    }
   };
+  
   const toggleMobileServices = (e) => {
     e.preventDefault();
     setServicesOpenMobile((prev) => !prev);
   };
 
-  let hoverTimeout;
-
-  const handleMouseEnter = () => {
+  // Navigation item mouse handlers
+  const handleNavMouseEnter = () => {
     if (!isMobile) {
-      if (hoverTimeout) clearTimeout(hoverTimeout);
+      // Clear any existing timeout
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout);
+        setDropdownTimeout(null);
+      }
       setShowDropdown(true);
     }
   };
 
-  const handleMouseLeave = () => {
+  const handleNavMouseLeave = () => {
     if (!isMobile) {
-      hoverTimeout = setTimeout(() => {
+      // Add a delay before closing
+      const timeout = setTimeout(() => {
         setShowDropdown(false);
-      }, 150);
+      }, 150); // 150ms delay
+      setDropdownTimeout(timeout);
     }
   };
 
+  // Dropdown menu mouse handlers
   const handleDropdownMouseEnter = () => {
     if (!isMobile) {
-      if (hoverTimeout) clearTimeout(hoverTimeout);
-      setShowDropdown(true);
+      // Clear timeout when entering dropdown
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout);
+        setDropdownTimeout(null);
+      }
     }
   };
 
   const handleDropdownMouseLeave = () => {
     if (!isMobile) {
-      hoverTimeout = setTimeout(() => {
-        setShowDropdown(false);
-      }, 150);
+      // Close immediately when leaving dropdown
+      setShowDropdown(false);
     }
   };
 
@@ -115,130 +139,143 @@ const Header = () => {
             const isServices = link.name.toLowerCase() === "services";
 
             return (
-              <div
-                key={link.name}
-                className={`${styles.navItem} ${
-                  isServices ? styles.hasDropdown : ""
-                }`}
-                onMouseEnter={isServices ? handleMouseEnter : undefined}
-                onMouseLeave={isServices ? handleMouseLeave : undefined}
-              >
-                <NavLink
-                  to={link.path}
-                  onClick={(e) => {
-                    if (isMobile && isServices) {
-                      e.preventDefault();
-                      toggleMobileServices(e);
-                    } else {
-                      closeMenu();
-                    }
-                  }}
-                  className={({ isActive }) =>
-                    `${styles.navLink} ${isActive ? styles.active : ""}`
-                  }
-                >
-                  {link.name}
-                  {isServices && (
-                    <span
-                      className={`${styles.dropdownArrow} ${
-                        servicesOpenMobile ? styles.rotated : ""
-                      }`}
-                    >
-                      ▼
-                    </span>
-                  )}
-                </NavLink>
-
-                {/* Desktop Dropdown */}
-                {isServices && showDropdown && !isMobile && (
+              <div key={link.name} className={styles.navItem}>
+                {isServices ? (
                   <div
-                    className={styles.mainDropMenu}
-                    onMouseEnter={handleDropdownMouseEnter}
-                    onMouseLeave={handleDropdownMouseLeave}
+                    className={styles.dropdownWrapper}
+                    
                   >
-                    <div className={styles.dropdownMenu}>
-                      <h4 className={styles.dropdownHeader}>
-                        OUR KEY SERVICES
-                      </h4>
+                    <NavLink
+    to={link.path}
+    onMouseEnter={handleNavMouseEnter}  // Add here
+    onMouseLeave={handleNavMouseLeave}  // Add here
+    onClick={(e) => {
+      if (isMobile) {
+        e.preventDefault();
+        toggleMobileServices(e);
+      } else {
+        e.preventDefault();
+        setShowDropdown((prev) => !prev);
+      }
+    }}
+                      className={({ isActive }) =>
+                        `${styles.navLink} ${isActive ? styles.active : ""}`
+                      }
+                    >
+                      {link.name}
+                      <span
+                        className={`${styles.dropdownArrow} ${
+                          servicesOpenMobile ? styles.rotated : ""
+                        }`}
+                      >
+                        ▼
+                      </span>
+                    </NavLink>
 
-                      <div className={styles.dropdownGrid}>
-                        {link.dropdownItems.map((item, i) => (
-                          <NavLink
-                            key={i}
-                            to={item.path}
-                            className={styles.dropdownItem}
-                            onClick={closeMenu}
-                          >
-                            <div className={styles.dropdownIcon}>{item.icon}</div>
-                            <span className={styles.dropdownTitle}>
-                              {item.title}
-                            </span>
-                          </NavLink>
-                        ))}
+                    {/* Desktop Dropdown */}
+                    {!isMobile && showDropdown && (
+                      <div 
+                        className={styles.mainDropMenu}
+                        onMouseEnter={handleDropdownMouseEnter}
+                        onMouseLeave={handleDropdownMouseLeave}
+                      >
+                        <div className={styles.dropdownMenu}>
+                          <div className={styles.innerMenu}>
+                            <h4 className={styles.dropdownHeader}>
+                              OUR KEY SERVICES
+                            </h4>
+
+                            <div className={styles.dropdownGrid}>
+                              {link.dropdownItems?.map((item, i) => (
+                                <NavLink
+                                  key={i}
+                                  to={item.path}
+                                  className={styles.dropdownItem}
+                                  onClick={closeMenu}
+                                >
+                                  <div className={styles.dropdownIcon}>
+                                    {item.icon}
+                                  </div>
+                                  <span className={styles.dropdownTitle}>
+                                    {item.title}
+                                  </span>
+                                </NavLink>
+                              ))}
+                            </div>
+
+                            <div className={styles.empowerSection}>
+                              <p className={styles.empowerText}>
+                                Empower Your Business with Dedicated Developers
+                                On Board
+                              </p>
+                              <button
+                                className={styles.hireButton}
+                                onClick={() => {
+                                  closeMenu();
+                                  navigate("/contact");
+                                }}
+                              >
+                                Hire Us
+                              </button>
+                            </div>
+
+                            <div className={styles.benefitsGrid}>
+                              <div className={styles.benefit}>
+                                <div
+                                  className={`${styles.benefitIcon} ${styles.delivery}`}
+                                >
+                                  <FaCogs />
+                                </div>
+                                <span className={styles.benefitText}>
+                                  On-time Delivery
+                                </span>
+                              </div>
+                              <div className={styles.benefit}>
+                                <div
+                                  className={`${styles.benefitIcon} ${styles.transparency}`}
+                                >
+                                  <FaEye />
+                                </div>
+                                <span className={styles.benefitText}>
+                                  100% Transparency
+                                </span>
+                              </div>
+                              <div className={styles.benefit}>
+                                <div
+                                  className={`${styles.benefitIcon} ${styles.communication}`}
+                                >
+                                  <FaComments />
+                                </div>
+                                <span className={styles.benefitText}>
+                                  One-to-one Communication
+                                </span>
+                              </div>
+                              <div className={styles.benefit}>
+                                <div
+                                  className={`${styles.benefitIcon} ${styles.models}`}
+                                >
+                                  <FaHandshake />
+                                </div>
+                                <span className={styles.benefitText}>
+                                  Engagement Models
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-
-                      <div className={styles.empowerSection}>
-                        <p className={styles.empowerText}>
-                          Empower Your Business with Dedicated Developers On Board
-                        </p>
-                        <button
-                          className={styles.hireButton}
-                          onClick={() => {
-                            closeMenu();
-                            navigate("/contact");
-                          }}
-                        >
-                          Hire Us
-                        </button>
-                      </div>
-
-                      <div className={styles.benefitsGrid}>
-                        <div className={styles.benefit}>
-                          <div
-                            className={`${styles.benefitIcon} ${styles.delivery}`}
-                          >
-                            <FaCogs />
-                          </div>
-                          <span className={styles.benefitText}>
-                            On-time Delivery
-                          </span>
-                        </div>
-
-                        <div className={styles.benefit}>
-                          <div
-                            className={`${styles.benefitIcon} ${styles.transparency}`}
-                          >
-                            <FaEye />
-                          </div>
-                          <span className={styles.benefitText}>
-                            100% Transparency
-                          </span>
-                        </div>
-
-                        <div className={styles.benefit}>
-                          <div
-                            className={`${styles.benefitIcon} ${styles.communication}`}
-                          >
-                            <FaComments />
-                          </div>
-                          <span className={styles.benefitText}>
-                            One-to-one Communication
-                          </span>
-                        </div>
-
-                        <div className={styles.benefit}>
-                          <div
-                            className={`${styles.benefitIcon} ${styles.models}`}
-                          >
-                            <FaHandshake />
-                          </div>
-                          <span className={styles.benefitText}>
-                            Engagement Models
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+                    )}
                   </div>
+                ) : (
+                  <NavLink
+                    to={link.path}
+                    onClick={closeMenu}
+                    className={({ isActive }) =>
+                      `${styles.navLink} ${isActive ? styles.active : ""}`
+                    }
+                  >
+                    {link.name}
+                  </NavLink>
                 )}
 
                 {/* Mobile Accordion Dropdown */}
@@ -256,7 +293,9 @@ const Header = () => {
                           className={styles.accordionItem}
                           onClick={handleServiceItemClick}
                         >
-                          <div className={styles.accordionIcon}>{item.icon}</div>
+                          <div className={styles.accordionIcon}>
+                            {item.icon}
+                          </div>
                           <span className={styles.accordionTitle}>
                             {item.title}
                           </span>
@@ -268,13 +307,6 @@ const Header = () => {
               </div>
             );
           })}
-
-          {/* Mobile CTA Button */}
-          {isMobile && (
-            <div className={styles.mobileCtaSection}>
-              <button className={styles.bookMeetingBtn}>Book A Meeting</button>
-            </div>
-          )}
         </nav>
 
         <div
