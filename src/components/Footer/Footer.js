@@ -20,7 +20,7 @@ const companyLinks = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   // { name: "Community", href: "/about/community" },
-  { name: "In the News", href: "/about/news" },
+  // { name: "In the News", href: "/about/news" },
   { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
@@ -30,8 +30,8 @@ const resourcesLinks = [
   { name: "Services", href: "/services" },
   { name: "Technical", href: "/technical" },
   // { name: "Safety", href: "/about/safety" },
-  { name: "Capabilities", href: "/about/manufacturing-capabilities" },
-  { name: "Configurations", href: "/products/available-configurations" },
+  // { name: "Capabilities", href: "/about/manufacturing-capabilities" },
+  // { name: "Configurations", href: "/products/available-configurations" },
 ];
 
 const contactInfo = [
