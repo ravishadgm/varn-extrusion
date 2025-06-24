@@ -5,6 +5,10 @@
   padding: 3rem 6rem;
   background-color: $blue-color;
 
+  @media (max-width: 1024px) {
+    padding: 3rem 2rem;
+  }
+
   @media (max-width: 768px) {
     padding: 3rem 2.7rem;
   }
@@ -28,7 +32,7 @@
 
   .innerSection {
     width: 48%;
-    background-color: #f0fff0;
+    background-color: #defcde;
     padding: 3rem 12rem;
     font-size: 3rem;
     border-radius: 25px;
@@ -60,7 +64,7 @@
     width: 48%;
     height: auto;
     border-radius: 25px;
-    background-color: #efefff;
+    background-color: #e3f0fa;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -135,7 +139,7 @@
 
 .secondSection {
   width: 100%;
-  height: auto;
+  // min-height: 100%;
   display: flex;
   align-items: stretch;
   gap: 1.5rem;
@@ -148,8 +152,15 @@
     flex-direction: column;
   }
 
+  .left, .right {
+    height: 100%; 
+  }
+
   .left {
+    display: flex; 
+    flex-direction: column;
     width: 30%;
+    flex: 1;
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -158,18 +169,26 @@
     }
 
     .leftContainer {
+      height: 100%;
       background-color: $gray-bg;
       border-radius: 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      overflow: hidden;
+      // overflow: hidden;
       font-size: 1rem;
+  //  flex:1;
+       justify-content: space-between;
 
       h3 {
         text-align: center;
         font-size: 2rem;
         padding: 1.5rem 1rem 1rem 1rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.7rem;
+          padding:3rem 1.7rem 2.5rem 1.7rem;
+        }
 
         @media (max-width: 480px) {
           font-size: 1rem;
@@ -177,6 +196,7 @@
       }
 
       .img1 {
+        border-radius: 25px 25px ;
         @media (max-width: 768px) {
           display: none;
         }
@@ -190,6 +210,8 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1.5rem;
+    height: 100%;
+    
 
     @media (max-width: 768px) {
       width: 100%;
@@ -212,21 +234,42 @@
         align-items: strech;
       }
 
+       @media(max-width:320px){
+              
+              gap:1rem;
+            }
+
       .upperLeft {
         width: 40%;
         border-radius: 25px;
-        background-color: #efefff;
+        background-color: #e3f0fa;
         padding: 2.5rem 1.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
 
+        @media(max-width:768px){
+          padding:2rem 1rem;
+        }
+
+        @media(max-width:320px){
+          width:45%;
+              padding:2rem 2rem 2rem 0.5rem;
+              gap:0rem;
+            }
+
         p {
           font-size: 18px;
+          @media(max-width:760px){
+          padding:0px;
+        }
            @media (max-width: 480px) {
                     font-size: 14px;
-                    padding: 10px;
+                    //padding: 10px;
                 }
+
+            
+
         }
 
         h1 {
@@ -241,14 +284,31 @@
       .upperRight {
         width: 55%;
         border-radius: 25px;
-        background-color: #f0fff0;
+        // background-color: #f0fff0;
+        background-color:#defcde;
         padding: 2.5rem 1.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
 
+          @media(max-width:768px){
+          padding:2rem 1rem;
+        }
+
+        @media(max-width:320px){
+          width:45%;
+              padding:1.3rem 3rem 2rem 0.5rem;
+              gap:0rem;
+            }
+
         p {
           font-size: 18px;
+
+          font-size: 18px;
+          @media(max-width:760px){
+              padding:0px;
+            }
+          
             @media (max-width: 480px) {
                     font-size: 14px;
                     padding: 10px;
@@ -279,7 +339,7 @@
 
       .lowerLeft {
         width: 55%;
-        background-color: #f0fff0;
+        background-color: #defcde;
         padding: 2.5rem 1.5rem;
         border-radius: 25px;
         align-items: flex-start;

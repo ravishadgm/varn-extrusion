@@ -15,11 +15,11 @@
  
 
   &:nth-child(even) {
-    background-color: #f0fff0;
+    background-color: #defcde;
     color: $color-white;
 
     .cardIcon {
-      background-color: #d7ffd6;
+      background-color: #bdfcbc;
     }
 
     .divider {
@@ -44,11 +44,11 @@
   }
 
   &:nth-child(odd) {
-    background-color: #efefff;
+    background-color: 	#E3F0FA;
     
 
     .cardIcon {
-      background-color: #d6d8ff;
+      background-color: #B3DDF3;
     }
 
     .divider {
