@@ -1,0 +1,135 @@
+@import "../../../styles/variables";
+
+.detailPage {
+  padding:5rem 6rem;
+
+  @media(max-width:1080px){
+    padding: 5rem 2.8rem;
+  }
+  @media(max-width:768px){
+    padding: 5rem 2rem;
+  }
+  @media(max-width:480px){
+    padding: 3rem 1rem;
+  }
+
+  .sectionHeader {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+   
+    .tag{
+      font-size: 2.3rem;
+      font-weight: bold;
+      padding:0rem 0rem 4rem 1rem;
+
+      @media(max-width:768px){
+        font-size:2rem;
+        padding:0rem 0rem 2.5rem 1rem;
+      }
+      @media(max-width:480px){
+        font-size: 1.5rem;
+        // justify-content: flex-start;
+        // align-items:flex-start;
+        padding:0rem 0rem 2rem 1rem;
+        text-align: left;
+      }
+    }
+  }
+      
+
+  .accordionWrapper {
+    padding: 0 0.5rem;
+
+    .accordionItem {
+      border: 1px solid  $hover-green;;
+      border-bottom: 4px solid $hover-green;
+      background-color: $color-white;
+      border-radius: 0.75rem;
+      margin-bottom: 1.3rem;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+
+      &.open {
+        background-color: #b4fab4;
+        border-bottom-color: $hover-green;
+      }
+
+      .accordionToggle {
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+        font-size: 1.125rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        .toggleLeft {
+          display: flex;
+          align-items: center;
+
+          .count {
+            font-size: 1.9rem;
+            margin-right: 1rem;
+            color:$hover-green;
+
+            @media(max-width:768x){
+              font-size: 1.2rem;
+            }
+            @media(max-width:480px){
+              font-size: 0.9rem;
+            }
+          }
+
+          .question {
+            font-size: 1.125rem;
+            color:$hover-green;
+
+            @media(max-width:768px){
+              font-size: 1rem;
+            }
+            @media(max-width:480px){
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2rem;
+          height: 2rem;
+          color: #1f2937;
+        }
+      }
+
+      .accordionContent {
+        padding: 0 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &.expanded {
+          max-height: 500px;
+          padding: 1rem;
+          border-top: 1px solid #4b5563;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #4b5563;
+
+           @media(max-width:480px){
+              font-size: 0.65rem;
+            }
+        }
+      }
+    }
+  }
+}
