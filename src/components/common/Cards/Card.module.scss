@@ -1,0 +1,144 @@
+@import "../../../styles/variables";
+
+.customCard {
+  width: 100%;
+  border-radius: 1.5rem;
+  align-items: stretch;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #111;
+  background-color: #f0f0f0;
+
+ 
+
+  &:nth-child(even) {
+    background-color: #f0fff0;
+    color: $color-white;
+
+    .cardIcon {
+      background-color: #d7ffd6;
+    }
+
+    .divider {
+      background-color:#afafb0;
+    }
+
+    .cardTitle{
+      color:#312238;
+    }
+
+    .cardDescription{
+      color:#5d3a5d;
+    }
+
+    .linkIcon:hover {
+      background-color: #d7ffd6;
+
+      .arrowIcon {
+        color: #008f4c; 
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    background-color: #efefff;
+    
+
+    .cardIcon {
+      background-color: #d6d8ff;
+    }
+
+    .divider {
+      background-color: #d7d7e1;
+    }
+
+    .cardTitle {
+      color:#0c2238;
+    }
+
+    .cardDescription{
+      color:#3a3a3a;
+    }
+
+    .linkIcon:hover {
+      background-color:#d6d8ff;
+
+      .arrowIcon {
+        color: #0c2238; 
+      }
+    }
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cardTitleContainer {
+      position: relative;
+      display: inline-block;
+
+      .cardIcon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        // background-color: #87bbf7;
+        z-index: 1;
+      }
+    }
+
+    .linkIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+
+      .arrowIcon {
+        transition: color 0.3s ease;
+        color:black;
+      }
+    }
+  }
+
+  .cardTitle {
+    position: relative;
+    padding-left: 0.75rem;
+    padding-top: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 2;
+    color: white;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #bfbfbf; 
+    margin: 0.5rem 0;
+
+     @media(max-width:480px){
+       
+    margin:0.2rem;
+    }
+  }
+
+  .cardDescription {
+    font-size: 0.95rem;
+    padding-bottom: 10px;
+    color: white;
+    line-height: 1.5;
+
+    @media(max-width:480px){
+       
+    font-size: 0.8rem;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './About.module.scss';
+import React from "react";
+import styles from "./About.module.scss";
 import {
   FaIndustry,
   FaAward,
@@ -10,45 +10,45 @@ import {
   FaEye,
   FaHeart,
   FaCogs,
-  FaFire
-} from 'react-icons/fa';
+  FaFire,
+} from "react-icons/fa";
 
 const About = () => {
   const statsData = [
     { number: "2016", label: "Established" },
     { number: "0.3mm", label: "Ultra-Slim Profile" },
     { number: "6000 MT", label: "Annual Capacity" },
-    { number: "300+", label: "Skilled Team" }
+    { number: "300+", label: "Skilled Team" },
   ];
 
   const strengthsData = [
     {
       icon: <FaRocket />,
       title: "Ultra-Slim Innovation",
-      description: "India's pioneers in 0.3mm aluminium profiles"
+      description: "India's pioneers in 0.3mm aluminium profiles",
     },
     {
       icon: <FaIndustry />,
       title: "Integrated Manufacturing",
-      description: "Complete in-house production capabilities"
+      description: "Complete in-house production capabilities",
     },
     {
       icon: <FaAward />,
       title: "Premium Quality",
-      description: "Approved by Jotun, AkzoNobel, Asian Paints PPG"
+      description: "Approved by Jotun, AkzoNobel, Asian Paints PPG",
     },
     {
       icon: <FaUsers />,
       title: "Expert Team",
-      description: "300+ skilled professionals driving excellence"
-    }
+      description: "300+ skilled professionals driving excellence",
+    },
   ];
 
   const valuesData = [
     { icon: <FaShieldAlt />, title: "Quality & Integrity" },
     { icon: <FaLeaf />, title: "Environmental Care" },
     { icon: <FaHeart />, title: "Customer Focus" },
-    { icon: <FaRocket />, title: "Innovation First" }
+    { icon: <FaRocket />, title: "Innovation First" },
   ];
 
   return (
@@ -84,35 +84,42 @@ const About = () => {
             <div className={styles.aboutContent}>
               <h2>Who We Are</h2>
               <p>
-                Since 2016, we've been India's foremost aluminum innovation leader, specializing in ultra-thin profiles with wall thicknesses as fine as 0.3mm. This rare capability showcases our mastery in minimalist engineering and elegant functionality.
+                Since 2016, we've been India's foremost aluminum innovation
+                leader, specializing in ultra-thin profiles with wall
+                thicknesses as fine as 0.3mm. This rare capability showcases our
+                mastery in minimalist engineering and elegant functionality.
               </p>
               <p>
-                We combine cutting-edge technology with deep industry knowledge, delivering solutions that are both durable and beautifully designed. Our commitment to precision, performance, and purposeful design sets us apart.
+                We combine cutting-edge technology with deep industry knowledge,
+                delivering solutions that are both durable and beautifully
+                designed. Our commitment to precision, performance, and
+                purposeful design sets us apart.
               </p>
             </div>
             <div className={styles.missionContent}>
               <div className={styles.missionCard}>
                 <FaEye className={styles.missionIcon} />
                 <h3>Vision</h3>
-                <p>To be a globally trusted name in aluminium manufacturing with innovative, sustainable products</p>
+                <p>
+                  To be recognized as a globally trusted name in aluminium
+                  manufacturing, offering innovative, sustainable, and
+                  superior-quality products.
+                </p>
               </div>
               <div className={styles.missionCard}>
                 <FaRocket className={styles.missionIcon} />
                 <h3>Mission</h3>
-                <p>Continuously enhance quality, invest in modern technologies, and provide exceptional service</p>
+                <p>
+                  To continuously enhance product quality, invest in modern
+                  technologies, and provide exceptional service to our clients
+                  by fostering a culture of continuous improvement and
+                  environmental responsibility.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-     
-
-    
-
-     
-
-   
     </div>
   );
 };

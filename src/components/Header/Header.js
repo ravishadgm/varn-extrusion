@@ -38,12 +38,12 @@ const navLinks = [
 ];
 
 const Header = () => {
+   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpenMobile, setServicesOpenMobile] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {

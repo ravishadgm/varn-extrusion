@@ -1,17 +1,28 @@
 import React from 'react'
 import Hero from './Hero/Hero';
-import Product from './Products/Product';
+// import Product from './Products/Product';
 import Customer from './Customer/Customer';
 import Project from './Project/Project';
 import About from './AboutVarn/About'
+import Business from './Business/Business';
+import Services from './Services/Services';
+import TrustedByBrands from './TrustedByBrands/TrustedByBrands';
+import WhyUs from './WhyUs/WhyUs';
+
 function index() {
   return (
     <>
       <Hero />
-      <Product />
-      <Customer />
-      <Project />
-      <About/>
+      <Business />
+      {/* <Product /> */}
+      <Services />
+            <About />
+      <TrustedByBrands />
+      <WhyUs />
+      {/* <Customer /> */}
+
+      {/* <Project /> */}
+
     </>
   )
 }
