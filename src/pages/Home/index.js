@@ -8,6 +8,7 @@ import Business from './Business/Business';
 import Services from './Services/Services';
 import TrustedByBrands from './TrustedByBrands/TrustedByBrands';
 import WhyUs from './WhyUs/WhyUs';
+import Mission from './MisssionVarn/Mission';
 
 function index() {
   return (
@@ -16,7 +17,9 @@ function index() {
       <Business />
       {/* <Product /> */}
       <Services />
-            <About />
+      {/* <About /> */}
+      <Mission />
+
       <TrustedByBrands />
       <WhyUs />
       {/* <Customer /> */}

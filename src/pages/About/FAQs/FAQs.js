@@ -45,6 +45,7 @@ const FAQs = () => {
     return (
         <div className={styles.detailPage}>
             <div className={styles.sectionHeader}>
+
                 <button className={styles.tag}>Frequently Asked Questions</button>
                 <span className={styles.subText}></span>
             </div>
