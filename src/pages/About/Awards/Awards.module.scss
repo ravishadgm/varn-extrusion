@@ -1,0 +1,87 @@
+@import "../../../styles/variables";
+
+.trustedSection {
+  padding: 3rem 3rem;
+  background-color: $gray-bg;
+  text-align: center;
+  overflow: hidden;
+
+   @media(max-width:768px){
+    text-align: start;
+      padding: 3rem 1.5rem;
+      
+  }
+
+   @media(max-width:480px){
+    padding:2.5rem 1rem;
+  }
+
+
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+
+
+   @media(max-width:480px){
+    text-align: start;
+     margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+}
+
+.marqueeWrapper {
+  padding:2rem 0rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 3rem;
+  animation: scrollLeft 30s linear infinite;
+  width: max-content;
+
+
+  @media(max-width:480px){
+     gap: 0.9rem;
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+.logoCard {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media(max-width:480px){
+      width: 130px;
+  height: 60px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+
