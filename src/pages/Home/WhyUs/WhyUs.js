@@ -42,7 +42,7 @@ const WhyUs = () => {
             <div className={styles.leftContainer}>
               <img src={image1} alt="founder" className={styles.img1} />
               <h3 className={styles.name}>
-We uphold integrity, innovation, and timely delivery in everything we do              </h3>
+                We uphold integrity, innovation, and timely delivery in everything we do              </h3>
             </div>
           </div>
           <div className={styles.right}>
@@ -58,7 +58,7 @@ We uphold integrity, innovation, and timely delivery in everything we do        
               </div>
               <div className={styles.upperRight}>
                 <p>
-                  We are capable to produce 6000 MT aluminum profile annually
+                  We are capable to produce 6000 MT aluminum profiles annually, powered by advanced extrusion presses and in-house billet casting.It reflects our commitment to high-volume, precision-driven manufacturing.
                 </p>
                 <h1>6000 MT</h1>
               </div>
@@ -73,7 +73,7 @@ We uphold integrity, innovation, and timely delivery in everything we do        
               </div>
               <div className={styles.lowerRight}>
                 <p>
-               Quality is Our Identity — every inch of every profile reflects our uncompromising standards
+                  Quality is Our Identity — every inch of every profile reflects our uncompromising standards
                 </p>
                 {/* <h1>90+</h1> */}
               </div>
