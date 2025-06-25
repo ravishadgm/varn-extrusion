@@ -37,7 +37,7 @@ const TexureList = () => {
             <div className={style.warningBox}>
                 <ImNotification className={style.icon} />
                 <p>
-                    <strong>Please be advised thatVarn Extrusion does not currently provide staining services.</strong>
+                    <strong>Please be advised that Varn Extrusion does not currently provide staining services.</strong>
                 </p>
             </div>
         </div>

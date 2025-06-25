@@ -30,8 +30,6 @@
       }
       @media(max-width:480px){
         font-size: 1.5rem;
-        // justify-content: flex-start;
-        // align-items:flex-start;
         padding:0rem 0rem 2rem 1rem;
         text-align: left;
       }
@@ -52,7 +50,9 @@
       overflow: hidden;
 
       &.open {
-        background-color: #b4fab4;
+        // background-color: #b3dda2;
+        background-color: #edf7e9;
+        color:black;
         border-bottom-color: $hover-green;
       }
 
@@ -105,7 +105,7 @@
           justify-content: center;
           width: 2rem;
           height: 2rem;
-          color: #1f2937;
+          color: $banner-text;
         }
       }
 
@@ -118,12 +118,12 @@
         &.expanded {
           max-height: 500px;
           padding: 1rem;
-          border-top: 1px solid #4b5563;
+          border-top: 1px solid $banner-text;
         }
 
         p {
           font-size: 1rem;
-          color: #4b5563;
+          color: $banner-text;
 
            @media(max-width:480px){
               font-size: 0.65rem;

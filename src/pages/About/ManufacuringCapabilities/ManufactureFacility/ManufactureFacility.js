@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./ManufactureFacility.module.scss"
 import { motion } from "framer-motion";
-import factory from "../../../../assets/images/Manufacture/factory.jpg";
+import factory from "../../../../assets/images/Manufacture/facility.jpeg";
 import Highlights from '../Highlights/Highlights';
 
 const ManufactureFacility = () => {
@@ -16,13 +16,13 @@ const ManufactureFacility = () => {
                         <div className={styles.innerContent}>
                             <ul>
                                 <li>Varn Extrusion Pvt. Ltd. operates across multiple industrial units strategically located in Gujarat, India. With a combined facility area built for high-volume, precision-based aluminium manufacturing, we have developed an infrastructure that supports innovation, speed, and uncompromising quality.</li>
-                                <li>Our facility is essentially two mills in one, with the addition of the new laminating facility recently constructed on the south end of the existing plant. This new plant includes state-of-the-art equipment from the lumber grading station through the finished room.</li>
-                                <li>We have multiple lines capable of producing the most versatile product range offered in the industry. Our state-of-the-art facility efficiently produces custom curves, tapers, and production stock beams. The plant is capable of producing beams up to 20″ wide, 108″ deep, and 130′ long. The new finish line can finish any size beam (see capabilities) we produce. We can also load the trucks indoors.</li>
+                                <li>We have built a vertically integrated ecosystem that includes modern extrusion presses, automated anodizing and powder coating lines, CNC machining centers, and die manufacturing facilities. Our newly expanded setup further strengthens our capabilities, ensuring seamless production flow from raw material to finished aluminium profiles.</li>
+                                <li>With a strong focus on innovation and quality control, our facilities are optimized for high-volume manufacturing while maintaining flexibility for custom projects. Whether it’s complex profiles, critical tolerances, or specialized surface finishes, our facility is engineered to meet the evolving demands of diverse industries.</li>
                             </ul>
                         </div>
                     </div>
                     <div>
-                        {/* <div className={styles.imageWrapper}>
+                        <div className={styles.imageWrapper}>
                             <motion.img
                                 src={factory}
                                 alt="Factory Overview"
@@ -30,8 +30,7 @@ const ManufactureFacility = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                             />
-                        </div> */}
-
+                        </div>
                     </div>
                 </div>
             </section>

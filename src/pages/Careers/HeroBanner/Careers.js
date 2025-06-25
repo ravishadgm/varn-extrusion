@@ -8,8 +8,8 @@ function Careers() {
         Careers At VARN Extrusion Pvt. Ltd.
       </>
     ),
-    subtext: "Join Our Commitment to Excellence", 
-    buttonLabel:"Applpy Today"
+    subtext: "Join Our Commitment to Excellence",
+    buttonLabel: "Apply Today"
   };
 
   return (

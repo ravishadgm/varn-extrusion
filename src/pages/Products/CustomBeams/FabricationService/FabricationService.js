@@ -14,10 +14,7 @@ const FabricationService = () => {
             <div className={styles.subContainer}>
                 <h1>Fabrication Services</h1>
                 <p>
-                    Fabrication can include a variety of beam profiles, corbel details, or custom shapes.
-                    We offer a variety of beam finishes and a full complement of metal fabricating and truss assembly
-                    as specified by your designer for your project. Radial reinforcing and raceways for electrical
-                    or other wiring are available.
+                    Our fabrication services include a wide range of aluminium profiles, custom shapes, and detailed finishes. We offer precise cutting, punching, CNC machining, and component assembly as per your project needs. Electrical raceways, reinforcement options, and integration-ready solutions are available to match your design specifications.
                 </p>
 
                 <a href="/services/fabrication" rel="noopener noreferrer">

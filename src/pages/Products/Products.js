@@ -14,28 +14,28 @@ const imageData = [
   {
     title: "Aluminum beams",
     description:
-      "Get your construction project completed faster and more efficiently with our stock Aluminium beams.",
+      "Ultra-slim, durable, and precisely crafted — aluminium beams built for performance and visual excellence.",
     image: Images.CustomAluminium,
     link: '/products/stoke-beams'
   },
   {
     title: "QA Beam Plate",
     description:
-      "QB Rim Board has enhanced strength, stability, and resistance to warping or splitting.",
+      "Precision-extruded aluminium plates designed for strength, flatness, and structural reliability in demanding applications.",
     image: Images.beamPlate,
-    link: '/products/qb-rim-board'
+    link: '/products/varn-rim-board'
   },
   {
     title: "Aluminum Utility Frames",
     description:
-      "An excellent solution for expanding the nation’s infrastructure efficiently.",
+      "Robust and customizable aluminium frames built for versatile industrial and architectural applications.",
     image: Images.utilityStructure,
     link: '/products/utility-structures'
   },
   {
     title: "Aluminum Ingots",
     description:
-      "Our pellets are renewable, sustainable, and rated as high-performance fuel.",
+      "Engineered aluminium interlocks crafted with tight tolerances for seamless assembly and long-term durability.",
     image: Images.aluminiumIntelogs,
     link: '/products/wood-pellets'
   },

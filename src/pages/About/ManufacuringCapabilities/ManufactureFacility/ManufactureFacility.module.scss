@@ -20,7 +20,13 @@
 }
 
 .imageWrapper{
-    padding:50px 120px;
+    padding:10px 120px 50px 120px;
+    margin-bottom: -10rem;
+
+    @media(max-width:768px){
+        margin-bottom: 0px;
+        display: none;
+    }
 }
 
 @media (max-width: 768px){

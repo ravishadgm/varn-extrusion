@@ -48,15 +48,15 @@ const Choice = () => {
         </div>
 
         <div className={styles.imageWrapper}>
-          <img src={Images.choice_bg} alt="Glulam Truss" />
+          <img src={Images.workService} alt="Glulam Truss" />
         </div>
       </section>
       <div className={styles.innerBlock}>
-       <VerticalBlock
-  title="Glulam Trusses are the Preferred Choice over the Alternatives"
-  description="When it comes to strength and design flexibility, glulam stands out as a superior structural solution. With a strength-to-weight ratio up to three times greater than steel, glulam provides exceptional load-bearing performance while allowing for efficient, lightweight design."
-  features={featuresData}
-/>
+        <VerticalBlock
+          title="Glulam Trusses are the Preferred Choice over the Alternatives"
+          description="When it comes to strength and design flexibility, glulam stands out as a superior structural solution. With a strength-to-weight ratio up to three times greater than steel, glulam provides exceptional load-bearing performance while allowing for efficient, lightweight design."
+          features={featuresData}
+        />
 
       </div>
     </>

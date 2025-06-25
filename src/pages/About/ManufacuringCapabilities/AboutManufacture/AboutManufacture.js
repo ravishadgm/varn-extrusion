@@ -1,6 +1,5 @@
 import React from 'react'
 import mainImage from "../../../../assets/images/Manufacture/Manufacture_Product.jpeg";
-import overlayImage from "../../../../assets/images/Manufacture/ManufactureSecond.jpeg";
 import styles from './AboutManufacture.module.scss';
 
 const AboutManufacture = () => {
@@ -35,14 +34,3 @@ const AboutManufacture = () => {
 };
 
 export default AboutManufacture;
-
-
-
-{/* <motion.img
-    src={mainImage}
-    alt="Factory Overview"
-    initial={{ opacity: 0, x: -50 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1, ease: "easeOut" }}
-    className={styles.curvedBeamImage}
-/> */}

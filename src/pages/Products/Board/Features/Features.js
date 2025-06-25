@@ -11,27 +11,27 @@ function Features() {
     {
       number: "01",
       title: "Strength",
-      text: "Glulam is known for its exceptional strength-to-weight ratio, making it capable of supporting heavy loads without excessive bulk.",
+      text: "Engineered with ultra-slim 0.3 mm wall thickness and high strength-to-weight ratio, our aluminium profiles support heavy loads while remaining lightweight and easy to handle.",
     },
     {
       number: "02",
-      title: "Stability",
-      text: "The gluing process used in manufacturing glulam results in a stable product that is less prone to shrinking, twisting, or warping than solid lumber.",
+      title: "Dimensional Stability",
+      text: "Manufactured with +3/32, -0 tolerance and tested using Brinell & Webster hardness equipment, each profile ensures consistent performance without warping or deviation.",
     },
     {
       number: "03",
-      title: "Long spans",
-      text: "Glulam rim boards can be manufactured in long lengths, which reduces the need for splicing and increases design flexibility for architects and engineers.",
+      title: "Custom Lengths & Flexibility",
+      text: "Our profiles can be fabricated to exact lengths and shapes using in-house moulds and tooling, reducing the need for post-processing and enabling greater architectural freedom.",
     },
     {
       number: "04",
       title: "Sustainability",
-      text: "Glulam is considered an environmentally friendly choice because it uses renewable wood resources and can be sourced from sustainably managed forests.",
+      text: "Aluminium is 100% recyclable. Our energy-efficient in-house production systems minimize waste and support environmentally responsible manufacturing.",
     },
     {
       number: "05",
-      title: "Consistency",
-      text: "Unlike solid lumber, glulam’s engineered construction ensures uniformity and predictability in its mechanical properties.",
+      title: "Uniform Quality",
+      text: "With 1000+ moulds, automated coating systems, and ERP-monitored workflow, we ensure uniformity in finish, strength, and functionality across every extrusion batch.",
     }
   ];
   return (
@@ -43,15 +43,15 @@ function Features() {
           </div>
           <div className={styles.right}>
             <ul>
-              <li>1 ½” thickness in depths of 9 1/4", 9 1/2", 11 1/4", 11 7/8" and 14”</li>
-              <li>3½” and 5½” thickness in depths up to 20”</li>
-              <li>Additional thicknesses available</li>
-              <li>
+              <li>Available in ultra-slim 0.3 mm wall thickness with custom depths</li>
+              <li>profiles via 1000+ moulds, extruded using 800/600 UST presses</li>
+              <li>fabricated with in-house cutting, punching, and drilling for precise, ready-to-install solutions.</li>
+              {/* <li>
                 Square cut in 20’ lengths for easy handling
                 <span className={styles.optionalNote}>(other lengths may be special ordered)</span>
-              </li>
+              </li> */}
               <li>
-                Manufactured to a +3/32, -0 tolerance and a consistent, low moisture content of 12% for increased dimensional stability
+                Seamless handling and efficient installation.
               </li>
             </ul>
           </div>
@@ -59,15 +59,15 @@ function Features() {
       </section>
       <div className={styles.grayBg}>
         <VerticalBlock
-          title="Glulam Rim Boards offer several advantages"
-          description="QB’s glulam rim boards are popular in modern construction due to their several advantages. QB Rim could be used for residential and commercial construction framing. They are often combined with other engineered wood products, such as I-joists, to create efficient and reliable building structures."
+          title="Aluminium Profiles by Varn Offer Several Advantages"
+          description="Varn’s precision-engineered aluminium profiles are widely used in modern construction and infrastructure projects due to their strength, versatility, and design flexibility."
           features={featuresData}
         />
         <div className={styles.errorMessage}>
           <div className={styles.warningBox}>
             <ImNotification className={styles.icon} />
             <p>
-              <strong>It’s important to note that while glulam rim boards offer many benefits, their use and design should follow local building codes and engineering standards to ensure safe and proper installation. Always consult a qualified structural engineer or building professional when incorporating glulam rim boards into your construction projects.</strong>
+              <strong>It’s important to note that while alluminium boards offer many benefits, their use and design should follow local building codes and engineering standards to ensure safe and proper installation. Always consult a qualified structural engineer or building professional when incorporating glulam rim boards into your construction projects.</strong>
             </p>
           </div>
         </div>
@@ -77,15 +77,15 @@ function Features() {
       <section className={styles.qbSection}>
         <div className={styles.container}>
           <div className={styles.imageSection}>
-            <h2>QB Rim Allowable Design Properties</h2>
-            <img src={Images.board_proparties} alt="QB Rim Design Table" />
+            <h2>Design Properties of Varn Aluminium Rim Profiles</h2>
+            <img src={Images.board_proparties} alt="Varn Rim Design Table" />
           </div>
 
           <div className={styles.infoSection}>
             <h3>Additional Info:</h3>
 
             <div className={styles.downloadBox}>
-              <p>Download the QB Rim Board Brochure:</p>
+              <p>Download the varn Rim Board Brochure:</p>
               <a
                 href="https://cdn.prod.website-files.com/655bc5fdd4556632911f083a/65fdff9ea73e00babc1e3347_QB-RIM-BOARD.pdf"
                 className={styles.button}
@@ -97,7 +97,7 @@ function Features() {
             </div>
 
             <div className={styles.downloadBox}>
-              <p>Read the APA QB Rim Report:</p>
+              <p>Read the APA varn Rim Report:</p>
               <a
                 href="https://drive.google.com/file/d/1g4irX9uuxCbdFi723r9y359p6Z9ZUVSl/view?pli=1"
                 className={styles.button}

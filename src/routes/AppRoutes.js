@@ -59,7 +59,7 @@ const AppRoutes = () => {
       <Route path="/services/truss-assembly" element={<Assembly />} />
       <Route path="/products/wood-pellets" element={<WoodPallets />} />
       <Route path="/products/utility-structures" element={<Utility />} />
-      <Route path="/products/qb-rim-board" element={<Board />} />
+      <Route path="/products/varn-rim-board" element={<Board />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

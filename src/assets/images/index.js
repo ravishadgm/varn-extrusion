@@ -66,6 +66,8 @@ import beamPlate from "./products/OuterImages/BeamPlate.jpg";
 import aluminiumIntelogs from "./products/OuterImages/AluminiumIngots.jpg";
 import utilityStructure from "./products/OuterImages/UtilityStructure.jpeg";
 import utilityBeamStructure from "./products/InnerImages/utilityBeamStructure.jpeg";
+import workService from "./services/workService.jpeg";
+import preserveImage from "./products/InnerImages/PreserveImg.jpeg";
 
 const images = {
   news_16,
@@ -134,7 +136,9 @@ const images = {
   beamPlate,
   aluminiumIntelogs,
   utilityStructure,
-  utilityBeamStructure
+  utilityBeamStructure,
+  workService,
+  preserveImage
 };
 
 export default images;

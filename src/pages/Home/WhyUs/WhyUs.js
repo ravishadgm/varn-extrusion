@@ -68,12 +68,12 @@ const WhyUs = () => {
                 <p>
                   We live by our word. With streamlined operations and on-time
                   logistics, we deliver what you need, when you need it — no
-                  excuses
+                  excuses.With everything under one roof — including anodizing, powder coating, fabrication, and packaging — we don’t just promise timely delivery, we engineer it.
                 </p>
               </div>
               <div className={styles.lowerRight}>
                 <p>
-                  Quality is Our Identity — every inch of every profile reflects our uncompromising standards
+                  Quality is Our Identity — every inch of every profile reflects our uncompromising standards.Backed by Brinell and Webster hardness testing, spectrometer analysis, and a 7-tank pre-treatment process.
                 </p>
                 {/* <h1>90+</h1> */}
               </div>

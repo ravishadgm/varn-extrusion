@@ -3,58 +3,58 @@ import styles from './GradeList.module.scss';
 
 const gradeData = [
     {
-        title: 'Framing Grade',
+        title: 'Mill Finish',
         items: [
-            'Lightly sanded.',
-            'No patching or filling.',
-            'Ideal for beams hidden in walls.'
+            'Raw aluminium from press.',
+            'Matte look with lines.',
+            'Used for internal or hidden use.'
         ]
     },
     {
-        title: 'Industrial',
+        title: 'Brushed Finish',
         items: [
-            'Sanded finish with square edges.',
-            'No patching or filling.'
+            'SUniform brushed texture.',
+            'Industrial appearance.'
         ]
     },
     {
-        title: 'Architectural',
+        title: 'Anodized Finish',
         items: [
-            'Sanded finish with eased edges.',
-            'Voids over ¾” are filled.'
+            'Treated for corrosion resistance.',
+            'Available in silver, bronze, black.'
         ]
     },
     {
-        title: 'Stain Grade',
+        title: 'Powder Coated Finish',
         items: [
-            'Sanded finish with eased edges.',
-            'No patching or filling.',
-            'Ideal for when the stain is to be applied.',
+            'Colored powder baked on surface.',
+            'Durable, UV-resistant.',
+            'Best for decorative exteriors.',
         ]
     },
     {
-        title: 'Premium',
+        title: 'Premium Polished Finish',
         items: [
-            'Sanded down with fine sandpaper for a smoother surface with eased edges.',
-            'All voids are filled.',
+            'High-gloss polished surface.',
+            'Buffed for mirror finish.',
         ]
     },
     {
-        title: 'Hand Select Premium',
+        title: 'Custom Finish',
         items: [
-            'Lumber is graded for tight knots to minimize larger knots in the beam’s appearance.',
-            'Sanded down with fine sandpaper for a smoother surface with eased edges.',
-            'All voids are filled.'
+            'Made to customer specs.',
+            'Includes dual colors or textures.',
+            'For precise functional needs.'
         ]
     },
-    {
-        title: 'Hand Select Stain Grade',
-        items: [
-            'Lumber is graded for tight knots to minimize larger knots in the appearance of a beam.',
-            'Sanded down with fine sandpaper for a smoother surface with eased edges.',
-            'Ideal for when a stain is to be applied.'
-        ]
-    },
+    // {
+    //     title: 'Hand Select Stain Grade',
+    //     items: [
+    //         'Lumber is graded for tight knots to minimize larger knots in the appearance of a beam.',
+    //         'Sanded down with fine sandpaper for a smoother surface with eased edges.',
+    //         'Ideal for when a stain is to be applied.'
+    //     ]
+    // },
 
 ];
 

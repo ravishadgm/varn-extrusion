@@ -14,7 +14,7 @@ const StokeBeams = () => {
                             Stock Glulam Beams
                         </>
                     }
-                    subheading="QB Corporation is one of the largest stock glulam beams producers, with two high-capacity RF production lines and a strong link to the required natural fiber resource. Whether your project requires custom beams and fabrication or truckloads of high-quality stock material, QB Corporation is your one-stop source."
+                    subheading="Varn Extrusion is one of the largest stock glulam beams producers, with two high-capacity RF production lines and a strong link to the required natural fiber resource. Whether your project requires custom beams and fabrication or truckloads of high-quality stock material, QB Corporation is your one-stop source."
                     buttonLabel="Contact An Expert"
 
                 />

@@ -10,29 +10,18 @@ const Structures = () => {
         <div className={styles.utilityContent}>
           <div className={styles.utilityLeft}>
             <h2>
-              Utility Structures: Poles, cross-arms and wood framing.
+              Aluminium Utility Structures: Poles, Cross-Arms & Framing Solutions
             </h2>
           </div>
           <div className={styles.utilityRight}>
             <p>
-              The rising demand for alternative energy sources, such as wind and solar
-              facilities, has resulted in an increased need for wood Utility Structures.
-              Wood has a proven track record of reliable performance over several decades,
-              sometimes up to 80 years.
+              With the evolution of energy infrastructure and urban expansion, aluminium utility structures have become a reliable and future-ready alternative to traditional materials. At Varn Extrusion Pvt. Ltd., we specialize in manufacturing precision-engineered aluminium components ideal for poles, cross-arms, framing systems, and other structural applications—offering unmatched strength-to-weight ratio and corrosion resistance.
             </p>
             <p>
-              As the demand for taller, stronger, and more durable structures grows,
-              engineered wood poles and framing have been developed for use in transmission
-              lines. These members are not only cost-effective but also environmentally
-              friendly, making them an ideal solution for expanding the nation’s electrical
-              grid.
+              Our integrated manufacturing facility houses 3 high-capacity extrusion presses (800 UST x2 and 600 UST), supported by advanced anodizing (300 MT/month) and powder coating lines (2m/min). These capabilities allow us to produce utility-grade profiles with tight tolerances and customizable surface finishes, including JOTUN, AkzoNobel, and Asian Paints PPG-approved coatings—ensuring long-lasting performance in demanding environments.
             </p>
             <p>
-              QB Corporation offers Utility Structures products specifically designed for
-              the utility industry and ready for treatment. Our product is coastal Douglas
-              Fir, which can be incised to enable better penetration of preservatives to
-              lengthen lifespan. Poles, cross-arms, and x-braces can be fabricated
-              according to the required dimensions for quick and easy installation.
+              Every profile undergoes rigorous testing using Brinell and Webster hardness testers, along with spectrometer analysis for material integrity. With 1000+ moulds in our library, precision fabrication, and automated packaging, we deliver aluminium utility structures built to meet modern load-bearing, environmental, and aesthetic requirements—ready for the next generation of smart, sustainable infrastructure.
             </p>
           </div>
         </div>
@@ -41,24 +30,17 @@ const Structures = () => {
       <div className={styles.treatmentSection}>
         <div className={styles.treatmentContent}>
           <div className={styles.treatmentImage}>
-            <img src={Images.CustomAluminium} alt="Preservative treated wood beams" />
+            <img src={Images.preserveImage} alt="Preservative treated wood beams" />
           </div>
           <div className={styles.treatmentText}>
-            <h2>Preservative Treatment</h2>
+            <h2>Surface Protection & Finishing Treatments</h2>
             <p>
-              QB Corporation recommends using <strong>Coastal Douglas Fir</strong> or{" "}
-              <strong>Southern Yellow Pine</strong> for products that undergo chemical
-              preservative pressure treatment. Treatments should be oil-based or as
-              specified by the project designer.
+              At Varn Extrusion Pvt. Ltd., we understand that surface durability is just as important as structural integrity—especially in demanding utility and industrial applications. That’s why we offer advanced protective treatments like anodizing and powder coating to enhance corrosion resistance, improve longevity, and deliver superior aesthetic appeal across all aluminium profiles.
             </p>
             <p>
-              While QB Corporation does not provide treating services ourselves, we can
-              outsource this service. We offer incising services for better chemical
-              penetration and retention — highly recommended for Utility Structures.
-              Our incising equipment can handle large industrial beams, including tapered
-              beams.
+              Our in-house powder coating line uses a 7-tank pretreatment system followed by chromotization, enabling strong bonding of the coating to the metal surface. Approved by premium brands like Jotun, AkzoNobel, and Asian Paints PPG, our coatings come with 10/15/25-year guarantees and are applied using a high-speed conveyor system for consistency and efficiency—ideal for architectural and utility-grade applications.
             </p>
-            <p>
+            {/* <p>
               Some customers opt for <strong>Alaskan Yellow Cedar</strong>, a naturally
               durable species resistant to insect attack and decay. QB Corporation is an
               approved fabricator of this species. If you have questions,{" "}
@@ -66,7 +48,8 @@ const Structures = () => {
                 contact our customer service
               </a>{" "}
               at 208-756-4248.
-            </p>
+            </p> */}
+            <p>For added durability and surface integrity, we offer anodizing up to 25 microns with electro-anodized colours and shot blasting. These treatments not only prevent oxidation and surface degradation but also enhance visual appeal and functional lifespan. At Varn, preservation isn’t just protection—it’s performance engineered to last.</p>
           </div>
         </div>
       </div>

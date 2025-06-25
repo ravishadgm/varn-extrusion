@@ -71,7 +71,7 @@ const Product = () => {
                 </Link>
 
 
-                <li onClick={() => navigate('/products/qb-rim-board')}>
+                <li onClick={() => navigate('/products/varn-rim-board')}>
                   QB Rim Board <FiArrowUpRight />
                 </li>
                 <li onClick={() => navigate('/products/utility-structures')}>

@@ -8,37 +8,37 @@ const featuresData = [
   {
     number: "01",
     title: "Renewable and Sustainable",
-    text: "Wood pellets are made from wood residues (sawdust, wood shavings, and other by-products of our manufacturing process). Using wood pellets helps reduce reliance on fossil fuels, contributing to a more sustainable energy system.",
+    text: "Aluminium is 100% recyclable without any loss in quality, making it one of the most sustainable metals in the world. Our operations emphasize eco-conscious manufacturing with in-house casting, optimized press usage, and anodizing practices that minimize waste.",
   },
   {
     number: "02",
-    title: "High Energy Density",
-    text: "Fuel pellets have a high energy density, meaning they contain a significant amount of energy per unit of weight. This makes them an efficient fuel source, providing much heat output for their size. It also allows for convenient storage and transportation.",
+    title: "High Strength-to-Weight Ratio",
+    text: "Aluminium offers high mechanical strength while being remarkably lightweight, enabling efficient transportation, installation, and structural integrity. Our ultra-slim 0.3 mm wall thickness profiles are a testament to engineering precision—providing high performance without bulk, ideal for modern infrastructure and architectural demands.",
   },
   {
     number: "03",
-    title: "Clean and Low Emissions",
-    text: "Wood pellets burn more cleanly and produce fewer emissions than traditional wood or fossil fuels. They have a low moisture content, which leads to efficient combustion and reduced smoke and particulate matter. Fuel pellets also emit lower levels of greenhouse gases, such as carbon dioxide, than fossil fuels.",
+    title: "Clean Processing and Low Emissions",
+    text: "At Varn, our automated systems, chromotization processes, and 7-tank pre-treatment lines ensure clean production with consistent surface finishes and lower environmental impact—making our profiles not only strong but also environmentally considerate.",
   },
   {
     number: "04",
-    title: "Cost-effective",
-    text: "Wood pellets can be a cost-effective heating option, especially in areas where other fuel sources, such as oil or propane, are expensive. While the upfront cost of purchasing a pellet stove or boiler may be higher, the lower cost of wood pellets and their efficient combustion can result in long-term cost savings.",
+    title: "Cost-Effective and Long-Lasting",
+    text: "Though aluminium may have a higher initial material cost compared to steel or wood, its long lifecycle, minimal maintenance, and corrosion resistance translate into major long-term savings.",
   },
   {
     number: "05",
-    title: "Convenient and Automated",
-    text: "Pellet stoves and boilers are designed for convenient use. They typically have automated feeding systems that deliver pellets to the combustion chamber, allowing continuous heat without constant refueling. Certain models of pellet stoves can be controlled remotely through smartphones or thermostats.",
+    title: "Precision, Automation & Integration",
+    text: "From billet casting to automated packaging, our fully integrated systems ensure seamless quality control and minimal human error. ",
   },
   {
     number: "06",
-    title: "Carbon Neutral",
-    text: "Pellets are considered a carbon-neutral fuel because the carbon dioxide released during combustion is almost equivalent to the carbon dioxide absorbed by trees during their growth. This carbon uptake and release cycle helps minimize the net increase of greenhouse gases in the atmosphere.",
+    title: "Low Carbon Footprint & Recyclability",
+    text: "Varn Extrusion’s use of in-house melting and holding furnaces further optimizes energy usage, ensuring every kilogram of aluminium is part of a greener manufacturing cycle.",
   },
   {
     number: "07",
-    title: "Utilization of Wood Waste",
-    text: "Wood pellets are valuable for wood residues that would otherwise be discarded or decomposed. By utilizing these by-products, wood pellet production contributes to waste reduction and maximizes the use of available resources.",
+    title: "Waste Reduction Through Smart Design",
+    text: "With in-house cutting, punching, and drilling facilities, every aluminium product is optimized from start to finish, reducing excess scrap and promoting efficient use of raw input.",
   },
 ];
 
@@ -47,8 +47,8 @@ function Advantages() {
     <>
       <div className={styles.verticalContent}>
         <VerticalBlock
-          title="Wood pellet fuel offers several advantages"
-          description="Overall, wood pellet fuel offers an efficient, environmentally friendly, and sustainable alternative to traditional heating fuels, making it an attractive option for residential, commercial, and industrial applications."
+          title="Aluminium: A Sustainable, High-Performance Material for the Future"
+          description=" At Varn Extrusion Pvt. Ltd., our high-quality aluminium profiles are engineered for durability, recyclability, and energy efficiency—supporting a cleaner and more responsible future."
           features={featuresData}
         />
       </div>

@@ -12,9 +12,9 @@ const FAQs = () => {
         },
         {
             count: "02",
-            question: "What coating standards and approvals does the company have?",
+            question: "What fabrication services does Varn Extrusion offer in-house?",
             answer:
-                "Only the best finishes make the cut. Thatʼs why weʼre officially approved by Jotun, AkzoNobel, Asian Paints PPG — trusted names for world-class powder coating. Your products deserve nothing less.",
+                "Varn Extrusion provides in-house precision cutting, punching, and drilling to ensure flawless fabrication, maintain tight tolerances, and enable faster delivery of aluminium profiles.",
         },
         {
             count: "03",

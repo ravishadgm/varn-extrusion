@@ -5,6 +5,10 @@
   background: $color-white;
   text-align: center;
 
+  @media(max-width:900px){
+    padding: 6rem 1rem;
+  }
+
   
 }
 
@@ -69,7 +73,7 @@
 @media (max-width: 768px) {
 
   .specificationSection {
-    padding:4rem 2.2rem;
+    padding:8rem 2.2rem;
   }
   .title {
     font-size: 1.6rem;
@@ -98,7 +102,7 @@
 @media (max-width: 768px) {
 
   .specificationSection {
-    padding:4rem 1rem;
+    padding:6rem 1rem;
   }
   
   .woodPelletsImage{

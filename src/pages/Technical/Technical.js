@@ -14,7 +14,7 @@ const tabs = {
   "Checking": <Checking />,
   "Fire Resistance": <FireResistance />,
   "Quality Assurance": <QualityAssurance />,
-  "Beam Layups": <BeamLayups />,
+  "Aluminium Profile": <BeamLayups />,
   "Volume Effects": <VolumeEffects />,
   "Treatment": <Treatment />,
 };

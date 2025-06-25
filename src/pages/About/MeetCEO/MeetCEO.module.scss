@@ -146,6 +146,11 @@
       margin-bottom: 1rem;
       border: 1px solid #e0e0e0;
       margin-bottom:0.5rem;
+
+      @media(max-width:480px){
+        width:200px;
+        height:200px;
+      }
     }
 
     h3 {
