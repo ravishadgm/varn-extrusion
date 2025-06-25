@@ -10,14 +10,13 @@ const Sizinng = () => {
                     <p>
                         Our{' '}
                         <a
-                            href="/manufacturing-capabilities"
-                            target="_blank"
+                            href="/about/manufacturing-capabilities"
                             rel="noopener noreferrer"
                             className={styles.link}
                         >
                             manufacturing capabilities
                         </a>{' '}
-                        give us a wide range of available depths, widths, and lengths for you to choose from.
+                        allow a wide range of sizes, ensuring we meet your precise project requirements.
                     </p>
                     <div>
                         <p>
@@ -31,16 +30,16 @@ const Sizinng = () => {
                 <div className={styles.right}>
                     <ul>
                         <li className={styles.item}>
-                            <span className={styles.label}>Depth:</span>{' '}
-                            Our standard depths are in 1.5” increments, but we can produce any depth between 3” and 96” deep.
+                            <span className={styles.label}>Thickness :</span>{' '}
+                            As fine as 0.3 mm, we are among the few globally capable of this precision.
                         </li>
                         <li className={styles.item}>
-                            <span className={styles.label}>Width:</span>{' '}
-                            We can produce a width range between 1.5” to 20” wide.
+                            <span className={styles.label}>Width Range :</span>{' '}
+                            We support profile widths based on custom dies, including ultra-narrow to medium-wide applications.
                         </li>
                         <li className={styles.item}>
                             <span className={styles.label}>Length:</span>{' '}
-                            The beams we can produce are up to 130’ long.
+                            Profiles can be extruded in varying lengths based on design needs and logistics — with flexibility up to several meters.
                         </li>
                     </ul>
                 </div>

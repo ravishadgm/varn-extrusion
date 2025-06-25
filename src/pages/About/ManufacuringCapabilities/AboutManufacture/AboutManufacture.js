@@ -1,5 +1,5 @@
 import React from 'react'
-import mainImage from "../../../../assets/images/Manufacture/ManufactureFirst.jpeg";
+import mainImage from "../../../../assets/images/Manufacture/Manufacture_Product.jpeg";
 import overlayImage from "../../../../assets/images/Manufacture/ManufactureSecond.jpeg";
 import styles from './AboutManufacture.module.scss';
 
@@ -19,20 +19,13 @@ const AboutManufacture = () => {
                 <div className={styles.textSection}>
                     <div className={styles.mainContent}>
                         <h1>
-                            The Most Versatile Product Range Offered in the Industry
+                            The Most Versatile Aluminium Profile Range in the Industry
                         </h1>
                         <p>
-                            We now have two working high production lines along with two
-                            curve lines. With the addition of the new facility, customers can
-                            expect more versatility and shorter lead times due to the
-                            increased capacity. Adding the new glue racks and more
-                            oversized curve floors allows us to glue longer and heavier
-                            cambered beams. We now have a second beam press to cover all
-                            your stock needs.
+                            We operate with three high-capacity extrusion presses (800 UST × 2 and 600 UST × 1), capable of delivering a broad spectrum of profile sizes, shapes, and complexities. With the addition of expanded mould inventory and precision press control, our clients benefit from greater customization, faster turnaround, and consistent quality.
                         </p>
                         <p>
-                            If you want that cleaner beam to look, try our "clear glue" option
-                            that makes the glue lines virtually invisible.
+                            The integration of advanced anodizing and powder coating lines, along with automated packaging systems, ensures seamless post-processing — minimizing manual intervention and maximizing finish consistency.
                         </p>
                     </div>
                 </div>

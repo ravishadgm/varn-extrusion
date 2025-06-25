@@ -59,11 +59,17 @@ import woodPellets_banner from './woodPellets/woodPellets_banner.jpeg';
 import utility_treatment from './utility/utility_treatment.jpg';
 import board_banner from './board/board_banner.jpg';
 import board_proparties from './board/board_proparties.jpg';
-import certificate from './products/product_certificate.jpg'
+import certificate from './products/product_certificate.jpg';
+import CustomAluminium from './products/OuterImages/CustomAluminium.jpeg';
+import CustomAluminiumExtrusion from "./products/OuterImages/CustomAluminimExtrusion.jpeg";
+import beamPlate from "./products/OuterImages/BeamPlate.jpg";
+import aluminiumIntelogs from "./products/OuterImages/AluminiumIngots.jpg";
+import utilityStructure from "./products/OuterImages/UtilityStructure.jpeg";
+import utilityBeamStructure from "./products/InnerImages/utilityBeamStructure.jpeg";
 
 const images = {
-news_16,
-news_15,
+  news_16,
+  news_15,
   news_14,
   news_13,
   news_12,
@@ -122,7 +128,13 @@ news_15,
   utility_treatment,
   board_banner,
   board_proparties,
-  certificate
+  certificate,
+  CustomAluminium,
+  CustomAluminiumExtrusion,
+  beamPlate,
+  aluminiumIntelogs,
+  utilityStructure,
+  utilityBeamStructure
 };
 
 export default images;

@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './Highlights.module.scss';
 
 const steps = [
-    "Initially, lumber is protected from excessive moisture in our storage sheds.",
-    "RF (Radio Frequency) batch press that cures glulam beams as they pass through the press.",
-    "When completed, the glulam beam is moved to the finishing department.",
-    "The automated finish department can process the various products our customers demand.",
-    "The beams are wrapped and stacked. We take great care to ensure your beams arrive in the best physical condition.",
-    "Beams are loaded on trucks for delivery to the job site or lumber yard.",
+    "Aluminium billets are stored and melted using high-capacity furnaces.",
+    "Billets are extruded through press machines into custom aluminium profiles.",
+    "Extruded profiles move to the anodizing or powder coating departments.",
+    "Finishes are applied using automated lines for maximum surface quality.",
+    "Profiles are wrapped with shrink packaging to avoid scratches or damage.",
+    "Final products are loaded onto trucks and dispatched for delivery.",
 ];
 
 const Highlights = () => {

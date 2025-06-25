@@ -20,9 +20,11 @@ const FabricationService = () => {
                     or other wiring are available.
                 </p>
 
-                <button className={styles.pdfButton}>
-                    FEBRICATION DETAILS <HiArrowUpRight className={styles.pdfIcon} />
-                </button>
+                <a href="/services/fabrication" rel="noopener noreferrer">
+                    <button className={styles.pdfButton}>
+                        FEBRICATION DETAILS <HiArrowUpRight className={styles.pdfIcon} />
+                    </button>
+                </a>
             </div>
 
             <div className={styles.anotherContainer}>
