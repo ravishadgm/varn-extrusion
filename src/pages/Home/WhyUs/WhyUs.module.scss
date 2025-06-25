@@ -3,7 +3,7 @@
 .mainSection {
   width: 100%;
   padding: 3rem 6rem;
-  background-color: $blue-color;
+  background-color: #f5f5f5;
 
   @media (max-width: 768px) {
     padding: 3rem 2.7rem;
@@ -28,7 +28,7 @@
 
   .innerSection {
     width: 48%;
-    background-color: #f0fff0;
+    background-color: #74C053;
     padding: 3rem 12rem;
     font-size: 3rem;
     border-radius: 25px;
@@ -60,7 +60,8 @@
     width: 48%;
     height: auto;
     border-radius: 25px;
-    background-color: #efefff;
+    color: white;
+    background-color: #296389;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -95,11 +96,11 @@
       padding: 1.3rem 2rem;
       border-radius: 0px 0px 25px 25px;
       display: flex;
-      align-items: flex-start;
+     align-items: center;
       gap: 10px;
       text-align: flex-end;
       cursor: pointer;
-      background-color: #ccccf8;
+      background-color: #bfe6ff17;
 
       @media (max-width: 480px) {
         padding: 1.3rem 1rem;
@@ -113,7 +114,7 @@
         width: 32px;
         height: 32px;
         border-radius: 6px;
-        background-color: #a5a9f3;
+        background-color: #296389;
         z-index: 1;
       }
 
@@ -170,6 +171,8 @@
         text-align: center;
         font-size: 2rem;
         padding: 1.5rem 1rem 1rem 1rem;
+            background: #296389;
+    color: white;
 
         @media (max-width: 480px) {
           font-size: 1rem;
@@ -215,11 +218,12 @@
       .upperLeft {
         width: 40%;
         border-radius: 25px;
-        background-color: #efefff;
+        background-color: #296389;
         padding: 2.5rem 1.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        color: white;
 
         p {
           font-size: 18px;
@@ -241,7 +245,7 @@
       .upperRight {
         width: 55%;
         border-radius: 25px;
-        background-color: #f0fff0;
+        background-color: #74C053;
         padding: 2.5rem 1.5rem;
         display: flex;
         flex-direction: column;
@@ -279,7 +283,7 @@
 
       .lowerLeft {
         width: 55%;
-        background-color: #f0fff0;
+        background-color: #74C053;
         padding: 2.5rem 1.5rem;
         border-radius: 25px;
         align-items: flex-start;
@@ -300,8 +304,9 @@
       .lowerRight {
         width: 40%;
         padding: 2.5rem 1.5rem;
-        background-color: #a5a9f3;
+        background-color: #296389;
         border-radius: 25px;
+        color: white;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;

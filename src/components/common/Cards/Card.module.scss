@@ -15,11 +15,11 @@
  
 
   &:nth-child(even) {
-    background-color: #f0fff0;
+    background-color: #74c05321;
     color: $color-white;
 
     .cardIcon {
-      background-color: #d7ffd6;
+      background-color: #afddae;
     }
 
     .divider {
@@ -35,7 +35,7 @@
     }
 
     .linkIcon:hover {
-      background-color: #d7ffd6;
+      background-color: #afddae;
 
       .arrowIcon {
         color: #008f4c; 
@@ -44,7 +44,7 @@
   }
 
   &:nth-child(odd) {
-    background-color: #efefff;
+    background-color: #29638917;
     
 
     .cardIcon {

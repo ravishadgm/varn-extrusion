@@ -11,7 +11,7 @@ function Banner() {
       
         </>
       }
-      subheading="QB Corporation is a leader in the industry with over 40 years of experience producing glued laminated timber (glulam). Our state-of-the-art manufacturing process ensures that our glulam heavy timber trusses are produced, fabricated, and assembled with precision in our facility."
+subheading="Varn Extrusion specializes in precision aluminum profile fabrication, combining cutting-edge CNC technology with expert craftsmanship. With advanced infrastructure and a focus on engineered excellence, we deliver custom glulam truss assemblies with exacting tolerances and consistent quality — all under one roof."
       buttonLabel="Contact An Expert"
     />
   )

@@ -11,7 +11,7 @@ function Banner() {
       
         </>
       }
-      subheading="QB Corp. is one of the largest glulam manufacturers with CNC capabilities in the United States. Our facility offers comprehensive services, including the production of stock and custom glulam, CNC fabrication, attaching connections, and assembling."
+      subheading="Varn Extrusion leads India’s aluminium industry with complete in-house capabilities — from ultra-slim profile production to precision fabrication, coating, and assembly."
       buttonLabel="Contact An Expert"
     />
   )

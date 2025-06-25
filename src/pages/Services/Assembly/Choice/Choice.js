@@ -6,35 +6,36 @@ import VerticalBlock from "@components/common/VerticalNumberBlock/VerticalBlock"
 const featuresData = [
   {
     number: "01",
-    title: "Lightweight",
-    text: "Glulam is lighter than steel for the same load-bearing capacity thanks to its high strength-to-weight ratio. This makes Glulam trusses easier to maneuver and install, saving time and effort.",
+    title: "Ultra-Light Yet Strong",
+    text: "Our engineered profiles offer a high strength-to-weight ratio — ensuring exceptional structural support while remaining lightweight, ideal for projects where weight savings are critical.",
   },
   {
     number: "02",
-    title: "Flexibility",
-    text: "Whether you're working on a long-span project or a curved design, Glulam is the perfect choice. Its flexibility allows for creative designs without compromising on aesthetics.",
+    title: "Design Flexibility",
+    text: "With precision CNC fabrication and ultra-slim profile capabilities down to 0.3 mm wall thickness, we enable custom shapes and design innovations that meet both structural and aesthetic goals.",
   },
   {
     number: "03",
-    title: "Durability",
-    text: "Glulam is more durable in environments with high moisture or chemical levels and requires less maintenance than steel. This makes Glulam trusses a practical choice for a wide range of projects.",
+    title: "Corrosion-Resistant Durability",
+    text: "Unlike steel, our aluminum profiles do not rust and perform excellently in harsh environments. Combined with anodizing or powder coating, they offer long-term durability with minimal maintenance.",
   },
   {
     number: "04",
-    title: "Lower Carbon Footprint",
-    text: "Glulam has a lower carbon footprint than steel and concrete. This is because the production of Glulam requires less energy and results in fewer greenhouse gas emissions.",
+    title: "Eco-Friendly Production",
+    text: "Our extrusion processes consume less energy than traditional materials, and aluminum’s recyclability contributes to a reduced carbon footprint and greener manufacturing practices.",
   },
   {
     number: "05",
-    title: "Sustainable Material",
-    text: "Wood is a renewable resource, and the timber used in Glulam can be sourced from sustainably managed forests while using the wood more efficiently than solid sawn.",
+    title: "Sustainable Manufacturing",
+    text: "We use eco-conscious methods such as chromotization, waste reduction, and efficient resource management to produce environmentally responsible architectural profiles.",
   },
   {
     number: "06",
-    title: "Life Cycle Analysis",
-    text: "When considering the entire life cycle of the building product, wood was found to be better than steel or concrete in terms of embodied energy, global warming potential, air emissions, water emissions, and solid waste production.",
+    title: "Precision at Every Stage",
+    text: "From advanced spectrometer-based alloy analysis to in-house CNC machining and ERP-controlled fabrication, every profile is built with unmatched accuracy and consistency.",
   },
 ];
+
 
 
 const Choice = () => {
@@ -43,10 +44,7 @@ const Choice = () => {
     <>
       <section className={styles.strengthBlock}>
         <div className={styles.text}>
-          When it comes to strength and flexibility, Glulam outperforms steel in
-          many ways. Glulam offers superior load-bearing capacity with a
-          strength-to-weight ratio that is three times greater than steel. This
-          means that pound for pound, Glulam is indeed stronger than steel.
+          When it comes to strength and design versatility, glulam offers significant advantages over steel. With a strength-to-weight ratio up to three times greater, glulam provides exceptional load-bearing capacity while allowing for lighter, more efficient structural designs. Pound for pound, glulam proves to be stronger and more adaptable than steel.
         </div>
 
         <div className={styles.imageWrapper}>
@@ -54,12 +52,12 @@ const Choice = () => {
         </div>
       </section>
       <div className={styles.innerBlock}>
-        <VerticalBlock
-          title="Glulam Trusses are the Preferred Choice over the Alternatives"
-          description="When it comes to strength and flexibility, Glulam outperforms steel in many ways. Glulam offers superior load-bearing capacity with a strength-to-weight ratio that is three times greater than steel. This means that pound for pound, Glulam is indeed stronger than steel."
-          features={featuresData}
+       <VerticalBlock
+  title="Glulam Trusses are the Preferred Choice over the Alternatives"
+  description="When it comes to strength and design flexibility, glulam stands out as a superior structural solution. With a strength-to-weight ratio up to three times greater than steel, glulam provides exceptional load-bearing performance while allowing for efficient, lightweight design."
+  features={featuresData}
+/>
 
-        />
       </div>
     </>
 

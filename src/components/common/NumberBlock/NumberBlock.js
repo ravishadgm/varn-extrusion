@@ -85,10 +85,12 @@ function NumberBlock({
             <span className={styles.alertIcon}>!</span>
             <span className={styles.alertText}>
               <strong>
-                QB Corporation does not provide engineering or design services.
+                Varn Extrusion does not offer structural design or engineering
+                services.
               </strong>
-              &nbsp;Please provide us with the beam list and drawings in{" "}
-              <code>.3d</code> or <code>.dxf</code> file formats.
+              &nbsp;Kindly provide finalized drawings and specifications in{" "}
+              <code>.3d</code> or <code>.dxf</code> file formats to ensure
+              accurate production and processing.
             </span>
           </div>
         )}

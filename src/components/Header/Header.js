@@ -38,7 +38,7 @@ const navLinks = [
 ];
 
 const Header = () => {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpenMobile, setServicesOpenMobile] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -58,7 +58,6 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Clean up timeout on component unmount
   useEffect(() => {
     return () => {
       if (dropdownTimeout) {
@@ -68,6 +67,7 @@ const Header = () => {
   }, [dropdownTimeout]);
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   const closeMenu = () => {
     setMenuOpen(false);
     setServicesOpenMobile(false);
@@ -77,16 +77,14 @@ const Header = () => {
       setDropdownTimeout(null);
     }
   };
-  
+
   const toggleMobileServices = (e) => {
     e.preventDefault();
     setServicesOpenMobile((prev) => !prev);
   };
 
-  // Navigation item mouse handlers
   const handleNavMouseEnter = () => {
     if (!isMobile) {
-      // Clear any existing timeout
       if (dropdownTimeout) {
         clearTimeout(dropdownTimeout);
         setDropdownTimeout(null);
@@ -97,18 +95,15 @@ const Header = () => {
 
   const handleNavMouseLeave = () => {
     if (!isMobile) {
-      // Add a delay before closing
       const timeout = setTimeout(() => {
         setShowDropdown(false);
-      }, 150); // 150ms delay
+      }, 150);
       setDropdownTimeout(timeout);
     }
   };
 
-  // Dropdown menu mouse handlers
   const handleDropdownMouseEnter = () => {
     if (!isMobile) {
-      // Clear timeout when entering dropdown
       if (dropdownTimeout) {
         clearTimeout(dropdownTimeout);
         setDropdownTimeout(null);
@@ -118,7 +113,6 @@ const Header = () => {
 
   const handleDropdownMouseLeave = () => {
     if (!isMobile) {
-      // Close immediately when leaving dropdown
       setShowDropdown(false);
     }
   };
@@ -141,23 +135,18 @@ const Header = () => {
             return (
               <div key={link.name} className={styles.navItem}>
                 {isServices ? (
-                  <div
-                    className={styles.dropdownWrapper}
-                    
-                  >
+                  <div className={styles.dropdownWrapper}>
                     <NavLink
-    to={link.path}
-    onMouseEnter={handleNavMouseEnter}  // Add here
-    onMouseLeave={handleNavMouseLeave}  // Add here
-    onClick={(e) => {
-      if (isMobile) {
-        e.preventDefault();
-        toggleMobileServices(e);
-      } else {
-        e.preventDefault();
-        setShowDropdown((prev) => !prev);
-      }
-    }}
+                      to={link.path}
+                      onMouseEnter={handleNavMouseEnter}
+                      onMouseLeave={handleNavMouseLeave}
+                      onClick={(e) => {
+                        if (isMobile) {
+                          e.preventDefault();
+                          toggleMobileServices(e);
+                        }
+                        // On desktop, allow navigation to /services
+                      }}
                       className={({ isActive }) =>
                         `${styles.navLink} ${isActive ? styles.active : ""}`
                       }
@@ -172,9 +161,8 @@ const Header = () => {
                       </span>
                     </NavLink>
 
-                    {/* Desktop Dropdown */}
                     {!isMobile && showDropdown && (
-                      <div 
+                      <div
                         className={styles.mainDropMenu}
                         onMouseEnter={handleDropdownMouseEnter}
                         onMouseLeave={handleDropdownMouseLeave}
@@ -278,7 +266,6 @@ const Header = () => {
                   </NavLink>
                 )}
 
-                {/* Mobile Accordion Dropdown */}
                 {isServices && isMobile && (
                   <div
                     className={`${styles.mobileAccordion} ${

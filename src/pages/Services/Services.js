@@ -8,14 +8,14 @@ const imageData = [
   {
     title: "Fabrication Services",
     description:
-      "Fabrication services with cutting-edge technology, extensive capabilities, and superior results",
+      "Fabrication solutions backed by advanced technology, robust infrastructure, and uncompromising quality.",
     image: Images.services_fab,
     link:'/services/fabrication'
   },
   {
     title: "Timber Truss Assembly",
     description:
-      "QB Corporation is your go-to solution for premium glued laminated timber trusses.",
+      "Varn Extrusion is your trusted partner for high-quality glued laminated timber trusses, engineered for strength and precision",
     image: Images.services_timber,
     link:'/services/truss-assembly'
   },
@@ -35,8 +35,7 @@ function Services() {
         title={<>Varn Extrusion Provides Exceptional Services</>}
         description={
           <>
-            Varn Extrusion offers more than glulam beam products – we provide a
-            comprehensive solution that enhances your business capabilities.
+            Varn Extrusion delivers more than aluminum profiles – we offer end-to-end solutions that strengthen your business operations  
           </>
         }
         buttonText="Contact an Expert"
