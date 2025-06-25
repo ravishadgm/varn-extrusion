@@ -19,7 +19,7 @@ const Mission = () => {
                     <div className={styles.visionContent}>
                         <div className={styles.upperContainer}>
                             <h1 className={styles.subHeading}>Our Vision</h1>
-                            <h1 className={styles.visionText}>
+                            <h1 className={styles.visionTextt}>
                                 To be recognized as a globally trusted name in aluminium manufacturing, offering
                                 innovative, sustainable, and superior-quality products.
                             </h1>

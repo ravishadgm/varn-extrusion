@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "../StokeTable.module.scss"
 import BeamTable from '@components/common/BeamTable/BeamTable';
 
-const headers = ["Glulam Beam Size", "Width", "Depths", "Length Available in Ft"];
+const headers = ["Aluminium Beam Size", "Width", "Depths", "Length Available in Ft"];
 
 const data = [
     ['3-1/8” x 6"', '3.125″ (79 mm)', '6″ (152mm)', "48′ 60′ 63′ and 66′"],

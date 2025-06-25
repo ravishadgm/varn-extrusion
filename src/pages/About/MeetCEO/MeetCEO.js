@@ -17,30 +17,30 @@ const MeetCEO = () => {
     const team = [
         {
             name: 'Mr. Rajesh Mehta',
-            position: 'Chief Executive Officer (CEO)',
+            position: 'Managing Director',
             quote:
                 'At Varn Extrusion Pvt. Ltd., we don’t just manufacture aluminium profiles—we engineer possibilities.',
-            image: Image1,
-        },
-        {
-            name: 'Ms. Priya Sharma',
-            position: 'Chief Technology Officer (CTO)',
-            quote:
-                'We empower our people to deliver quality that speaks for itself.',
             image: Image2,
         },
         {
-            name: 'Mr. Anil Patel',
-            position: 'Director of Operations',
+            name: 'Ms. Priya Sharma',
+            position: 'Quality Control Head',
             quote:
-                'Together, we’re not only building products, but a legacy of excellence.',
+                'For us, quality isnʼt a checkpoint — itʼs a mindset.From raw material to final finish, every inch of every profile reflects our uncompromising standards.',
+            image: Image1,
+        },
+        {
+            name: 'Mr. Anil Patel',
+            position: 'Logistics & Dispatch Manager',
+            quote:
+                'We live by our word. With streamlined operations and on-time logistics, we deliver what you need, when you need it — no excuses.',
             image: Image3,
         },
         {
             name: 'Mrs. Sneha Desai',
-            position: 'Quality Assurance Manager',
+            position: 'Head of Fabrication',
             quote:
-                'Quality isn’t a checkpoint—it’s a mindset reflected in every inch we produce.',
+                'For us, quality isn’t a checkpoint — it’s a mindset. From raw material to final finish, every inch of every profile reflects our uncompromising standards.',
             image: Image4,
         },
         {
@@ -60,7 +60,7 @@ const MeetCEO = () => {
                         <div className={styles.varnImg}>
                             {/* <img src={Image} alt="Our Vision" /> */}
                             <motion.img
-                                src={Image}
+                                src={Image3}
                                 alt="Factory Overview"
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -71,7 +71,7 @@ const MeetCEO = () => {
                     <div className={styles.contentSection}>
                         <h1>Meet Our CEO</h1>
                         <div className={styles.innerContainer}>
-                            <p>“At Varn Extrusion Pvt. Ltd., we don’t just manufacture aluminium profiles—we engineer possibilities. Our journey has always been guided by a commitment to precision, innovation, and trust. I believe in leading with integrity and empowering our people to deliver quality that speaks for itself. Together, we’re not only building products, but also a legacy of excellence that will define the future of this industry.”</p>
+                            <p>“At Varn Extrusion Pvt. Ltd., we don’t just manufacture aluminium profiles—we engineer possibilities. I believe in leading with integrity and empowering our people to deliver quality that speaks for itself. At every step, we uphold the values of integrity, innovation, and on-time delivery — because your vision deserves nothing less than the exceptional.”</p>
                             <h4>- CEO NAME</h4>
                         </div>
                     </div>

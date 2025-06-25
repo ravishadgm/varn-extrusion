@@ -5,38 +5,38 @@ import Images from "@assets/images";
 
 const imageData = [
   {
-    title: "Custom Glulam Beams",
+    title: "Custom Aluminium Extrusions",
     description:
-      "Get the perfect fit for your project with QB Corporation’s custom and curved glulam beams.",
-    image: Images.product_custom,
+      "Over 1000+ mould designs allow tailored solutions for unique profile requirements. Our team ensures precision and strength in every extrusion.",
+    image: Images.CustomAluminiumExtrusion,
     link: '/products/custom-beams'
   },
   {
-    title: "Stock Glulam Beams",
+    title: "Aluminum beams",
     description:
-      "Get your construction project completed faster and more efficiently with our stock glulam beams.",
-    image: Images.product_stock,
+      "Get your construction project completed faster and more efficiently with our stock Aluminium beams.",
+    image: Images.CustomAluminium,
     link: '/products/stoke-beams'
   },
   {
-    title: "QB Rim Board",
+    title: "QA Beam Plate",
     description:
       "QB Rim Board has enhanced strength, stability, and resistance to warping or splitting.",
-    image: Images.prodcut_qb,
+    image: Images.beamPlate,
     link: '/products/qb-rim-board'
   },
   {
-    title: "Utility Structures",
+    title: "Aluminum Utility Frames",
     description:
       "An excellent solution for expanding the nation’s infrastructure efficiently.",
-    image: Images.product_utility,
+    image: Images.utilityStructure,
     link: '/products/utility-structures'
   },
   {
-    title: "Wood Pellets",
+    title: "Aluminum Ingots",
     description:
       "Our pellets are renewable, sustainable, and rated as high-performance fuel.",
-    image: Images.product_Wood,
+    image: Images.aluminiumIntelogs,
     link: '/products/wood-pellets'
   },
 ];

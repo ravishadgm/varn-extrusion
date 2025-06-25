@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./TexureList.module.scss"
-import texureOne from "../../../../../assets/images/products/textureOne.jpg"
-import texureTwo from "../../../../../assets/images/products/texureTwo.jpg"
+import texureOne from "../../../../../assets/images/products/InnerImages/Texture1.jpeg"
+import texureTwo from "../../../../../assets/images/products/InnerImages/Texture2.jpeg"
 import { ImNotification } from "react-icons/im";
 
 const TexureList = () => {
@@ -12,16 +12,16 @@ const TexureList = () => {
                     <p>The textures we offer can be applied to most of our finishes. Each provides its own unique look that differs from the standard appearance. The texture affects the beam’s appearance but does not influence the strength of the beam in any way.</p>
                 </div>
                 <div className={style.tableContent}>
-                    <h4>Rough Saw</h4>
-                    <p>It gives the beam an olden look of sawn timber that can add an aesthetic character to the beam in any application.</p>
+                    <h4>Satin Finish</h4>
+                    <p>A fine-brushed appearance that adds texture without glare. It offers a balance between matte and polished looks.</p>
                 </div>
                 <div className={style.tableContent}>
-                    <h4>Light Rough Saw</h4>
-                    <p>The exact appearance of the Rough Saw but a lighter version.</p>
+                    <h4>Polished Finish</h4>
+                    <p>A glossy, mirror-like surface ideal for decorative or high-end design elements. Great for applications where shine and smoothness are key.</p>
                 </div>
                 <div className={style.tableContent}>
-                    <h4>Wire Brush</h4>
-                    <p>As the name states, it gives the beam the look of being wiped with a wire brush. It removes some of the wood’s soft parts, adding a more natural look to the appearance.</p>
+                    <h4>Shot Blasted</h4>
+                    <p>Creates a uniform, matte texture by blasting the surface with fine media. It enhances the coating adhesion and gives a refined industrial look.</p>
                 </div>
             </div>
             <div className={style.imageContainer}>
@@ -37,7 +37,7 @@ const TexureList = () => {
             <div className={style.warningBox}>
                 <ImNotification className={style.icon} />
                 <p>
-                    <strong>Please be advised that QB Corporation does not currently provide staining services.</strong>
+                    <strong>Please be advised thatVarn Extrusion does not currently provide staining services.</strong>
                 </p>
             </div>
         </div>

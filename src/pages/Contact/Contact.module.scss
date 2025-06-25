@@ -19,7 +19,7 @@
       $banner-overlay,
       rgba(22, 46, 32, 0.6)
     ),
-    url("../../assets/images/contact/contact_bg1.jpg");
+    url("../../assets/images/contact/contactus_bg4.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,6 +144,7 @@
   align-items: flex-start; // ✅ Top align form
   padding: 80px 60px;
 
+ 
   @media (max-width: 1024px) {
     padding: 60px 40px;
   }
@@ -175,10 +176,15 @@
   margin-left: 0;
   margin-left: -175px;
 
+   @media(max-width:1440px){
+    margin-left: -90px;
+  }
+
+
   @media (max-width: 1024px) {
     margin: 2rem auto;
     margin-left :auto;
-    margin-top:-170px;
+    margin-top:-150px;
   }
 
   @media (max-width: 768px) {

@@ -36,7 +36,7 @@ export default function Specification() {
         </div>
       </div>
       <div>
-        <img className={styles.woodPelletsImage} src={Images.woodPellets_bg} alt='wood pellets'/>
+        <img className={styles.woodPelletsImage} src={Images.utilityBeamStructure} alt='wood pellets' />
       </div>
     </section>
   );

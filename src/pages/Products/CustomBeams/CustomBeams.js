@@ -12,7 +12,7 @@ const tabs = {
     "Sizing": <Sizinng />,
     "Curved": <Curved />,
     "Treated": <Treated />,
-    "Species": <Species />,
+    "Material Grades": <Species />,
 };
 
 const CustomBeams = () => {

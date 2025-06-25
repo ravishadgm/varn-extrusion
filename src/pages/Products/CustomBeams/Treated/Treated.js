@@ -9,12 +9,15 @@ const Treated = () => {
                 <div className={styles.left}>
                     <div>
                         <p>
-                            QB Corporation recommends using Coastal Douglas Fir or Southern Yellow pine for Custom Glulam Beams that undergoes chemical preservative pressure treatment. Treatments should be oil-based or as specified by the project designer. As an alternative to pressure treating, some customers are moving to Alaskan Yellow Cedar, a naturally durable species against insect attack and decay.
-                        </p>
-                        <p>
-                            We do not offer treating services but can outsource this if you do not have your own capabilities. We do offer incising to allow better chemical penetration and retention. This is highly recommended on any product to be treated for outdoor use. Our incising equipment can handle large industrial beams typically used in industrial structures. We can also incise the tapered faces of tapered beams.
+                            Every profile undergoes treatment processes that enhance durability, aesthetics, and environmental performance.
                         </p>
                     </div>
+                </div>
+                <div className={styles.right}>
+                    <ul>
+                        <li>Powder Coating: Automated system using premium brands like Jotun, AkzoNobel, Asian Paints PPG, with 10/15/25-year warranty coatings.</li>
+                        <li>Anodizing: Performed through a 25-tank setup supporting up to 25 microns, with options for electro-anodized colors, shot blasting, and chromotization.</li>
+                    </ul>
                 </div>
             </div>
         </section>

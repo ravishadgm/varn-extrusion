@@ -1,28 +1,28 @@
 import React from 'react';
 import styles from './Species.module.scss';
-import FirstProduct from "../../../../assets/images/products/first_block.jpg"
-import SecondProduct from "../../../../assets/images/products/second_block.jpg"
-import ThirdProduct from "../../../../assets/images/products/third_block.jpg"
-import FourthProduct from "../../../../assets/images/products/fourth_block.jpg"
+import FirstProduct from "../../../../assets/images/products/InnerImages/HighPurity.jpg"
+import SecondProduct from "../../../../assets/images/products/InnerImages/IndustrialAluminum.jpeg"
+import ThirdProduct from "../../../../assets/images/products/InnerImages/ArchitecturalAluminium.jpg"
+import FourthProduct from "../../../../assets/images/products/InnerImages/surfaceAluminum.png"
 
 const species = [
     {
-        name: "Douglas Fir",
+        name: " High-Purity Aluminium",
         image: FirstProduct,
         note: ""
     },
     {
-        name: "Alaskan Yellow Cedar",
+        name: "Industrial-Grade Aluminium",
         image: SecondProduct,
         note: ""
     },
     {
-        name: "Western Red Cedar",
+        name: "Architectural Aluminium",
         image: ThirdProduct,
         note: "(depending on availability)"
     },
     {
-        name: "Southern Yellow Pine",
+        name: "Surface-Grade Aluminium",
         image: FourthProduct,
         note: "(depending on availability)"
     }
@@ -32,9 +32,9 @@ const Species = () => {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <h2>Wood Species</h2>
+                <h2>Material Grades</h2>
                 <p>
-                    Certain species can be used in different applications. If you are unsure which species you need, contact our experienced staff, and we would be happy to assist you. We also are capable of providing other species if requested.
+                    Aluminium extrusions are manufactured using high-grade alloys designed for strength, formability, and corrosion resistance.
                 </p>
             </div>
 

@@ -10,7 +10,7 @@ const StokeIntro = () => {
             <div className={styles.right}>
                 <ul>
                     <li>
-                        QB Corporation’s stock glulam beams are available in standard sizes:
+                        Varn Extrusion's aluminium beams are available in standard sizes:
                         <strong> 3&#8540;", 5&#8540;", 6&#190;", and 8&#190;"</strong>. These options allow for faster delivery and easier handling on-site.
                         All stock beams are <strong>cambered at a 5000-foot radius</strong>, made with a <strong>24F-V4 Layup</strong>, and range from
                         <strong> 48 to 66 feet in length</strong>. Each beam features an <strong>Architectural finish</strong> and is manufactured from

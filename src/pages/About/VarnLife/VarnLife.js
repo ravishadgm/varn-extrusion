@@ -9,12 +9,12 @@ const VarnLife = () => {
         {
             title: 'Modern Infra & Automation',
             description:
-                'Our advanced infrastructure includes 3 extrusion presses (800 UST & 600 UST), automated packaging systems, and in-house ERP to ensure seamless operations and a tech-enabled work environment.',
+                'From anodizing and powder coating to in-house fabrication and automatic packaging, our fully integrated facility ensures seamless production with zero compromise on quality or timelines.',
         },
         {
             title: 'Skilled Workforce',
             description:
-                'With a cohesive team of 300+ skilled professionals, every process at Varn reflects precision, commitment, and people-driven excellence.',
+                'With over 300 skilled professionals, our team powers excellence in every process. Itʼs not just manufacturing — itʼs passion, precision, and people working in harmony. A team of 300+ work cohesively to maintain seamless operations and uphold our commitment to quality.',
 
         },
         {
@@ -26,16 +26,16 @@ const VarnLife = () => {
         {
             title: 'Innovation Culture ',
             description:
-                'We encourage innovation with responsibility — combining cutting-edge technology and sustainable processes to shape smarter aluminum solutions.',
+                'Driven by a culture of commitment, craftsmanship, and creativity, we combine cutting-edge technology with deep industry knowledge to bring our clients solutions that are as durable as they are beautifully designed.',
 
         }, {
             title: 'Career & Learning Opportunities',
             description:
-                'Through on-site fabrication, anodizing, quality testing, and ERP-based workflows, employees gain deep industry knowledge and hands-on experience for continuous career growth.',
+                'With over 300 skilled professionals, our team powers excellence in every process. Itʼs not just manufacturing — itʼs passion, precision, and people working in harmony.',
         }, {
             title: 'Eco-Conscious Work Environment',
             description:
-                'With environmentally responsible processes — including chromotization, 7-tank powder coating, and recyclable packaging — we support sustainability at every step.',
+                'At VARN Extrusion Pvt. LTd., We donʼt just build for today. With sustainable practices and eco-friendly processes, weʼre helping shape a greener, smarter future. ',
         }
     ]
     return (

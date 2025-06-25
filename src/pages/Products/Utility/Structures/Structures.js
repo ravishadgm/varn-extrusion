@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Structures.module.scss";
-import  Images  from '@assets/images';
+import Images from '@assets/images';
 
 const Structures = () => {
   return (
@@ -41,7 +41,7 @@ const Structures = () => {
       <div className={styles.treatmentSection}>
         <div className={styles.treatmentContent}>
           <div className={styles.treatmentImage}>
-            <img src={Images.utility_treatment} alt="Preservative treated wood beams" />
+            <img src={Images.CustomAluminium} alt="Preservative treated wood beams" />
           </div>
           <div className={styles.treatmentText}>
             <h2>Preservative Treatment</h2>
