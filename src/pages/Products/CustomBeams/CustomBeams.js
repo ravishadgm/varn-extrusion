@@ -25,13 +25,13 @@ const CustomBeams = () => {
                 <CorpBlock
                     heading={
                         <>
-                            High-Quality Glue <br />
-                            Laminated Beams
+                            High-Quality Custom <br />
+                            Aluminium Profiles
                         </>
                     }
-                    subheading="We at QB Corporation take pride in providing quality custom glue beams, meeting each of the specifications provided by our customers. With our facility, we can manufacture custom and curved glue laminated timber for even the most complicated jobs."
+                    subheading="We at Varn Extrusion take pride in delivering high-quality custom aluminium profiles, precisely engineered to meet every specification provided by our customers. With our advanced manufacturing facility, we can produce complex, curved, and ultra-slim aluminium designs — even for the most challenging applications."
                     buttonLabel="Contact An Expert"
-
+                    buttonLink="/contact"
                 />
             </div>
             <div className={styles.containerBox}>

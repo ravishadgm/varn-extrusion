@@ -1,9 +1,9 @@
 import React from "react";
 import VerticalBlock from "../../../../components/common/VerticalNumberBlock/VerticalBlock";
 import styles from "./Advantages.module.scss"
-
 import { FaFilePdf } from "react-icons/fa6";
 import Images from '@assets/images';
+
 const featuresData = [
   {
     number: "01",

@@ -11,11 +11,12 @@ const StokeBeams = () => {
                 <CorpBlock
                     heading={
                         <>
-                            Stock Glulam Beams
+                            Stock Aluminium Beams
                         </>
                     }
-                    subheading="Varn Extrusion is one of the largest stock glulam beams producers, with two high-capacity RF production lines and a strong link to the required natural fiber resource. Whether your project requires custom beams and fabrication or truckloads of high-quality stock material, QB Corporation is your one-stop source."
+                    subheading="Varn Extrusion is one of India's leading producers of stock and custom aluminium profiles, equipped with high-capacity extrusion press lines and fully integrated in-house facilities. Whether your project demands precision-fabricated components or bulk quantities of premium aluminium beams, Varn is your trusted one-stop solution — engineered for performance, quality, and timely delivery."
                     buttonLabel="Contact An Expert"
+                    buttonLink="/contact"
 
                 />
             </div>

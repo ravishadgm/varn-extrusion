@@ -1,20 +1,15 @@
 import React from 'react';
-// import Images from "@assets/images";
-import greenLogo from "../../../assets/images/trustedBrands/Green.png";
-import hindalcoLogo from "../../../assets/images/trustedBrands/hindalco.png";
-import isoLogo from "../../../assets/images/trustedBrands/ISO.png";
-import jswLogo from "../../../assets/images/trustedBrands/JSW.png";
-import ltLogo from "../../../assets/images/trustedBrands/L&T.png";
+import Images from "@assets/images";
 import styles from "./Awards.module.scss";
 
 const Awards = () => {
 
     const brandLogos = [
-        { name: "Jindal Aluminium", src: greenLogo },
-        { name: "Hindalco", src: hindalcoLogo },
-        { name: "Vedanta", src: isoLogo },
-        { name: "Tata Steel", src: jswLogo },
-        { name: "L&T", src: ltLogo },
+        { name: "Jindal Aluminium", src: Images.greenLogo },
+        { name: "Hindalco", src: Images.hindalcoLogo },
+        { name: "Vedanta", src: Images.isoLogo },
+        { name: "Tata Steel", src: Images.jswLogo },
+        { name: "L&T", src: Images.ltLogo },
     ];
 
     return (

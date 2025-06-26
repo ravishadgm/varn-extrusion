@@ -1,29 +1,26 @@
 import React from 'react';
 import styles from './Species.module.scss';
-import FirstProduct from "../../../../assets/images/products/InnerImages/HighPurity.jpg"
-import SecondProduct from "../../../../assets/images/products/InnerImages/IndustrialAluminum.jpeg"
-import ThirdProduct from "../../../../assets/images/products/InnerImages/ArchitecturalAluminium.jpg"
-import FourthProduct from "../../../../assets/images/products/InnerImages/surfaceAluminum.png"
+import Images from '@assets/images';
 
 const species = [
     {
         name: " High-Purity Aluminium",
-        image: FirstProduct,
+        image: Images.firstProduct,
         note: ""
     },
     {
         name: "Industrial-Grade Aluminium",
-        image: SecondProduct,
+        image: Images.secondProduct,
         note: ""
     },
     {
         name: "Architectural Aluminium",
-        image: ThirdProduct,
+        image: Images.thirdProduct,
         note: "(depending on availability)"
     },
     {
         name: "Surface-Grade Aluminium",
-        image: FourthProduct,
+        image: Images.fourthProduct,
         note: "(depending on availability)"
     }
 ];

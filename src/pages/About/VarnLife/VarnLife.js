@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from "../../../assets/images/Team/Team.png"
 import styles from "./VarnLife.module.scss";
+import Images from '@assets/images';
 import Card from '@components/common/Cards/Card';
 import { motion } from "framer-motion";
 
@@ -31,7 +31,7 @@ const VarnLife = () => {
         }, {
             title: 'Career & Learning Opportunities',
             description:
-                'With over 300 skilled professionals, our team powers excellence in every process. Itʼs not just manufacturing — itʼs passion, precision, and people working in harmony.',
+                'At VARN Extrusion, we believe growth thrives where innovation meets craftsmanship. We foster a culture of continuous learning, skill development, and ethical excellence—empowering individuals to build meaningful careers in aluminium manufacturing.',
         }, {
             title: 'Eco-Conscious Work Environment',
             description:
@@ -48,7 +48,7 @@ const VarnLife = () => {
                     <div className={styles.varnImg}>
                         {/* <img src={Image} alt="Our Vision" /> */}
                         <motion.img
-                            src={Image}
+                            src={Images.team}
                             alt="Factory Overview"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}

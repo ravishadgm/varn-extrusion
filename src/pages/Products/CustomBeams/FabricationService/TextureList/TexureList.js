@@ -1,7 +1,6 @@
 import React from 'react'
 import style from "./TexureList.module.scss"
-import texureOne from "../../../../../assets/images/products/InnerImages/Texture1.jpeg"
-import texureTwo from "../../../../../assets/images/products/InnerImages/Texture2.jpeg"
+import Images from '@assets/images';
 import { ImNotification } from "react-icons/im";
 
 const TexureList = () => {
@@ -26,11 +25,11 @@ const TexureList = () => {
             </div>
             <div className={style.imageContainer}>
                 <div className={style.imageBlock}>
-                    <img src={texureOne} alt="Columns – Combination 2 or V8" />
+                    <img src={Images.texureOne} alt="Columns – Combination 2 or V8" />
                     <p>Rough Saw Texture</p>
                 </div>
                 <div className={style.imageBlock}>
-                    <img src={texureTwo} alt="Columns – Combination 2 or V8" />
+                    <img src={Images.texureTwo} alt="Columns – Combination 2 or V8" />
                     <p>Wire Brush Texture</p>
                 </div>
             </div>

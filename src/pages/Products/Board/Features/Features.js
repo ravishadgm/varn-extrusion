@@ -77,15 +77,15 @@ function Features() {
       <section className={styles.qbSection}>
         <div className={styles.container}>
           <div className={styles.imageSection}>
-            <h2>Design Properties of Varn Aluminium Rim Profiles</h2>
-            <img src={Images.board_proparties} alt="Varn Rim Design Table" />
+            <h2>Varn’s Trusted Perimeter Framing Profiles</h2>
+            <img src={Images.varnProfile} alt="Varn Rim Design Table" />
           </div>
 
           <div className={styles.infoSection}>
             <h3>Additional Info:</h3>
 
             <div className={styles.downloadBox}>
-              <p>Download the varn Rim Board Brochure:</p>
+              <p>Download the Aluminium Perimeter Profile Brochure:</p>
               <a
                 href="https://cdn.prod.website-files.com/655bc5fdd4556632911f083a/65fdff9ea73e00babc1e3347_QB-RIM-BOARD.pdf"
                 className={styles.button}
@@ -97,7 +97,7 @@ function Features() {
             </div>
 
             <div className={styles.downloadBox}>
-              <p>Read the APA varn Rim Report:</p>
+              <p>Read the Engineering Specification Sheet:</p>
               <a
                 href="https://drive.google.com/file/d/1g4irX9uuxCbdFi723r9y359p6Z9ZUVSl/view?pli=1"
                 className={styles.button}
