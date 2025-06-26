@@ -8,16 +8,15 @@ const FireResistance = () => {
             <div className={styles.textContent}>
                 <h2>Fire Resistant Design</h2>
                 <p>
-                    Since wood is a combustible material, many design professionals do not consider wood as part of an effective fire-resistant design. With proper design and care, wood can be used in many structures requiring fire-resistant design.
+                    Aluminium, by nature, is non-combustible and does not emit toxic gases, making it a reliable material for fire-resistant construction. At VARN Extrusion, our aluminium profiles are manufactured with precision and treated with high-quality finishes that enhance their resistance to heat and surface degradation. Combined with powder coating and anodizing processes, our profiles meet stringent safety and durability standards required for architectural and industrial applications.
                 </p>
                 <p>
-                    For most lightweight construction, fire resistance is provided by a covering of gypsum or other insulating materials or by fire sprinklers. This is true for wood, steel, or even concrete.
+                    Unlike combustible materials, aluminium does not char or contribute to flame spread, offering consistent performance even under elevated temperatures.
                 </p>
                 <p>
-                    Glulam beams with proper design can accomplish fire-resistant design by using larger sections. Using wood's natural characteristics to char when exposed to high temperature and combustion. This charring develops natural insulation to fire, protecting the interior wood fiber from high temperature and flame. Of course, this charring only protects the wood for a relatively short time, just as insulation or gypsum protects other products for a short time.
-
+                    Our commitment to quality and compliance ensures that your structure remains safer, stronger, and smarter—ready to meet modern fire safety codes and expectations.
                 </p>
-                <p>The bottom line, you can protect your structure and have the desired appearance by designing your Varn Extrusion members for fire resistance construction. You should consult a licensed design professional in this area, although some basic information is available in the Timber Construction Manual, published by the American Institute of Timber Construction.</p>
+                <p>The bottom line, you can protect your structure and have the desired appearance by designing your Varn Extrusion members for fire resistance construction. You should consult a licensed design professional in this area, although some basic information is available in the Timber Construction Manual.</p>
             </div>
 
             <div className={styles.sideInfo}>

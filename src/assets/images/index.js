@@ -68,6 +68,32 @@ import utilityStructure from "./products/OuterImages/UtilityStructure.jpeg";
 import utilityBeamStructure from "./products/InnerImages/utilityBeamStructure.jpeg";
 import workService from "./services/workService.jpeg";
 import preserveImage from "./products/InnerImages/PreserveImg.jpeg";
+import premiumProfile from "./products/OuterImages/premiumProfile.jpeg";
+import crossArms from "./products/OuterImages/crossArms.png";
+import premiumIngots from "./products/OuterImages/premiumIngots.jpg"
+import FirstImage from "./technical/firstbeam.jpg";
+import SecondImage from "./technical/secondbeam.jpeg";
+import ThirdImage from "./technical/beamthree.jpeg";
+import texureOne from "./products/InnerImages/Texture1.jpeg";
+import texureTwo from "./products/InnerImages/Texture2.jpeg";
+import firstProduct from "./products/InnerImages/HighPurity.jpg";
+import secondProduct from "./products/InnerImages/IndustrialAluminum.jpeg";
+import thirdProduct from "./products/InnerImages/ArchitecturalAluminium.jpg";
+import fourthProduct from "./products/InnerImages/surfaceAluminum.png";
+import varnProfile from "./products/OuterImages/varnProfile.jpeg";
+import vision from "./home/vision.png";
+import leaders from "./home/leaders.png";
+import greenLogo from "./trustedBrands/Green.png";
+import hindalcoLogo from "./trustedBrands/hindalco.png";
+import isoLogo from "./trustedBrands/ISO.png";
+import jswLogo from "./trustedBrands/JSW.png";
+import ltLogo from "./trustedBrands/L&T.png";
+import team from "./Team/Team.png";
+import Leader2 from "./Leaders/Lead2.png";
+import Leader3 from "./Leaders/Lead3.png";
+import Leader4 from "./Leaders/Lead4.jpeg";
+import Leader5 from "./Leaders/Lead5.jpeg";
+import Leader6 from "./Leaders/Lead6.jpeg";
 
 const images = {
   news_16,
@@ -138,7 +164,35 @@ const images = {
   utilityStructure,
   utilityBeamStructure,
   workService,
-  preserveImage
+  preserveImage,
+  premiumProfile,
+  crossArms,
+  premiumIngots,
+  FirstImage,
+  SecondImage,
+  ThirdImage,
+  texureOne,
+  texureTwo,
+  firstProduct,
+  secondProduct,
+  thirdProduct,
+  fourthProduct,
+  varnProfile,
+  vision,
+  leaders,
+  greenLogo,
+  hindalcoLogo,
+  isoLogo,
+  jswLogo,
+  ltLogo,
+  team,
+  Leader2,
+  Leader3,
+  Leader4,
+  Leader5,
+  Leader6
+
+
 };
 
 export default images;

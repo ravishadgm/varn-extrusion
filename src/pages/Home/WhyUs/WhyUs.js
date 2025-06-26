@@ -3,6 +3,7 @@ import styles from "./WhyUs.module.scss";
 import image1 from "../../../assets/images/home/leaders.png";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import Images from "@assets/images";
 
 const WhyUs = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const WhyUs = () => {
         <div className={styles.secondSection}>
           <div className={styles.left}>
             <div className={styles.leftContainer}>
-              <img src={image1} alt="founder" className={styles.img1} />
+              <img src={Images.leaders} alt="founder" className={styles.img1} />
               <h3 className={styles.name}>
                 We uphold integrity, innovation, and timely delivery in everything.</h3>
             </div>

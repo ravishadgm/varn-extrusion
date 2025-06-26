@@ -1,26 +1,27 @@
 import CorpBlock from '@components/common/CorpBlock/CorpBlock';
 import React from 'react';
-import  Images  from '@assets/images';
+import Images from '@assets/images';
 
 
 function Banner() {
-   
+
   return (
-     <div>
+    <div>
       <CorpBlock
-      heading={
-        <>
-          Poles, Cross-arms,<br/>
-        and Wood Framed<br/>
-        Utility Structures
-      
-        </>
-      }
-      subheading=""
-      buttonLabel="Contact An Expert"
-      sideImage={Images.utility_banner} 
-      greenBg={true} 
-    />
+        heading={
+          <>
+            Precision-Built<br />
+            Poles and<br />
+            Cross-Arms
+
+          </>
+        }
+        subheading=""
+        buttonLabel="Contact An Expert"
+        buttonLink="/contact"
+        sideImage={Images.crossArms}
+        greenBg={true}
+      />
     </div>
   )
 }

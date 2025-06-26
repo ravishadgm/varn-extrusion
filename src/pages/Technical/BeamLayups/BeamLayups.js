@@ -1,7 +1,5 @@
 import React from 'react';
-import FirstImage from "../../../assets/images/technical/firstbeam.jpg";
-import SecondImage from "../../../assets/images/technical/secondbeam.jpeg";
-import ThirdImage from "../../../assets/images/technical/beamthree.jpeg";
+import Images from '@assets/images';
 import styles from "../Technical.module.scss";
 
 const BeamLayups = () => {
@@ -22,7 +20,7 @@ const BeamLayups = () => {
                             <li>Engineered for precision, offering extreme slenderness without compromising strength.</li>
                             <li>Ideal for premium interiors, compact partitions, and sleek façade designs with 0.3mm  wall thickness.</li>
                         </ul>
-                        <img src={FirstImage} alt="Balanced – V8" className={styles.cardImage} />
+                        <img src={Images.FirstImage} alt="Balanced – V8" className={styles.cardImage} />
                     </div>
 
                     <div className={styles.card}>
@@ -32,7 +30,7 @@ const BeamLayups = () => {
                             <li>Produced using three powerful presses: 2×800 UST and 1×600 UST.</li>
                             <li>Offers exceptional durability and design flexibility across multiple use cases.</li>
                         </ul>
-                        <img src={SecondImage} alt="Unbalanced – V4" className={styles.cardImage} />
+                        <img src={Images.SecondImage} alt="Unbalanced – V4" className={styles.cardImage} />
                     </div>
 
                     <div className={styles.card}>
@@ -41,7 +39,7 @@ const BeamLayups = () => {
                             <li>Powder Coating: 7-tank pretreatment, chromotization, Jotun/AkzoNobel/PPG approved.</li>
                             <li>Anodizing: 25-tank capacity, supports up to 25 microns, electro-anodized finishes.</li>
                         </ul>
-                        <img src={ThirdImage} alt="Columns – Combination 2 or V8" className={styles.cardImage} />
+                        <img src={Images.ThirdImage} alt="Columns – Combination 2 or V8" className={styles.cardImage} />
                     </div>
                 </div>
             </div>

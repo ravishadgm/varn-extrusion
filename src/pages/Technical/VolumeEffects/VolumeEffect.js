@@ -8,13 +8,13 @@ const VolumeEffect = () => {
             <div className={styles.textContent}>
                 <h2>Volume Effects</h2>
                 <p>
-                    It has been long known and proven that large structural members do not have the same strength per unit of size as smaller members. The theory behind this is weak link analysis which suggests that the larger the area, the more potential area will contain a strength-limiting defect.
+                    In aluminium extrusion, volume effects influence the performance, tolerance, and cooling characteristics of large profiles. As profile dimensions increase, precise control over wall thickness, die design, and cooling rate becomes critical to maintaining uniformity and structural integrity.
                 </p>
                 <p>
-                    Testing has proven this theory, and industry guidelines have been set to reduce allowable stresses for prominent members. Span charts and load tables will already incorporate this factor.
+                    At VARN Extrusion, we specialize in ultra-slim and large-section aluminium profiles, including complex shapes with wall thickness as low as 0.3 mm.
                 </p>
                 <p>
-                    Designers using prominent members should always consider volume effects in their structural calculations. AITC publishes a document detailing the proper use of this factor.
+                    Our experience with high-volume output, advanced press machines, and in-house mold library ensures that each profile meets stringent quality and dimensional standards, regardless of size or complexity.
                 </p>
             </div>
             <div className={styles.sideInfo}>

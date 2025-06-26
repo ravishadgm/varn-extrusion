@@ -8,14 +8,12 @@ const Treatment = () => {
             <div className={styles.textContent}>
                 <h2>Preservative Treatment</h2>
                 <p>
-                    Varn Extrusion recommends using Coastal Douglas Fir or Southern Yellow pine for a product that undergoes chemical preservative pressure treatment. Treatments should be oil-based or as specified by the project designer.
+                    At Varn Extrusion, aluminium profiles undergo advanced surface treatments designed to enhance durability, aesthetics, and corrosion resistance. We utilize a 7-tank chemical pretreatment system followed by premium powder coating and anodizing processes, ensuring each profile meets international quality benchmarks.
                 </p>
                 <p>
-                    We do not offer treating services but can outsource this if you do not have your capabilities. We do offer incising to allow better chemical penetration and retention. This is highly recommended on any product to be treated for outdoor use. Our incising equipment can handle large industrial beams typically used in industrial structures. We can also incise the tapered faces of tapered beams.
+                    Approved by global leaders like Jotun, AkzoNobel, and Asian Paints PPG, our treatments not only improve product lifespan but also ensure consistent color and finish across large batches. Every profile is finished with precision and automatically packaged to preserve surface quality during handling and logistics.
                 </p>
-                <p>
-                    Some customers are moving to Alaskan Yellow Cedar, a naturally durable species to insect attack and decay, as an alternative to pressure treatment. Varn Extrusion is an approved fabricator of this species. Call our customer service desk at 208-756-4248 if you have further questions.
-                </p>
+
             </div>
             <div className={styles.sideInfo}>
                 <h3>Additional Info</h3>

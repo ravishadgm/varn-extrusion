@@ -7,6 +7,7 @@ const CorpBlock = ({
   heading,
   subheading,
   buttonLabel,
+  buttonLink,
   sideImage,
   greenBg,
 }) => {
@@ -21,7 +22,7 @@ const CorpBlock = ({
 
               {buttonLabel && (
                 <div className={styles.buttonWrapper}>
-                  <a href="#" className={styles.buttonIsLight}>
+                  <a href={buttonLink || "#"} className={styles.buttonIsLight}>
                     <div className={styles.buttonText}>
                       {buttonLabel}
                       <HiArrowUpRight className={styles.arrowIcon} />
@@ -61,7 +62,7 @@ const CorpBlock = ({
           <div className={styles.pageHeroBackgroundTexture}></div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

@@ -2,6 +2,7 @@
 
 .containerBox{
     padding: 10px 110px;
+
 }
 
 .navTabs {
@@ -101,13 +102,13 @@
 
 @media (max-width: 1024px) {
    .containerBox {
-    padding: 25px 30px;
+    padding: 90px 30px 25px 30px;
   }
 }
 
 @media (max-width: 768px) {
    .containerBox {
-    padding: 25px 30px;
+    padding: 80px 30px 25px 30px;
   }
 
   .sizingSection {

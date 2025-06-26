@@ -11,12 +11,13 @@ function Banner() {
       <CorpBlock
         heading={
           <>
-            APA-EWS Evaluated QB Rim Board
+            Aluminium Perimeter Profiles
           </>
         }
-        subheading="Varn Rim is an engineered wood glulam rim board used in construction, particularly in framing buildings. QB Rim is a structural member that exhibits enhanced strength, stability, and resistance to warping or splitting."
+        subheading="Varn’s perimeter profiles are expertly crafted aluminium structural members designed for framing, support, and edge detailing in architectural and industrial applications. Engineered for strength, dimensional accuracy, and corrosion resistance, they ensure lasting performance without warping, splitting, or degradation."
         buttonLabel="Contact An Expert"
-        sideImage={Images.board_banner}
+        buttonLink="/contact"
+        sideImage={Images.premiumProfile}
         greenBg={true}
       />
       <Features />

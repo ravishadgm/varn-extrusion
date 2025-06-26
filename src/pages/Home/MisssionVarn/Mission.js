@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Mission.module.scss";
-import Image from "../../../assets/images/home/vision.png"
+import Images from '@assets/images';
 
 const Mission = () => {
     return (
@@ -46,7 +46,7 @@ const Mission = () => {
                     </div>
 
                     <div className={styles.visionImg}>
-                        <img src={Image} alt="Our Vision" />
+                        <img src={Images.vision} alt="Our Vision" />
                     </div>
                 </div>
             </section>

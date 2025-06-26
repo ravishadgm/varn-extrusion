@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import Image from "../../../assets/images/home/vision.png"
 import styles from "./MeetCEO.module.scss"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Images from '@assets/images';
 import Image1 from "../../../assets/images/Leaders/Lead2.png";
 import Image2 from "../../../assets/images/Leaders/Lead3.png";
 import Image3 from "../../../assets/images/Leaders/Lead4.jpeg";
@@ -20,35 +20,35 @@ const MeetCEO = () => {
             position: 'Managing Director',
             quote:
                 'At Varn Extrusion Pvt. Ltd., we don’t just manufacture aluminium profiles—we engineer possibilities.',
-            image: Image2,
+            image: Images.Leader3,
         },
         {
             name: 'Ms. Priya Sharma',
             position: 'Quality Control Head',
             quote:
                 'For us, quality isnʼt a checkpoint — itʼs a mindset.From raw material to final finish, every inch of every profile reflects our uncompromising standards.',
-            image: Image1,
+            image: Images.Leader2,
         },
         {
             name: 'Mr. Anil Patel',
             position: 'Logistics & Dispatch Manager',
             quote:
                 'We live by our word. With streamlined operations and on-time logistics, we deliver what you need, when you need it — no excuses.',
-            image: Image3,
+            image: Images.Leader4,
         },
         {
             name: 'Mrs. Sneha Desai',
             position: 'Head of Fabrication',
             quote:
                 'For us, quality isn’t a checkpoint — it’s a mindset. From raw material to final finish, every inch of every profile reflects our uncompromising standards.',
-            image: Image4,
+            image: Images.Leader5,
         },
         {
             name: 'Mr. Manav Shah',
             position: 'Production Head',
             quote:
                 'On-time delivery, streamlined production, and consistency drive our commitment.',
-            image: Image5,
+            image: Images.Leader6,
         },
     ];
 

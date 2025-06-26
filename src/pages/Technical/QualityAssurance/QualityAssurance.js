@@ -8,25 +8,23 @@ const QualityAssurance = () => {
             <div className={styles.textContent}>
                 <h2>Quality Assurance</h2>
                 <p>
-                    At Varn Extrusion, we aim not to be average but to stand out in quality. Since our founding, we never could produce our products to the minimum acceptable standards and feel good about it. All product produced at our facility is covered under the APA-EWS quality assurance program. Rigorous independent audits ensure fabrication methods meet or exceed industry standards.
+                    At Varn Extrusion,quality is not just a commitment — it’s our identity. Every aluminium profile produced at our facility undergoes rigorous quality checks and is crafted to meet or exceed international standards. From raw material sourcing to final finishing, we follow a comprehensive quality assurance protocol supported by precision machinery and expert supervision.
                 </p>
                 <p>
-                    Varn quality technicians work hand in hand in the plant with production personnel. They enjoy the full support of management in making quality-related decisions, and in the long run, every plant member is fully engaged in our quality program. “Quality is built in” is more than a catchphrase for us. We select quality vendors for our raw material and then carefully grade and process it into a finished product. Every piece is graded and monitored for appropriate moisture content to ensure proper gluing and curing.
+                    Our process includes continuous monitoring of extrusion parameters, wall thickness, and surface finish. Advanced tools like Brinell and Webster hardness testers, UTM machines, and a German-made spectrometer ensure each product is mechanically strong and chemically accurate.
                 </p>
                 <p>
-                    All product produced at Varn Extrusion is covered under the APA-EWS quality assurance program.
+                    We’ve implemented an in-house ERP system that allows real-time production tracking, tighter process control, and seamless coordination across departments.
                 </p>
                 <p>
-                    Attention to detail in all aspects of the operation makes the difference between mediocre and excellent product quality. Nowhere is this attention to detail more important than in the area of finger joints. Finger joints are glued connections that make long pieces of wood out of short pieces through “fingers” cut into the ends of the boards.
+                    Each profile is inspected for dimensional accuracy, finish uniformity, and coating adhesion — ensuring that what we deliver is not just aluminium, but excellence shaped by engineering.
                 </p>
-                <p>
-                    These joints transfer forces from along the board to the adjoining board. It takes significant care to make a quality joint. The joint's fit, the adhesive application, and the pressure and cure are all crucial aspects of making this a critical component of beam construction work. All tension laminations are proof loaded to ensure both the lumber and the finger joint will handle the stress levels assumed for the design.
-                </p>
+
             </div>
             <div className={styles.sideInfo}>
                 <h3>Span and Load Charts</h3>
                 <div className={styles.documentCard}>
-                    <p>AITC Technical Note 21:</p>
+                    <p>Qyality Assurance Report:</p>
 
                     <a
                         href="https://drive.google.com/file/d/1lio3vi12HfSFiXJsjRL9YvaoFvEn1B_s/view"

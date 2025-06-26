@@ -44,11 +44,31 @@
 
 }
 
+@media (max-width: 1080px) {
+  .contentWrapper {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .imagesSection {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .textSection {
+    width: 100%;
+    padding: 30px 10px;
+
+  }
+
+}
+
 
 @media (max-width: 768px) {
   .contentWrapper {
     flex-direction: column;
     padding: 0px 20px;
+
   }
 
   .imagesSection {

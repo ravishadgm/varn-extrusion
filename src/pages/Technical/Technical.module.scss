@@ -90,6 +90,11 @@
   flex: 0 0 58%;
   min-width: 300px;
 
+  @media(max-width:300px){
+    min-width:22  0px;
+    max-width:230px;
+  }
+
   h2 {
     font-size: 2.4rem;
     margin-bottom: 20px;
@@ -243,6 +248,10 @@
   .sideInfo {
   width:100%;
   max-width: 800px;
+
+  @media(max-width:350px){
+    max-width:250px;
+  }
 
 
   .documentCard {

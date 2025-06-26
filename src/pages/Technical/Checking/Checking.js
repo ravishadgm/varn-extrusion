@@ -8,10 +8,13 @@ const Checking = () => {
             <div className={styles.textContent}>
                 <h2>Checking</h2>
                 <p>
-                    Checking is a natural phenomenon of wood that occurs when the wood dries and shrinks. The stresses built up from the shrinkage will cause a slight split. This typically is not an issue if the checking unless the checking is very severe.
+                    At Varn Extrusion, precision is a promise. Every aluminium profile is meticulously checked during and after the extrusion process to ensure dimensional accuracy, straightness, and consistent wall thickness — especially in our ultra-slim 0.3 mm designs.
                 </p>
                 <p>
-                    Varn places a great deal of attention on moisture during the manufacturing process. Our raw materials are dried to specific moisture contents, and we monitor this throughout the assembly process. Since shrinkage results from the moisture leaving the board, Varn's attention will minimize any checking you may see in the beams. However, as wood is a natural material and some locations are arid climates, some checking may still occur. It is also crucial that the product be appropriately handled and stored during any inventory or installation process to minimize checking issues.
+                    Our quality control process includes real-time monitoring, in-line inspections, and post-production checks using calibrated instruments. Profiles are measured against strict tolerances, and any deviation is flagged for immediate correction. This commitment ensures that every profile meets the demands of both aesthetic appeal and structural integrity.
+                </p>
+                <p>
+                    By combining skilled technicians with automated systems, we ensure that defects like warping, surface irregularities, or thickness variation are identified and eliminated — so what reaches you is perfection by design.
                 </p>
             </div>
 
@@ -19,7 +22,7 @@ const Checking = () => {
                 <h3>Additional Info </h3>
 
                 <div className={styles.documentCard}>
-                    <p>For information on checking and its impact on structural performance, please refer to AITC Technical Note #11:</p>
+                    <p>Dimentional Accuracy Report:</p>
                     <a
                         href="https://drive.google.com/file/d/1_1D-TV5sv1H3o7vJzBD7ZuRU9BVoqdBO/view"
                         target="_blank"
@@ -32,7 +35,7 @@ const Checking = () => {
                 </div>
 
                 <div className={styles.documentCard}>
-                    <p>For information on evaluating the impact of checking in the field, see AITC Technical Note #18:</p>
+                    <p>Aluminium Profile Inspection Checklist:</p>
                     <a
                         href="https://drive.google.com/file/d/1-Oz7akYyRTykFh8mnAskCVAEN3r5pJG2/view"
                         target="_blank"
@@ -45,7 +48,7 @@ const Checking = () => {
                 </div>
 
                 <div className={styles.documentCard}>
-                    <p>Read the Owners Guide to Understanding Checks in Glued Laminated Timber:</p>
+                    <p>Surface Finish Tolerance Guide:</p>
                     <a
                         href="https://drive.google.com/file/d/1sMX1lg5LD_lVOWVb7OXgbgBqGaDb5oP2/view"
                         target="_blank"
@@ -57,7 +60,7 @@ const Checking = () => {
                     </a>
                 </div>
                 <div className={styles.documentCard}>
-                    <p>Read about Evaluation of Check Size in Glued Laminated Timber Beams:
+                    <p>ISO/ASTM Certification for Profile Accuracy:
                     </p>
                     <a
                         href="https://drive.google.com/file/d/10M1NjwXKmwmWHsoA3iUkkys2WrHPMhV8/view"

@@ -7,14 +7,15 @@ function Banner() {
     <CorpBlock
       heading={
         <>
-          Lemhi Valley Premium
+          Sustainable Aluminium Production
           <br />
-          Grade Wood Pellets <br />
+          Premium Ingots <br />
         </>
       }
-      subheading="Varn Extrusion is committed to increasing efficiency in our use of wood resources. Our LEMHI VALLEY WOOD PELLETS are manufactured using by-products generated during our processes, such as sawdust and end trims. The high-grade wood, primarily Douglas Fir, used to produce these pellets, is rated as ' Premium Grade ' by the pellet industry."
+      subheading="Varn Extrusion is committed to maximizing efficiency and sustainability in our aluminium production. Our premium-grade aluminium ingots are produced from carefully selected raw materials and optimized processes that reduce waste and energy consumption."
       buttonLabel="Get In Touch"
-      sideImage={Images.woodPellets_banner}
+      buttonLink="/contact"
+      sideImage={Images.premiumIngots}
       greenBg={true}
     />
   );

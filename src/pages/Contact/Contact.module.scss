@@ -6,6 +6,7 @@
   display: flex;
   min-height: 100vh;
   font-family: "Arial", sans-serif;
+  overflow-x: hidden; 
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -165,26 +166,25 @@
 }
 
 .formContainer {
-  position: relative;
+   position: relative;
   z-index: 5;
   background: $color-white;
   padding: 33px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 600px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-left: -175px;
+  transform: translateX(-160px);
+
 
    @media(max-width:1440px){
-    margin-left: -90px;
+     transform: translateX(-90px);
   }
 
 
   @media (max-width: 1024px) {
+    transform: none; // ✅ Reset shift on tablet/mobile
     margin: 2rem auto;
-    margin-left :auto;
-    margin-top:-150px;
+    margin-top: -150px;
   }
 
   @media (max-width: 768px) {
@@ -207,6 +207,13 @@
     font-size: 1.5rem;
   }
 }
+
+.contactForm,
+  .formRow,
+  .formGroup {
+    position: relative;
+    left: 0; 
+  }
 
 .contactForm {
   display: flex;

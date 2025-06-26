@@ -133,12 +133,16 @@
     background-color: $gray-bg;
     border-top: 1px solid $gray-bg;
     padding: 3rem 0 1rem;
+  //   width: 100%;
+  // box-sizing: border-box;
 
     .container {
       max-width: 1400px;
       width: 90%;
       margin: 0 auto;
       padding: 0 1rem;
+
+
     }
 
   .footerContent {
@@ -296,6 +300,7 @@
         margin-bottom: 1.5rem;
         font-size: 0.95rem;
         font-weight: bold;
+
       }
 
       .socialLinks {
@@ -481,6 +486,8 @@
 
     @media (max-width: 480px) {
       .container {
+        width:100%;
+        box-sizing:border-box;
         padding: 0 0.75rem;
       }
 
@@ -494,7 +501,17 @@
         }
 
         .description {
-          font-size: 0.9rem;
+          font-size: 0.7rem;
+          word-break: break-word;
+           overflow-wrap: break-word;
+        }
+
+        .socialLinks{
+          flex-wrap: nowrap;
+          justify-content: center;
+          overflow-x: auto;
+          gap: 0.125rem;
+
         }
       }
     }
@@ -535,10 +552,14 @@
 
 .middleSection{
   display: flex;
-justify-content:space-evenly;
-@media (max-width: 768px) {
-    gap: 10%;
-    justify-content: normal;
+  justify-content:space-evenly;
+  @media (max-width: 768px) {
+      gap: 10%;
+      justify-content: normal;
+  }
+
+  @media (max-width:300px){
+    flex-direction: column;
   }
 
 }

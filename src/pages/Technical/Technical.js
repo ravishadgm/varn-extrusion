@@ -10,7 +10,7 @@ import VolumeEffects from "../Technical/VolumeEffects/VolumeEffect"
 import BeamLayups from "../Technical/BeamLayups/BeamLayups";
 
 const tabs = {
-  "Adhesives": <Adhesives />,
+  "Surface Finishing": <Adhesives />,
   "Checking": <Checking />,
   "Fire Resistance": <FireResistance />,
   "Quality Assurance": <QualityAssurance />,
@@ -20,7 +20,7 @@ const tabs = {
 };
 
 function Technical() {
-  const [activeTab, setActiveTab] = useState("Adhesives");
+  const [activeTab, setActiveTab] = useState("Surface Finishing");
 
   return (
     <section className={styles.container}>

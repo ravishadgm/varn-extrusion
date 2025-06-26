@@ -13,22 +13,22 @@ const Services = () => {
 
     const cardData = [
         {
-            title: 'Custom Glulam Beams',
+            title: 'Custom Aluminium Beams',
             description:
                 'Precision-engineered beams tailored to your project’s unique structural needs',
             link: '/products/custom-beams'
         },
         {
-            title: 'Stock Glulam Beams',
+            title: 'Stock Beams',
             description:
                 'Ready-to-use beams offering strength and reliability for fast construction.',
             link: '/products/stoke-beams',
         },
         {
-            title: 'QB Rim Board',
+            title: 'Perimeter Profile',
             description:
-                'Durable rim boards designed for floor stability and edge support.',
-            link: '/products/qb-rim-board',
+                'Engineered for edge framing applications, our aluminium perimeter profiles offer strength, precision, and clean architectural lines.',
+            link: '/products/varn-rim-board',
         },
         {
             title: 'Utility Structures',
@@ -37,9 +37,9 @@ const Services = () => {
             link: '/products/utility-structures',
         },
         {
-            title: 'Wood Pellets',
+            title: 'Aluminium Pellets',
             description:
-                'Clean-burning, eco-friendly fuel made from high-quality wood waste.',
+                'Clean-burning, eco-friendly fuel made from high-quality aluminium waste.',
             link: '/products/wood-pellets',
         },
     ];
@@ -66,7 +66,7 @@ const Services = () => {
 
         },
         {
-            title: 'Heavy Glulam Timber Truss Assembly ',
+            title: 'Aluminium Truss Assembly ',
             description:
                 'Expertly built heavy-duty truss systems for large-span structures.',
             link: '/services/truss-assembly'
