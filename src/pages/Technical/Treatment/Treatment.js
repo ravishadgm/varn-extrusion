@@ -18,7 +18,7 @@ const Treatment = () => {
             <div className={styles.sideInfo}>
                 <h3>Additional Info</h3>
                 <div className={styles.documentCard}>
-                    <p>Available Glued Laminated Timber Designs for Beams and Column:</p>
+                    <p>Download the Varn Aluminium Surface Treatment Specifications:</p>
 
                     <a
                         href="https://drive.google.com/file/d/1rYSlO7Lev8fSSJCOW2rwJA5JmaKw7gK5/view"

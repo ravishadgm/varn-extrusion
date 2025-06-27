@@ -60,7 +60,7 @@ const Checking = () => {
                     </a>
                 </div>
                 <div className={styles.documentCard}>
-                    <p>ISO/ASTM Certification for Profile Accuracy:
+                    <p>ISO/ASTM Certified Aluminium Profile Accuracy Standards:
                     </p>
                     <a
                         href="https://drive.google.com/file/d/10M1NjwXKmwmWHsoA3iUkkys2WrHPMhV8/view"
