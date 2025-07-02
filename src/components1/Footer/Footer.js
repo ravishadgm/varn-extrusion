@@ -112,7 +112,8 @@ const Footer = () => {
                             <div className={styles.logo}>
                                 <img src={footer_logo} alt="QB Corp Logo" />
                             </div>
-                            <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                            <p>Varn Extrusion Pvt Ltd. is a premier glue laminated timber manufacturer where
+                                excellence is a tradition and innovation knows no limits.</p>
                             <div className={styles.socialLinks}>
                                 {socialMediaLinks.map((link, index) => (
                                     <a key={index} href={link.href} aria-label={link.label}>
@@ -147,7 +148,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={styles.column}>
+                        <div className={styles.column_four}>
                             <div className={styles.contactSection}>
                                 <h3>Contact Us</h3>
                                 <div className={styles.contactInfo}>

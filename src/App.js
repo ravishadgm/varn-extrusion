@@ -34,6 +34,7 @@ import './styles/main.scss';
 import Footer from './components1/Footer/Footer';
 import MissionVarn from "./pages1/Home/MissionVarn/MissionVarn"
 import Certificates from 'pages1/Home/Certificates/Certificates';
+import GetInTouch from 'pages1/Home/GetInTouch/GetInTouch';
 // import Footer from '@components/Footer/Footer';
 const App = () => {
   return (
@@ -51,7 +52,10 @@ const App = () => {
 
 
 
-   
+        <MissionVarn />
+        <Certificates />
+        <GetInTouch />
+        <Footer />
       </div>
     </BrowserRouter>
 

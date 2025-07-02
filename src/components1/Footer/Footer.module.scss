@@ -42,7 +42,7 @@
     z-index: -1;
   }
 
-  @media(max-width:468px){
+  @media(max-width:768px){
     margin-bottom: -110px;
      margin-left:20px;
      flex-direction: column;
@@ -54,9 +54,9 @@
     max-width: 60%;
   font-size: 35px;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.2;
 
-    @media(max-width:468px){
+    @media(max-width:768px){
         max-width:90%;
         text-align: center;
         width: 100%;
@@ -66,11 +66,15 @@
   .right{
     max-width:40%;
 
-    @media(max-width:468px){
-        max-width: 50%;
+    @media(max-width:768px){
+        max-width: 30%;
         text-align:center;
-            width: 100%;
-        }
+        width: 100%;
+    }
+
+     @media(max-width:468px){
+        max-width: 50%;
+    }
 
     .button {
         background: transparent;
@@ -91,7 +95,7 @@
 
         &:hover {
             border:none;
-            background-color: $primary-green;
+            background-color: $blue-bg;
             color: $color-white;
 
             svg {
@@ -127,12 +131,16 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 40px;
-        padding:0px 40px 40px 40px;
+        padding:0px 50px 40px 40px;
+        
+        @media(max-width:468px){
+            padding:0px;
+        }
     }
 
     .column_two {
         max-width: 280px;
-        margin-right:20px;
+        margin-right:10px;
 
         h3 {
         font-size: 18px;
@@ -170,7 +178,7 @@
     }
      .column_three {
         max-width: 280px;
-        margin-right:30px;
+        margin-right:20px;
 
 
         h3 {
@@ -209,10 +217,16 @@
         }
     }
 
+    .column_four{
+        flex: 1 1 220px;
+        max-width: 280px;
+        
+    }
+
 
     .column {
         flex: 1 1 220px;
-        max-width: 280px;
+        max-width: 400px;
         
 
         .logo {
@@ -406,6 +420,12 @@
             color: $light-blue-text;
         }
         }
+
+        @media(max-width:468px){
+            flex-direction: column;
+            padding:0px;
+            margin-left: 0px;
+        }
     }
 }
 
@@ -427,4 +447,15 @@
 }
 
 
+@media(max-width:768px){
+    .semiFooter{
+        margin-left: 35px;
+    }
+}
 
+
+@media(max-width:320px){
+    .semiFooter{
+        margin-left: 10px;
+    }
+}
