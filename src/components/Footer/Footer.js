@@ -168,31 +168,31 @@ const Footer = () => {
             </div>
 
             <div className={styles.middleSection}>
-<div className={styles.linkSection}>
-              <h3>Company</h3>
-              <ul>
-                {companyLinks.map((link, index) => (
-                  <li key={index}>
-                    <a href={link.href}>{link.name}</a>
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.linkSection}>
+                <h3>Company</h3>
+                <ul>
+                  {companyLinks.map((link, index) => (
+                    <li key={index}>
+                      <a href={link.href}>{link.name}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Resources Section */}
+              <div className={styles.linkSection}>
+                <h3>Resources</h3>
+                <ul>
+                  {resourcesLinks.map((link, index) => (
+                    <li key={index}>
+                      <a href={link.href}>{link.name}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            {/* Resources Section */}
-            <div className={styles.linkSection}>
-              <h3>Resources</h3>
-              <ul>
-                {resourcesLinks.map((link, index) => (
-                  <li key={index}>
-                    <a href={link.href}>{link.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            </div>
 
-            
 
             {/* Contact Section */}
             <div className={styles.contactSection}>
