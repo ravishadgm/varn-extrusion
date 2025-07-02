@@ -501,7 +501,7 @@
         }
 
         .description {
-          font-size: 0.7rem;
+        
           word-break: break-word;
            overflow-wrap: break-word;
         }
@@ -514,6 +514,10 @@
 
         }
       }
+    }
+
+    @media(max-width:300px){
+        font-size: 0.7rem;
     }
   }
 }

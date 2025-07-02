@@ -266,32 +266,38 @@
 }
 
 
-// @media (max-width: 280px) {
-//   .heroSideImage {
-//     margin-right: 0;
-//     min-height: auto;
-//     width: 100%;
-//     height: auto;
-//   }
+@media(max-width:280px){
 
-//   .imageRevealMask {
-//     overflow: visible;
-//     width: 100%;
-//     height: auto;
-//   }
+  .heroSideContent {
+        align-items: left;
+        text-align: left;
+        padding: 0 0em;
+    }
+  
+  .headingLarge{
+    font-size:2rem;
+  }
 
-//   .imageMask {
-//     position: relative;
-//     width: 100%;
-//     height: auto;
-//     inset: unset;
-//   }
 
-//   .boxImage {
-//     position: relative;
-//     width: 100%;
-//     height: auto;
-//     object-fit: contain;
-//     display: block;
-//   }
-// }
+  .heroSideImage {
+    margin-right: 0;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .buttonWrapper{
+      justify-content: left;
+      margin-top: 1.5em;
+      padding:0 0em;
+  }
+
+  .boxImage {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin:0;
+    object-fit: contain;
+  
+  }
+}

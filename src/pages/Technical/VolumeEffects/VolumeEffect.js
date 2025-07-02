@@ -20,7 +20,7 @@ const VolumeEffect = () => {
             <div className={styles.sideInfo}>
                 <h3>Additional Info</h3>
                 <div className={styles.documentCard}>
-                    <p>AITC Technical Note 21:</p>
+                    <p>Download the Varn Aluminium Volume Specification Sheet:</p>
 
                     <a
                         href="https://drive.google.com/file/d/1BmoJgMDUvUtGTxZZBfnhWhPMiIve9sY4/view"

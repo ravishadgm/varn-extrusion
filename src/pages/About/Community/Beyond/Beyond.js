@@ -32,9 +32,9 @@ const Beyond = () => {
   return (
     <section className={styles.beyond}>
       <div className={styles.container}>
-            <h2>
-            Contributions to the QB Corp. <br />
-            community and beyond
+        <h2>
+          Contributions to the Varn Extrusion <br />
+          community and beyond
         </h2>
         <div className={styles.grid}>
           <div className={styles.local}>
