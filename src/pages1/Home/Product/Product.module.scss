@@ -1,0 +1,406 @@
+@import "../../../styles/variables";
+
+.productSection {
+  width: 100%;
+}
+
+// Common styles
+.section-base {
+  padding: 80px 20px;
+  position: relative;
+}
+
+.heading-base {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+
+  h4 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      border-radius: 1px;
+      display: block;
+    }
+  }
+
+  h2 {
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+// 👇 Reusable grid class (was %card-grid-base)
+.card-grid-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// 👇 Reusable card base class (was %card-base)
+.card-base {
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+    font-weight: 400;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-top: auto;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// PRODUCTS SECTION (Light Theme)
+.productsSection {
+  @extend .section-base;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+
+  .heading {
+    @extend .heading-base;
+
+    h4 {
+      color: $light-blue-text;
+
+      &::after {
+        background-color: $light-blue-text;
+      }
+    }
+
+    h2 {
+      color: $blue-text;
+    }
+
+    p {
+      color: #64748b;
+    }
+  }
+
+  .cardGrid {
+    @extend .card-grid-base;
+  }
+}
+
+// SERVICES SECTION (Dark Theme)
+.servicesSection {
+  @extend .section-base;
+  background: linear-gradient(135deg, $blue-bg 0%, lighten($blue-bg, 10%) 100%);
+
+  .heading {
+    @extend .heading-base;
+
+    h4 {
+      color: $light-blue-text;
+
+      &::after {
+        background-color: $light-blue-text;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+  }
+
+  .cardGrid {
+    @extend .card-grid-base;
+  }
+}
+
+// PRODUCT CARDS (Light Theme)
+.productCard {
+  @extend .card-base;
+  background: white;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  &:hover {
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba($light-blue-text, 0.1);
+    transform: translateY(-8px) scale(1.01);
+    border-color: rgba($light-blue-text, 0.2);
+
+    .productIcon {
+      background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 10%));
+      color: white;
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .productArrow {
+      background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 15%));
+      transform: scale(1.05);
+    }
+  }
+
+  h3 {
+    color: $blue-text;
+  }
+
+  p {
+    color: #64748b;
+  }
+}
+
+.productIcon {
+  background: linear-gradient(135deg, lighten($light-blue-text, 45%), lighten($light-blue-text, 40%));
+  color: $light-blue-text;
+}
+
+.productArrow {
+  background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 5%));
+}
+
+// SERVICE CARDS (White Theme)
+.serviceCard {
+  @extend .card-base;
+  background: white;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  &:hover {
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba($light-blue-text, 0.1);
+    transform: translateY(-8px) scale(1.01);
+    border-color: rgba($light-blue-text, 0.2);
+
+    .serviceIcon {
+      background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 10%));
+      color: white;
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .serviceArrow {
+      background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 15%));
+      transform: scale(1.05);
+    }
+  }
+
+  h3 {
+    color: $blue-text;
+  }
+
+  p {
+    color: #64748b;
+  }
+}
+
+.serviceIcon {
+  background: linear-gradient(135deg, lighten($light-blue-text, 45%), lighten($light-blue-text, 40%));
+  color: $light-blue-text;
+}
+
+.serviceArrow {
+  background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 5%));
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsSection,
+  .servicesSection {
+    padding: 60px 16px;
+  }
+
+  .heading {
+    margin-bottom: 48px;
+
+    h4 {
+      font-size: 13px;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .card {
+    padding: 24px 20px;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+
+    .iconWrapper {
+      width: 64px;
+      height: 64px;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .arrow {
+      width: 38px;
+      height: 38px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .productsSection,
+  .servicesSection {
+    padding: 50px 12px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+
+    h4 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .cardGrid {
+    gap: 16px;
+  }
+
+  .card {
+    padding: 20px 16px;
+
+    .iconWrapper {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .arrow {
+      width: 36px;
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    .iconWrapper {
+      width: 56px;
+      height: 56px;
+      font-size: 22px;
+    }
+  }
+}
