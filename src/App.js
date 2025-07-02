@@ -7,16 +7,17 @@ import './styles/main.scss';
 import Footer from '@components/Footer/Footer';
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="app">
-        {/* <Navbar />  */}
-          <Header />
-        <main className="app-content">
-          <AppRoutes />
-        </main>
-        <Footer/>
-      </div>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <div className="app">
+    //     {/* <Navbar />  */}
+    //       <Header />
+    //     <main className="app-content">
+    //       <AppRoutes />
+    //     </main>
+    //     <Footer/>
+    //   </div>
+    // </BrowserRouter>
+    <h1>hi</h1>
   );
 };
 
