@@ -51,9 +51,7 @@ const App = () => {
 
 
 
-        <MissionVarn />
-        <Certificates />
-        <Footer />
+   
       </div>
     </BrowserRouter>
 
