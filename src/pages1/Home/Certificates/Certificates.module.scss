@@ -51,7 +51,7 @@
 
 
   @media(max-width:480px){
-     gap: 0.9rem;
+     gap:0px;
   }
 }
 
@@ -114,7 +114,8 @@
       font-size: 2rem;
       color:$blue-text;
 
-
+        text-align: center;
+        width: 100%;
       @media(max-width:480px){
         font-size: 1.6rem;;
       }
@@ -129,7 +130,7 @@
       
 
        @media(max-width:480px){
-        text-align: start;
+       
           margin-bottom: 2rem;
       }
     }
@@ -160,7 +161,7 @@
 
     @media(max-width:768px){
 
-           height: 150px;
+           height: 115px;
 
     width: 90%;
     }

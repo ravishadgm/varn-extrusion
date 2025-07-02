@@ -10,8 +10,7 @@
   position: relative;
   width: 90%;
   display: flex;
-  margin-left:60px;
-  margin-bottom:-95px;
+    margin: 0 auto -58px auto;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -60,6 +59,7 @@
         max-width:90%;
         text-align: center;
         width: 100%;
+        font-size: 17px;
     }
   }
 
@@ -105,6 +105,9 @@
 
         @media (max-width: 480px) {
             padding: 0.65rem 1rem;
+                    font-size: 12px;
+                    align-items: center;
+        justify-content: center;
         }
     }
   }
@@ -446,16 +449,3 @@
   }
 }
 
-
-@media(max-width:768px){
-    .semiFooter{
-        margin-left: 35px;
-    }
-}
-
-
-@media(max-width:320px){
-    .semiFooter{
-        margin-left: 10px;
-    }
-}

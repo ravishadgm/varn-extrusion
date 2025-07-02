@@ -19,7 +19,6 @@ function index() {
     
             <Certificates />
        
-        <Footer />
     
     </>
   )

@@ -52,9 +52,6 @@ const App = () => {
 
 
 
-        <MissionVarn />
-        <Certificates />
-        <GetInTouch />
         <Footer />
       </div>
     </BrowserRouter>

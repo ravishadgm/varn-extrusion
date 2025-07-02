@@ -81,3 +81,10 @@ color: #fff;
     transform: translateY(0);
   }
 }
+
+
+@media (max-width: 768px) {
+  .heroSection{
+    margin-top: 60px;
+  }
+}
