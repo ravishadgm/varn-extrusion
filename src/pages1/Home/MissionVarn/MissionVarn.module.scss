@@ -81,6 +81,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 48px;
+  margin-top:4rem; 
+  margin-bottom:3rem;   
 
   @media(max-width:1160px){
     flex-direction: column;
@@ -89,6 +91,8 @@
   }
 
   @media(max-width:468px){
+    margin-top:1rem;  
+     margin-bottom:0rem; 
     padding:0rem !important;
   }
 
@@ -181,17 +185,17 @@
   width: 90%;
   background-color: $color-white;
   margin:auto;
-        align-items: center;
+  align-items: center;
+  margin-bottom:4rem;
 
         @media(max-width:1190px){
             width:90%;
         }
+
+        @media(max-width:468px){
+           margin-bottom:1rem;
+        }
   .semiContainer {
-
-
-
-    
-
     .contentWrapper {
       display: flex;
     margin-bottom: 42px;
