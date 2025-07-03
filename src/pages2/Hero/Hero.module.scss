@@ -1,0 +1,93 @@
+/* Hero.module.scss */
+
+$primary: #3366ff;
+$secondary: #00c6ff;
+$text-light: #ffffff;
+$text-muted: #eaeaea;
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.75);
+    animation: zoomSlow 20s ease-in-out infinite alternate;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroContent {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    max-width: 900px;
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: $text-light;
+    animation: float 6s ease-in-out infinite;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.4;
+
+      span {
+        color: $secondary;
+        font-weight: 800;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: $text-muted;
+      margin-bottom: 30px;
+    }
+
+    .ctaBtn {
+      background: linear-gradient(to right, $primary, $secondary);
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      animation: pulseGlow 2s infinite ease-in-out;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 198, 255, 0.3);
+      }
+    }
+  }
+
+}
+
