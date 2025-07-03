@@ -277,6 +277,11 @@
   background: linear-gradient(135deg, $light-blue-text, darken($light-blue-text, 5%));
 }
 
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 // Responsive Design
 @media (max-width: 1200px) {
   .cardGrid {
