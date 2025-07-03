@@ -1,44 +1,117 @@
 import React from 'react';
 import styles from './Profit.module.scss';
 import Images from '../../../assets2/images/index';
-import { FaShieldAlt, FaWineGlassAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -100, scale: 0.8 },
+  show: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.175, 0.885, 0.32, 1.275],
+    },
+  },
+};
+
+const graphVariants = {
+  hidden: { opacity: 0, y: 100, scale: 0.8 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 1,
+      type: 'spring',
+      stiffness: 100,
+      damping: 12,
+      delay: 0.8,
+    },
+  },
+};
+
+const buttonVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.8 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: 1,
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
+};
 
 const Profit = () => {
-    return (
-        <div className={styles.profitWrapper}>
-            <div className={styles.container}>
-                <div className={styles.content}>
-                    <p className={styles.subtitle}>PROFIT GRAPH</p>
-                    <h2>BLO gives you the best Financial solution for business</h2>
+  return (
+    <motion.div
+      className={styles.profitWrapper}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <div className={styles.container}>
+        {/* Left content with staggered entry */}
+        <motion.div className={styles.content} variants={containerVariants}>
+          <motion.p className={styles.subtitle} variants={itemVariants}>
+            PROFIT GRAPH
+          </motion.p>
 
-                    <div className={styles.feature}>
-                        <img src={Images.security} alt="icon" className={styles.iconName} />
-                        <div className={styles.description}>
-                            <strong>Security:</strong>
-                            <p>we offer protection when your customers have financial.</p>
-                        </div>
-                    </div>
+          <motion.h2 variants={itemVariants}>
+            VARN unlocks long-term growth with precision-engineered solutions
+          </motion.h2>
 
-                    <div className={styles.feature}>
-                        <img src={Images.trophy} alt="icon" className={styles.iconName} />
-                        <div className={styles.description}>
-                            <strong>Flexibility:</strong>
-                            <p>funding grows in line with your daily sales update.</p>
-                        </div>
-                    </div>
-
-                    <button className={styles.button}>CONTACT US</button>
-                </div>
-
-                <div className={styles.graph}>
-                    <img src={Images.graph} alt="Profit Chart" />
-                    <p className={styles.report}>
-                        <strong>Annual Report:</strong> From 2013 to 2018 the growth rate grew <span>+2.40%</span>
-                    </p>
-                </div>
+          <motion.div className={styles.feature} variants={itemVariants}>
+            <img src={Images.security} alt="icon" className={styles.iconName} />
+            <div className={styles.description}>
+              <strong>Reliability:</strong>
+              <p>Our systems ensure consistent performance for demanding environments.</p>
             </div>
-        </div>
-    );
+          </motion.div>
+
+          <motion.div className={styles.feature} variants={itemVariants}>
+            <img src={Images.trophy} alt="icon" className={styles.iconName} />
+            <div className={styles.description}>
+              <strong>Scalability:</strong>
+              <p>Solutions that evolve with your business—from startups to enterprises.</p>
+            </div>
+          </motion.div>
+
+          <motion.button
+            className={styles.button}
+            variants={buttonVariants}
+            whileHover={{ scale: 1.08, rotate: 1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            CONTACT US
+          </motion.button>
+        </motion.div>
+
+        {/* Right graph section with spring animation */}
+        <motion.div className={styles.graph} variants={graphVariants}>
+          <img src={Images.graph} alt="Profit Chart" />
+          <p className={styles.report}>
+            <strong>Annual Report:</strong> From 2018 to 2024, average client ROI improved by{' '}
+            <span>+5.6%</span>
+          </p>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
 };
 
 export default Profit;

@@ -1,11 +1,9 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import {
-  MdEmail,
-  MdLocationOn,
-  MdChat,
-} from 'react-icons/md';
+import { MdEmail, MdLocationOn, MdChat } from 'react-icons/md';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Images from "@assets/images";
+import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
@@ -30,16 +28,8 @@ const Header = () => {
         <div className={styles.container}>
           <div className={styles.leftGroup}>
             <div className={styles.logo}>
-              <div className={styles.logoGrid}>
-                <div className={styles.box}></div>
-                <div className={styles.box}></div>
-                <div className={styles.box}></div>
-                <div className={styles.box}></div>
-                <div className={styles.box}></div>
-                <div className={styles.box}></div>
-              </div>
               <div className={styles.logoText}>
-                <h2>VARN</h2>
+                <img src={Images.logo} alt="Varn Logo" />
               </div>
             </div>
 
@@ -52,13 +42,22 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className={styles.contact}>
+          {/* Floating Contact Section */}
+          <motion.div
+            className={styles.contact}
+            animate={{ y: [0, -6, 0, 6, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          >
             <MdChat className={styles.chatIcon} />
             <div>
               <small>Contact for support</small>
               <strong>098 6650 4085</strong>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </header>
