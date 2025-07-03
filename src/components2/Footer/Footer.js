@@ -24,6 +24,7 @@ const Footer = () => {
             <section>
                 <div className={styles.mainFooter}>
                     <div className={styles.containerOne}>
+
                         <div className={styles.logoSection}>
                             <img src={footer_logo} alt="QB Corp Logo" />
 
@@ -32,6 +33,7 @@ const Footer = () => {
                             <h2>Work with best Finance Team</h2>
                             <button>WORK WITH US</button>
                         </div>
+
                     </div>
                     <div
                         ref={sectionRef}

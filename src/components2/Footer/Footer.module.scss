@@ -10,6 +10,7 @@
   }
 
   .semiFooter{
+    
    width:100%;
     margin:auto;
     background-color: #142355;
@@ -17,11 +18,13 @@
     
    
     .bottom{
+       max-width: 1200px;
+     margin:auto;
       display: flex;
       align-items:center;
       border-top: 1spx solid rgba(255, 255, 255, 0.1);
       margin: 0 auto;
-      padding: 1.3rem 8rem;
+      padding: 1.3rem 3.3rem;
       display: flex;
       justify-content: space-between;
       font-size: 14px;
@@ -61,13 +64,16 @@
 }
 
 .mainFooter {
+  width: 100%;
+  
   background-image: url('/assets2//images/footer_bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   .containerOne{
-    
+    // max-width: 1200px;
+     margin:auto;
     margin-bottom:3rem;
     display: flex;
     color:white;
@@ -84,6 +90,7 @@
           }}
 
     .content{
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -103,8 +110,11 @@
 
   }
   
+
   .containerTwo {
-    padding: 1rem 8rem 3rem 8rem;
+     max-width: 1200px;
+     margin:auto;
+    padding: 1rem 3.3rem 3rem 3.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
@@ -118,7 +128,6 @@
   }
 }
 
-// About Section
 .aboutSection {
   .contactInfo {
     display: flex;

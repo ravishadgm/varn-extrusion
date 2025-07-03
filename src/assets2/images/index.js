@@ -7,6 +7,7 @@ import ReviewBg from "./Review/ReviewBackground.jpg";
 import graph from "./Profit/Graph.png";
 import security from "./Profit/security.png";
 import trophy from "./Profit/trophy.png";
+import WhyUs from "./WhyUS/WhyUs.jpeg";
 
 const images = {
     Blog1,
@@ -18,6 +19,7 @@ const images = {
     graph,
     security,
     trophy,
+    WhyUs
 
 }
 

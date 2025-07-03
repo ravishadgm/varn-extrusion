@@ -52,10 +52,7 @@ const App = () => {
 
         <Header />
         <Home />
-        <Certificates />
-        <Profit />
-        <Testimonials />
-        <Blog />
+
         <Footer />
       </div>
     </BrowserRouter>
