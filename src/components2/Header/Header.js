@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import { MdEmail, MdLocationOn, MdChat } from 'react-icons/md';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import Images from "@assets/images";
+import logo from "./footer_logo.svg";
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
           <div className={styles.leftGroup}>
             <div className={styles.logo}>
               <div className={styles.logoText}>
-                <img src={Images.logo} alt="Varn Logo" />
+                <img src={logo} alt="Varn Logo" />
               </div>
             </div>
 

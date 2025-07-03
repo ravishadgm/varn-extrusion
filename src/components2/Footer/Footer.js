@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Footer.module.scss';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaPaperPlane, FaArrowRight } from 'react-icons/fa';
-import footer_logo from "../../assets2/images/logo.png";
+import footer_logo from "../../assets2/images/footer_logo.svg";
 
 const Footer = () => {
     const sectionRef = useRef(null);
