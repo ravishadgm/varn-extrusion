@@ -12,8 +12,8 @@ const Header = () => {
       <div className={styles.topBar}>
         <div className={styles.container}>
           <div className={styles.left}>
-            <span><MdEmail /> query@finances.com</span>
-            <span><MdLocationOn /> Durham Street Hialeah, FL 33010</span>
+            <span><MdEmail /> varn@gmail.com</span>
+            <span><MdLocationOn /> Kalidas Nagar Surat, 395006 Gujarat, India</span>
           </div>
           <div className={styles.right}>
             <a href="#"><FaFacebookF /></a>
