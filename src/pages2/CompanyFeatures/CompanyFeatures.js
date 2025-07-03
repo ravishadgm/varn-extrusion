@@ -22,7 +22,7 @@ const serviceList = [
 
 // Show all services first, then products
 const combinedList = [
-  ...serviceList.map((item) => ({ ...item, type: 'Service', color: '#FF7043' })),
+  ...serviceList.map((item) => ({ ...item, type: 'Service', color: '#f3525a' })),
   ...productList.map((item) => ({ ...item, type: 'Product', color: '#42A5F5' })),
 ];
 
