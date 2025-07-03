@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaPhone, FaClock, FaBars } from "react-icons/fa";
 import Images from "@assets/images";
 import { useState, useEffect } from "react";
 
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,8 +53,8 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.navMenu} ${menuOpen ? styles.open : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">Products</a>
+          <a href="/">Home</a>
+          <a href="/products">Products</a>
 
           <div className={styles.dropdownWrapper}>
             {/* Use onClick instead of hover */}
@@ -65,9 +66,8 @@ export default function Header() {
             </span>
 
             <div
-              className={`${styles.dropdownMenu} ${
-                dropdownOpen ? styles.show : ""
-              }`}
+              className={`${styles.dropdownMenu} ${dropdownOpen ? styles.show : ""
+                }`}
             >
               <a href="/services1">Service 1</a>
               <a href="/services2">Service 2</a>
@@ -75,10 +75,12 @@ export default function Header() {
           </div>
 
           <a href="#">Company Varn</a>
-          <a href="#">Contact</a>
+          {/* <a href="#">Contact</a> */}
         </nav>
 
-        <button className={styles.purchaseBtn}>Contact Us</button>
+        <a href='contact'>
+          <button className={styles.purchaseBtn}>Contact Us</button>
+        </a>
       </div>
     </header>
   );

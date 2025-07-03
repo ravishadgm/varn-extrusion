@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.scss';
+import { Link } from 'react-router-dom';
 import BannerVideo from '@assets/videos/banner_video.mp4';
 
 function Hero() {
@@ -22,10 +23,13 @@ function Hero() {
             Since 2016, we’ve redefined precision with 0.3mm wall thickness profiles —
             where engineering meets elegance and performance.
           </p>
-          <button className={styles.ctaBtn}>Explore Our Expertise</button>
+          <Link to="/products">
+            <button className={styles.ctaBtn}>Explore Our Expertise</button>
+          </Link>
+
         </div>
       </div>
-     
+
     </section>
   );
 }

@@ -1,0 +1,123 @@
+.solutionsWrapper {
+  max-width:1200px;
+  margin:auto;
+  padding:6rem 3rem;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+    .subtitle {
+      color: #fa2b56;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .heading {
+      font-size: 35px;
+      font-weight: 700;
+      color: #172541;
+      margin-bottom: 55px;
+    }
+
+    .cardsWrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .card {
+        background: #eef2f6;
+        border-radius: 1px;
+        overflow: hidden;
+        flex: 1 1 calc(33.333% - 20px);
+        display: flex;
+        flex-direction: column;
+
+        &:hover{
+             border-radius: 4px;
+             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+        }
+       
+
+        .imageWrapper {
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+
+          .dateBadge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #fa2b56;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            width: 65px;
+
+            padding: 8px 0;
+            border-radius: 2px;
+            // font-size: 18px;
+
+            .date {
+              display: block;
+              font-size: 28px;
+              line-height: 1;
+            }
+
+            .month {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .cardBody {
+          padding: 20px;
+          text-align: left;
+
+          .meta {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+            color: #9ea1b1;
+
+            span {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            }
+          }
+
+          .cardTitle {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #172541;
+          }
+
+          .knowMore {
+            font-size: 13px;
+            color:#7c8596;
+            font-weight: 600;
+            text-decoration: none;
+
+            span {
+              margin-left: 5px;
+              transition: margin-left 0.2s ease;
+            }
+
+            &:hover span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
