@@ -6,6 +6,7 @@ import Profit from './Home/Profit/Profit';
 import Testimonials from './Home/Testimonials/Testimonials';
 import Blog from './Home/Blog/Blog';
 import WhyUs from './WhyUs/WhyUs';
+import Mission from './Home/Mission/Mission';
 
 function index() {
   return (
@@ -13,6 +14,7 @@ function index() {
       <Hero />
       <CompanyFeatures />
       <WhyUs />
+      <Mission />
       <Certificates />
       <Profit />
       <Testimonials />
