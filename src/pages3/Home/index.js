@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero/Hero";
 import Gallery from "./Gallery/Gallery";
 import Mission from "./Vision/Vision";
-import Certificates from "./Certificates/Certificates";
+import Certificates from "./Award/Award";
 import Services from "./Services/Services";
 import AboutUs from "./AboutUs/AboutUs";
 

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import styles from "./Certificates.module.scss";
+import styles from "./Award.module.scss";
 
 import img1 from "../../../assets3/images/certificate2.png";
 import img2 from "../../../assets3/images/certificate1.jpg";
