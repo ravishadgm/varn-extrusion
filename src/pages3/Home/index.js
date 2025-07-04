@@ -3,7 +3,7 @@ import Hero from "./Hero/Hero";
 import Gallery from "./Gallery/Gallery";
 import Mission from "./Mission/Mission";
 import Certificates from "./Certificates/Certificates";
-import Services from "@pages/Services";
+import Services from "./Services/Services";
 import AboutUs from "./AboutUs/AboutUs";
 
 function index() {
