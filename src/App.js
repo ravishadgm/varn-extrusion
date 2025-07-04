@@ -29,6 +29,7 @@ import Header from '../src/components3/Header/Header';
 import Home from "../src/pages3/Home/index"
 import { BrowserRouter } from 'react-router-dom';
 import Footer from 'components3/Footer/Footer';
+import './styles/main.scss'; 
 const App = () => {
   return (
     <BrowserRouter>

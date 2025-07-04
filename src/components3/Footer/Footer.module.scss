@@ -10,13 +10,12 @@
      margin:auto;
       display: flex;
       align-items:center;
-      border-top: 1spx solid rgba(255, 255, 255, 0.1);
-      margin: 0 auto;
-      padding: 1.3rem 0rem;
+   
+    padding: 1.3rem 2rem;
       display: flex;
       justify-content: space-between;
-      font-size: 12px;
-      flex-wrap: wrap;
+  
+      
     }
     .span{
       color: #a5a5a5;
@@ -39,22 +38,24 @@
   max-width: 1200px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    padding: 1.3rem 2rem;
 
+      gap: 45px;
 }
 
 .logoSection {
    
      img {
             height: 80px;
-            // width:250px;    
+    
       }
 }
 
 .infoSection {
  
   border-left:3px solid #0091ff;
-  padding-left:10px;
+  padding-left:25px;
 
   h4 {
     color: #fff;
