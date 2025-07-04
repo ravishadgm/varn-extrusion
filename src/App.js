@@ -28,7 +28,6 @@ import React from 'react';
 import Header from '../src/components3/Header/Header';
 import Home from "../src/pages3/Home/index"
 import { BrowserRouter } from 'react-router-dom';
-
 const App = () => {
   return (
     <BrowserRouter>

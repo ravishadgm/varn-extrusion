@@ -1,22 +1,22 @@
 import React from "react";
-import Hero from "./Hero/Hero";
-import Gallery from "./Gallery/Gallery";
+import OurHero from "./OurHero/OurHero";
+import Gallery from "./OurGallery/OurGallery";
 import Mission from "./Vision/Vision";
 import Certificates from "./Award/Award";
-import Services from "./Services/Services";
+import OurServices from "./OurServices/OurServices";
 import AboutUs from "./AboutUs/AboutUs";
 
 function index() {
   return (
     <>
-      <Hero />
+      <OurHero />
 
       <Gallery />
 
       <AboutUs />
       <Mission />
       <Certificates />
-      <Services />
+      <OurServices />
     </>
   );
 }

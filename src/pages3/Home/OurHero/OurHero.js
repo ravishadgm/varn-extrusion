@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-import styles from './Hero.module.scss';
+import styles from './OurHero.module.scss';
 
 import Banner1 from './Banner1.jpg';
 import Banner2 from './Banner2.jpg';

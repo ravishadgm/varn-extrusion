@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Services.module.scss";
+import styles from "./OurServices.module.scss";
 import Images from '../../../assets3/images/index';
 
 const Services = () => {
