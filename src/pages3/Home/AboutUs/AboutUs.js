@@ -41,6 +41,10 @@ const WhyUs = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
                 >
+                    {/* <div className={styles.countContainer}><span className={styles.count}>9+</span>
+                        <br />
+                        <span>Years</span>
+                    </div> */}
                     <img src={WhyUsImage} alt="Why Us" />
                 </motion.div>
 

@@ -9,11 +9,26 @@
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
+   
   }
 
   .imageContainer {
     flex: 1 1 500px;
     position: relative;
+
+    // .countContainer{
+      
+    //   color:white;
+    //   font-size:55px;
+    //   font-weight:bold;
+    //   text-align: end;
+    //   //  margin-top:1rem;
+    //   //  margin-left:40rem;
+    //   position:absolute;
+
+     
+    // }
+
 
     img {
       width: 100%;

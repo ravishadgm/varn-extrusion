@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 import styles from "./Award.module.scss";
 
 import img1 from "../../../assets3/images/certificate2.png";
-import img2 from "../../../assets3/images/certificate1.jpg";
-import img3 from "../../../assets3/images/certificate3.jpg";
+import img2 from "../../../assets3/images/certificate1.png";
+import img3 from "../../../assets3/images/certifiacate3.png";
 import img4 from "../../../assets3/images/certificate4.jpg";
 
 const awards = [
