@@ -28,6 +28,7 @@ import React from 'react';
 import Header from '../src/components3/Header/Header';
 import Home from "../src/pages3/Home/index"
 import { BrowserRouter } from 'react-router-dom';
+import Footer from 'components3/Footer/Footer';
 const App = () => {
   return (
     <BrowserRouter>
@@ -36,8 +37,11 @@ const App = () => {
         <Header />
         <Home />
 
-     
 
+
+
+
+        <Footer />
       </div>
     </BrowserRouter>
 
