@@ -25,8 +25,8 @@
 
 // src/App.tsx
 import React from 'react';
-import Header from '../src/components2/Header/Header';
-import Home from '../src/pages2/index'
+import Header from '../src/components3/Header/Header';
+import Home from '../src/pages3/Home/index';
 import { BrowserRouter } from 'react-router-dom';
 // import AppRoutes from './routes/AppRoutes';
 // import Header from '@components/Header/Header';
@@ -51,9 +51,9 @@ const App = () => {
 
 
         <Header />
-        <Home />
+     <Home />
 
-        <Footer />
+          {/*  <Footer /> */}
       </div>
     </BrowserRouter>
 
