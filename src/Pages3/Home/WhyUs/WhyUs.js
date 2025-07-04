@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './WhyUs.module.scss';
 import { FaQuoteLeft } from 'react-icons/fa';
-import WhyUsImage from '../../assets2/images/WhyUS/WhyUs.jpeg';
+import WhyUsImage from "../../../assets3/images/WhyUS.png";
 
 const WhyUs = () => {
     return (
