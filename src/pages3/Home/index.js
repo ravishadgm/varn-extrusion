@@ -1,17 +1,24 @@
-import React from 'react'
-import Hero from './Hero/Hero';
-import Gallery from './Gallery/Gallery'
+import React from "react";
+import Hero from "./Hero/Hero";
+import Gallery from "./Gallery/Gallery";
+import Mission from "./Mission/Mission";
+import Certificates from "./Certificates/Certificates";
+import Services from "@pages/Services";
+import AboutUs from "./AboutUs/AboutUs";
 
 function index() {
   return (
     <>
       <Hero />
 
-<Gallery/>
+      <Gallery />
 
-
+      <AboutUs />
+      <Mission />
+      <Certificates />
+      <Services />
     </>
-  )
+  );
 }
 
-export default index
+export default index;

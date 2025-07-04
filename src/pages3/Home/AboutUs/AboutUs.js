@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './WhyUs.module.scss';
+import styles from './AboutUs.module.scss';
 import { FaQuoteLeft } from 'react-icons/fa';
 import WhyUsImage from "../../../assets3/images/WhyUS.png";
 

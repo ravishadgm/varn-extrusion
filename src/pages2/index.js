@@ -5,7 +5,7 @@ import Certificates from './Home/Certificates/Certificates';
 import Profit from './Home/Profit/Profit';
 import Testimonials from './Home/Testimonials/Testimonials';
 import Blog from './Home/Blog/Blog';
-import WhyUs from '../Pages3/Home/WhyUs/WhyUs';
+import WhyUs from '../pages3/Home/AboutUs/AboutUs';
 import Mission from './Home/Mission/Mission';
 
 function index() {
