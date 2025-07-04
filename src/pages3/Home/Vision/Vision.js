@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "./Mission.module.scss";
+import styles from "./Vision.module.scss";
 import Images from "../../../assets3/images/index"; // adjust path if needed
 
 const cardVariants = {
