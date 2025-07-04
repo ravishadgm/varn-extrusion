@@ -17,8 +17,6 @@
     font-size: 1.6rem;
     padding-bottom:4rem;
   }
-
- 
 }
 
 @keyframes pulseStrong {
@@ -47,11 +45,13 @@
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease;
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem; 
+  max-width: 350px;
+  margin: 0 auto; 
 
   &:hover {
     transform: scale(1.03);
@@ -60,15 +60,10 @@
   .image {
     width: 300px;
     height: 200px;
-    object-fit: contain;
-    border: 2px solid #ddd;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-
- 
+    border: 6px solid #ddd;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
   }
-
-
 }
 
 :global(.swiper-slide) {
@@ -78,13 +73,13 @@
 
 :global(.swiper-slide-active) {
   opacity: 1;
-
-   .image {
-    transform: scale(1.2); 
-    margin-bottom:15px;
-  }
-
 }
+
+:global(.swiper-slide-active) .image {
+  transform: scale(1.2);
+  margin-bottom: 15px;
+}
+
 
 :global(.swiper-pagination-bullet) {
   height: 10px;
