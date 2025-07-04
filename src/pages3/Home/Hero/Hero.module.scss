@@ -170,7 +170,9 @@ gap: 1rem;
   }
 
   .statLabel {
-    font-size: 1rem;
-    opacity: 0.8;
+  font-size: 1rem;
+    /* opacity: 0.8; */
+    font-weight: bold;
+    color: white;
   }
 }

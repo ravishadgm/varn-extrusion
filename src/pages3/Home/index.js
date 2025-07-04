@@ -1,12 +1,13 @@
 import React from 'react'
-import Hero from './Hero';
-
+import Hero from './Hero/Hero';
+import Gallery from './Gallery/Gallery'
 
 function index() {
   return (
     <>
       <Hero />
 
+<Gallery/>
 
 
     </>
